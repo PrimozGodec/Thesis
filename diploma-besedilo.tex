@@ -411,6 +411,38 @@ Zadnja zbirka, ki jo bom opisal je tako imenovana Multi Modal \cite{panda2013mul
 
 \subsection{Algoritmi za evalvacijo čustev iz glasbe} 
 
+Vsi algoritmi za evalvacijo razpoloženja iz glasbe potrebujejo za svojo delovanje podatkovno zbirko, zato sem se v prejšnjem poglavju posvetil ravno tej temi. Poleg podtakov moramo poskrbeti tudi za različne značilke, na podlagi katerih se potem izvede klasifikacija. 
+
+V osnovi lahko delovanje algoritmov za evalvacijo čustev iz glasbe razdelimo na dva dela. Prvi del je treniranje algoritma. V drugem delu pa algoritem dejansko izvede klasifikacijo. Prvi del (treniranje poteka tako), da uporabimo eno izmed mnogih metod (Support Vector Machine, regresijo, dreves ali kakšno drugo). Na podlagi značilnic in podatkov iz podatkovne zbirke (že določene končne vrednosti za glasbo) algoritem izračuna pravilo za preslikavo. Ta postopek se izvaja na delu podatkovne zbirke namenjene treniranju algoritma. Ko algoritem ve pravilo lahko izvedemo drugi del klasifikacije. Na podlagi značilnic in pravila za preslikavo sedaj algoritem določi vrednosti. Vrednost je lahko skupina po razpoloženju v katero uvorstimo določeno pesem ali pa številčna vrednost, ko določamo le prijetnost in aktivnost. Drugi del se izvede na drugem delu zbirke pesmi. 
+
+To je opis splošnega delovanja algoritmov, ki je skupno vsem. Vsak od algoritmov pa ima svoje posebnosti. Zbral sem nekaj že obstoječih algoritmov, ki jih bom sedaj opisal.
+
+Schmidt et. al \cite{schmidt2009projection} so uporabili regresijski algoritem (metoda najmanjših kvadratov) za klasifikacijo. Podatkovno zbirko so razdelili na dva dela tako, da so 70\% podatkovne zbirke uporabili za treniranje algoritma in 30\% za testiranje. Za značilke so uporabili Mel-frequency cepstrum in Chromo. Algoritem npoveduje prijetnost (valence) in aktivnost (arousal) pesmi. Parametra algoritem napoveduje ločeno. 
+
+Panda et al. \cite{panda2013multi} so uporabili več algoritmov za napovedovanje in primerjali točnost napovedovanja. Uporabili so: Support Vector Machines, K-nearest Neighbours, C4.5 in Naive Bayes. Algoritem je izvaja klasifikacijo na podlagi 19 značilnic izračunanih iz glasbenega posnetka. Tem značilnicam so dodali tudi značilinice pridobljene iz MIDI signala in značilnice iz besedil. Izvajal je klasifikacijo v 5 gruč, ki so definirane za MIREX tekmovanje (tabela \ref{mirextask}).  Kot najboljši algoritem se je izkazal SVM. Samo na podlagi značilnic iz zvočnega zapisa je dosegel natančnost 64\%. Ko so dodali še značinice iz MIDI zapisa in besedil, pa se je natančnost zmanjšala na 61.1\%. Algoritem so preizkusili na podatkovni zbirki z 903 pesmimi. 
+
+Laurier et. al \cite{laurier2007audio} so za evalvacijo uporabili Support Vector Machine (SVM) \cite{ben2010user}. Algoritem za delovanje uporablja 133 značilk. Tudi ta algoritem deluje tako, da kot rezultat za vsako pesem vrne eno od petih gurč opisanih v tabeli \ref{mirextask}. Preizkusili so več različnih SVM metod in ugotovili, da najboljše rezultate vrača metoda C-SVC z RBF (Radial Basis Function) jedrom iz SVMlib knjižnice. 
+
+Diane Watson \cite{watson2012modeling} je uporabila klasifikator z Bayesovimi mrežami in Markove ocene. Kot rezultat je algoritem napovedoval prijetnost (valence) in aktivnost (arousal). Za razliko od ostlih je ona uporabila podatke, ki niso bili zajeti v laboratorijskem okolju ampak v vsakdanjem življenju. Uporabniki so skladbe ocenjevali s pomočjo pametnih telefonov kjerkoli so se nahajali v trenutku, ko jih je aplikacija prosila za oceno. Poleg značilnic iz glasbe je algoritem upošteval tudi podatke o tem kako prijetno se uporabnik počuti v času ocenjevanja in podatke o njegovi aktivnosti ter še nekatere druge podatke o stanju in okolju med tem ko je ocenjeval. Algoritem je dosegel natančnost 67\% za aktivnost (arousal) in 75\% za prijetnost (valence). 
+
+Sari et. al \cite{saari2013role} so uporabili Semantic Layer Projection (SLP) metodo za klasifikacijo. Za klasifikacijo so uporabili značilnice, končni rezultat pa so oznake s čustvi. Za razliko od prej opisnih metod, ki preslikavo izvedejo v enem koraku je tu drugače. Tukaj najprej preslikajo značilnice v tri dimenzionalni prostor z uporabo metode delnih najmanjših kvadratov (Partial Least Squares - PLS) in potem v drugem koraku na podlagi teh vrednosti določijo razpoloženje. Naj omenim, da so poskusili tudi algoritem v kombinaciji z tekstovnimi oznakami, vendar je deloval slabše. 
+
+
+\begin{table}[htb]
+	\caption{Gruče z čustvi, ki se uporabljajo v MIREX mood tekmovanju}
+    \begin{tabular}{|l|l|}
+    \hline
+    Gruče   & Čustva  \\
+    \hline                                                      
+    Gruča 1 & passionate, rousing, confident, boisterous, rowdy             \\
+    Gruča 2 & rollicking, cheerful, fun, sweet, amiable/good natured        \\
+    Gruča 3 & literate, poignant, wistful, bittersweet, autumnal, brooding  \\
+    Gruča 4 & humorous, silly, campy, quirky, whimsical, witty, wry         \\
+    Gruča 5 & aggressive, fiery, tense/anxious, intense, volatile, visceral \\
+    \hline
+    \end{tabular} 
+    \label{mirextask}   
+\end{table}
 
 
 \chapter{Naš dataset}

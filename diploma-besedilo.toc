@@ -21,14 +21,14 @@
 \contentsline {paragraph}{LAMP}{7}{section*.14}
 \contentsline {paragraph}{Multi Modal}{7}{section*.15}
 \contentsline {subsection}{\numberline {2.2.2}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{7}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{9}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{10}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{11}{subsection.3.1.2}
-\contentsline {paragraph}{Prvi del}{11}{section*.16}
-\contentsline {paragraph}{Drugi del}{12}{section*.17}
-\contentsline {paragraph}{Tretji del}{14}{section*.18}
-\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{14}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Sestava datasta}{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}Analiza podatkov}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{16}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{12}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{13}{subsection.3.1.2}
+\contentsline {paragraph}{Prvi del}{13}{section*.16}
+\contentsline {paragraph}{Drugi del}{14}{section*.17}
+\contentsline {paragraph}{Tretji del}{16}{section*.18}
+\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{16}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Sestava datasta}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}Analiza podatkov}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{18}{subsection.3.3.1}

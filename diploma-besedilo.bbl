@@ -30,6 +30,12 @@ Bernie Krause.
   World's Wild Places}.
 \newblock Hachette Digital, Inc., 2012.
 
+\bibitem{laurier2007audio}
+Cyril Laurier, Perfecto Herrera, M~Mandel, and D~Ellis.
+\newblock Audio music mood classification using support vector machine.
+\newblock {\em Music Information Retrieval Evaluation eXchange (MIREX) extended
+  abstract}, 2007.
+
 \bibitem{lenko2009pomen}
 Mira Lenko, Tina Kogov{\v{s}}ek, and Peter Stankovi{\'c}.
 \newblock {\em Pomen glasbe v o{\v{c}}eh mladih: diplomsko delo}.
@@ -46,6 +52,13 @@ Matev{\v{z}} Pesek.
 \newblock {\em Prepoznavanje akordov s hierarhi{\v{c}}nim kompozicionalnim
   modelom: diplomsko delo}.
 \newblock PhD thesis, M. Pesek, 2012.
+
+\bibitem{schmidt2009projection}
+Erik~M Schmidt and Youngmoo~E Kim.
+\newblock Projection of acoustic features to continuous valence-arousal mood
+  labels via regression.
+\newblock In {\em 10th International Society for Music Information Retrieval
+  Conference. ISMIR}, 2009.
 
 \bibitem{schmidt2011modeling}
 Erik~M Schmidt and Youngmoo~E Kim.
@@ -68,6 +81,12 @@ Douglas Turnbull, Luke Barrington, David Torres, and Gert Lanckriet.
 Nils~Lennart Wallin, Bj{\"o}rn Merker, and Steven Brown.
 \newblock {\em The origins of music}.
 \newblock MIT press, 2001.
+
+\bibitem{watson2012modeling}
+Diane Watson and Regan~L Mandryk.
+\newblock Modeling musical mood from audio features and listening context on an
+  in-situ data set.
+\newblock In {\em ISMIR}, pages 31--36, 2012.
 
 \bibitem{wu2013spectral}
 Bin Wu, Simon Wun, Chung Lee, and Andrew Horner.
