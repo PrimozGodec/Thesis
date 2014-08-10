@@ -307,7 +307,7 @@ z vpisno številko \textbf{63110452}, sem avtor  diplomskega dela z naslovom:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \addcontentsline{toc}{chapter}{Povzetek}
 \chapter*{Povzetek}
-V vzorcu je predstavljen postopek priprave diplomskega dela z uporabo okolja \LaTeX. Vaš povzetek mora sicer vsebovati približno 100 besed, ta tukaj je odločno prekratek.
+V vzorcu je predstavljen postopek priprave diplomskega dela z uporabo okolja \LaTeX. Vaš povzetek mo ra sicer vsebovati približno 100 besed, ta tukaj je odločno prekratek.
 \bigskip
 
 \noindent\textbf{Ključne besede:} \tkeywords.
@@ -341,6 +341,31 @@ This sample document presents an approach to typesetting your BSc thesis using \
 
 \chapter{Pregled področja}
 
+Lahko bi rekli, da je glasba ena najstarejših in zelo pomembnih aktivnosti na svetu. Razširjena je praktično po celem svetu in poznajo jo še tako izlirana in od ostalega sveta odmaknjena plemena. Znano je, da glasba na svetu obstaja že vsaj 50 000 let. Prva glasba naj bi takrat izvajali na Afriških tleh. Nato se je skozi čas razvijala in postala eden najpomembnejših sestavnih delov človekovega življenja. \cite{wallin2001origins} \cite{krause2012great} O pomebnosti glasbe priča dejstvo, da jo lahko slišimo praktično na vsakem koraku. Poslušamo jo doma, na poti, ko nam je dolgčas ali ko se želimo razvedriti, poslušamo jo ko smo na kavi ali ko smo v trgovini. Ponekod z pravo iziro glabe vplivajo na člonekove odločitve. Na primer v raznih trgovinah in lokalih z glasbo privlačijo kupce. Vse to priča o pomembnem vplivu glasbe pri človeku.  
+
+Glasba pomembno vpliva na človekaova čustva in razploženje. To moč ima predvsem zaradi tega, ker ima neposredno pot do čustev. Glasbo namreč doživljamo z notranjimi čuti, zato ni potrebne predhodne interpretacije, kot je potrebna pri razumevanju tiskane besede.  Znano je da različna glasba vzbudi različna čustva in ima moč da zbudi potlačena čustva. Na vzdušje vpliva razmerje med toni. Mol pričara bolj melanholično vzdušje. Dur pa ba bolj veselo. \cite{lenko2009pomen}
+
+V nadaljevanju poglavja bom povedal še nekaj o področju imenovanem pridobivanje informacij iz glasbe (Music information retrieval - MIR). To področje je pomembno, saj je osnova za temo moje diplomske naloge. Povedal bom nekaj o povezavi med razpoloženjem in glasbo. Pregledal bom datasete, ki obstajajo trenutno na področju razpoloženja in glasbe. Za konec pa bom predstavil še algoritme za evalvacijo čustev iz glasbe. 
+
+\section{Pridobivanje informacij iz glasbe}
+
+Pridobivanje infrormacij iz glasbe (Music information retrieval - MIR) je interdisciplinarna zannost, ki povezuje predvsem muzikologijo in računalništvo. \cite{pesek2012prepoznavanje} Vključuje pa tudi vede kot so psihologija, akademski študij glasbe, procesiranje signalov, strojno učenje in mnoge ostale. To področje je dokaj novo in se trenutno res hitro širi. Kljub temu, da je področje novo, je postalo že zelo široko. Pojavljajo se velike razlike v načinu obdelave in uporabe podatkov. Prav tako so cilji raziskovalcev zelo različni.
+
+Ključni namen področja je pridobiti infromacije iz glasbe in še bolj pomembno te informacije potem uporabiti v različnih sistemih. Trenutno se največ dela na naslednjih sistemih. 
+
+\paragraph{Sistem za predlaganje glasbe (Music Recommendation System)}
+
+V osnovi taki sistemi predlagajo glasbo na podlagi zgodovine poslušane glasbe s strani uporabnika. Trenutno obstaja veliko takih sistemov kot sta Pandora in Last.fm, ampak le redki uporabljajo informacije pridobljene z MIR za svoje delovanje. Namesto tega veliko sistemov uporablja informacije na podlagi primerjave med uporabniki. Naprimer sistem predlaga glasbo, ki so jo poslušali uporabniki s podobno zgodovino poslušanja. Drugi spetu uporabljajo oznake k določeni glasbi ali pa kakšen druge informacije, ki niso del MIR-a. Te oznake lahko dodajo ali uporabniki ali pa tudi experti. Pri sistemu Pandora glasbo označujejo strokovnjaki pri sistemu Last.fm pa uporabljajo oznake dodane s strani uporabnikov. Oznake, ki se uporabljajo so lahko različne od tega, da označijo zvrst glabe, lahko oznake opisuejo tudi razploženje, ali je pesem instrumental ali ali ima voka, je vokal ženski, moški in podobno. Od kar pa se je področje MIR zelo razširilo vedno več sistemov uporablja tudi te informacije za predlaganje glasbe. 
+ 
+\paragraph{Ločevanje pesmi na več pasov in prepoznavanje inštrumentov}
+
+Sistem za ločevanje pesmi zna pesem v kateri nastopa več instrumentov in vokali, razstaviti tako, da imamo posamezne pasove v pesmi ločene. Na primer lahko loči po inštrumentih. Da lahko loči posamezne pasove potrebuje sistem za prepovznavanje inštrumentov. Zaradi tega sta ta sistema tako tesno povezana med seboj. 
+
+Na tem področju obstaja že kar nekaj sistemov. Ti sistemi se veliko uporabljajo pri ustvarjanju podlag za karaoke. Tam je naprimer potrebno pesmi odvzeti vokal. Uporabljajo se tudi za izključevanje posameznih inštrumetnov iz podlage. Ti sistemi pa seveda še niso popolni. Veliko je še prostora za izbolšave. Velik problem je v tem kako najbolje ločiti vokal od ostalih delov pesmi, ker si vokal z določenimi inštrumenti deli frekvence.
+
+\paragraph{Avtomatično prepisovanje glasbe}
+
+Ti sistemi delujejo tako, da glasbo iz posnetka pretvarjajo v simbolični zapis. Največ se to uporablja za prepisovanje glasbe v zapis MIDI. Taki sistemi vključujejo kar nekaj podsistemov: detekcijo pojavov (onset detection), ocenjevanje trajanja, identifikacijo instrumentov, prepoznavanje ritma in ostale. Sistemi, ki trenutno obstajajo še niso popolni. Predvsem nastane problem, ko je v pesmi veliko inštrumentov in več polifoničnih nivojev. 
 
 \chapter{Naš dataset}
 
@@ -446,6 +471,10 @@ V prvem delo so podatki, ki opisujejo anketirance. Za vsakega imamo podtek o sta
 Drugi del podatkovne zbirke vsebuje podatke o anketirancevem razpoloženju v trenutku, ko je izpolnjeval anketo in o tem kako si anketiranec predstavlja posamezna čustva. Uporabnikono razploženje opisujejo trije podatki. Prvi je točka v VA prostoru (x in y koordinata). Drugo je barva v barvnem krogu (tukaj hranimo podatek o tem katero barvo je  anketiranec izbral). Tretji pa je vrednost kako močno je posamezno čustvo iza naobra 17 čustev, izraženo pri anketirancu v tistem trenutku. Hranimo vrednost med 0 in 1 za vsako čustvo. Kot sem že omenil drugi del vsebuje tudi podatek o tem kako si anketiranec predstavlja čustva. Za nabor 10 čustev imamo podatek kam v VA prostoru spada to čustvo po mnenju anketiranca in barvo s katero ga je anketiranec ozačil. 
 
 Tretji del podatkovne zbirke je malo drugačen. Tu nimamo le enega odgovora na anketiranca ampak do 10 odgovorov. Za vsako pesem en odgovor. Imamo podatek o tem katera čustva so izražena v glasbi in katera so vzbujena pri anketirancu. Poleg tega pa imamo za vsakga od izbranih čustev še podatek kam v VA prostor ga bi anketiranec postavil. Za vsako pesem imamo še podatek o barvi s katero je anketiranec ozančil glasbeni odlomek.  
+
+\section{Analiza podatkov}
+
+\subsection{Demografska analiza}
 
 
 

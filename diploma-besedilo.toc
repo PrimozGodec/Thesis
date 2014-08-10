@@ -6,12 +6,18 @@
 \select@language {slovene}
 \contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Pregled podro\IeC {\v c}ja}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{5}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{6}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{7}{subsection.3.1.2}
-\contentsline {paragraph}{Prvi del}{7}{section*.5}
-\contentsline {paragraph}{Drugi del}{8}{section*.6}
-\contentsline {paragraph}{Tretji del}{10}{section*.7}
-\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{10}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Sestava datasta}{10}{section.3.2}
+\contentsline {section}{\numberline {2.1}Pridobivanje informacij iz glasbe}{4}{section.2.1}
+\contentsline {paragraph}{Sistem za predlaganje glasbe (Music Recommendation System)}{4}{section*.5}
+\contentsline {paragraph}{Lo\IeC {\v c}evanje pesmi na ve\IeC {\v c} pasov in prepoznavanje in\IeC {\v s}trumentov}{4}{section*.6}
+\contentsline {paragraph}{Avtomati\IeC {\v c}no prepisovanje glasbe}{5}{section*.7}
+\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{8}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{9}{subsection.3.1.2}
+\contentsline {paragraph}{Prvi del}{9}{section*.8}
+\contentsline {paragraph}{Drugi del}{10}{section*.9}
+\contentsline {paragraph}{Tretji del}{12}{section*.10}
+\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{12}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Sestava datasta}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Analiza podatkov}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{14}{subsection.3.3.1}
