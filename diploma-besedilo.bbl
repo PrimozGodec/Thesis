@@ -1,4 +1,17 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{ben2010user}
+Asa Ben-Hur and Jason Weston.
+\newblock A user’s guide to support vector machines.
+\newblock In {\em Data mining techniques for the life sciences}, pages
+  223--239. Springer, 2010.
+
+\bibitem{chu2010lamp}
+Wei-rong Chu, RT-H Tsai, Ying-Sian Wu, Hui-Hsin Wu, Hung-Yi Chen, and JY-J Hsu.
+\newblock Lamp, a lyrics and audio mandopop dataset for music mood estimation:
+  Dataset compilation, system construction, and testing.
+\newblock In {\em Technologies and Applications of Artificial Intelligence
+  (TAAI), 2010 International Conference on}, pages 53--59. IEEE, 2010.
 
 \bibitem{dalgleish1999handbook}
 Tim Dalgleish and Michael~J Power.
@@ -22,11 +35,34 @@ Mira Lenko, Tina Kogov{\v{s}}ek, and Peter Stankovi{\'c}.
 \newblock {\em Pomen glasbe v o{\v{c}}eh mladih: diplomsko delo}.
 \newblock M. Lenko, 2009.
 
+\bibitem{panda2013multi}
+R~Panda, R~Malheiro, B~Rocha, A~Oliveira, and RP~Paiva.
+\newblock Multi-modal music emotion recognition: A new dataset, methodology and
+  comparative analysis.
+\newblock {\em Proc. CMMR}, 2013.
+
 \bibitem{pesek2012prepoznavanje}
 Matev{\v{z}} Pesek.
 \newblock {\em Prepoznavanje akordov s hierarhi{\v{c}}nim kompozicionalnim
   modelom: diplomsko delo}.
 \newblock PhD thesis, M. Pesek, 2012.
+
+\bibitem{schmidt2011modeling}
+Erik~M Schmidt and Youngmoo~E Kim.
+\newblock Modeling musical emotion dynamics with conditional random fields.
+\newblock In {\em ISMIR}, pages 777--782, 2011.
+
+\bibitem{schuller2010mister}
+Bj{\"o}rn Schuller, Clemens Hage, Dagmar Schuller, and Gerhard Rigoll.
+\newblock ‘mister dj, cheer me up!’: Musical and textual features for
+  automatic mood classification.
+\newblock {\em Journal of New Music Research}, 39(1):13--34, 2010.
+
+\bibitem{turnbull2008semantic}
+Douglas Turnbull, Luke Barrington, David Torres, and Gert Lanckriet.
+\newblock Semantic annotation and retrieval of music and sound effects.
+\newblock {\em Audio, Speech, and Language Processing, IEEE Transactions on},
+  16(2):467--476, 2008.
 
 \bibitem{wallin2001origins}
 Nils~Lennart Wallin, Bj{\"o}rn Merker, and Steven Brown.

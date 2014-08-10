@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.7)  9 AUG 2014 17:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.7)  10 AUG 2014 16:28
 entering extended mode
 **diploma-besedilo.tex
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.tex
@@ -546,97 +546,111 @@ Overfull \hbox (3.59727pt too wide) in paragraph at lines 346--347
 . Glasbo na-mrec dozivljamo
  []
 
-[3] [4] [5] [6
+[3] [4]
+Overfull \hbox (1.26553pt too wide) in paragraph at lines 372--373
+ []\OT1/cmr/bx/n/12 Avtomaticna ka-te-go-ri-za-cija glasbe[] \OT1/cmr/m/n/10.9
+5 To so sis-temi, ki znajo raz-vr-stiti glasbo
+ []
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 378.
+
+[5] [6] [7] [8
 
 ]
 Poglavje 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-<colorwheelold.png, id=175, 401.5pt x 401.5pt>
+ [9]
+<colorwheelold.png, id=212, 401.5pt x 401.5pt>
 File: colorwheelold.png Graphic file (type png)
  <use colorwheelold.png>
-Package pdftex.def Info: colorwheelold.png used on input line 394.
+Package pdftex.def Info: colorwheelold.png used on input line 440.
 (pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
 
-<colorwheel.png, id=177, 393.47pt x 340.27126pt>
+<colorwheel.png, id=214, 393.47pt x 340.27126pt>
 File: colorwheel.png Graphic file (type png)
  <use colorwheel.png>
-Package pdftex.def Info: colorwheel.png used on input line 395.
+Package pdftex.def Info: colorwheel.png used on input line 441.
 (pdftex.def)             Requested size: 170.71652pt x 147.63258pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
-[9 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheelold.png> <C:/
-Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheel.png>]
-<genresel.png, id=192, 843.15pt x 552.0625pt>
+ [10]
+[11 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheelold.png> <C:
+/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheel.png>]
+<genresel.png, id=230, 843.15pt x 552.0625pt>
 File: genresel.png Graphic file (type png)
  <use genresel.png>
-Package pdftex.def Info: genresel.png used on input line 413.
+Package pdftex.def Info: genresel.png used on input line 459.
 (pdftex.def)             Requested size: 284.52756pt x 186.30042pt.
 
-<moodstripe.png, id=194, 866.23625pt x 340.27126pt>
+<moodstripe.png, id=232, 866.23625pt x 340.27126pt>
 File: moodstripe.png Graphic file (type png)
  <use moodstripe.png>
-Package pdftex.def Info: moodstripe.png used on input line 429.
+Package pdftex.def Info: moodstripe.png used on input line 475.
 (pdftex.def)             Requested size: 284.52756pt x 111.76544pt.
 
-[10 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/genresel.png>]
-<images/moodgraph.png, id=204, 866.23625pt x 479.7925pt>
+[12 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/genresel.png>]
+<images/moodgraph.png, id=242, 866.23625pt x 479.7925pt>
 File: images/moodgraph.png Graphic file (type png)
 
 <use images/moodgraph.png>
-Package pdftex.def Info: images/moodgraph.png used on input line 439.
+Package pdftex.def Info: images/moodgraph.png used on input line 485.
 (pdftex.def)             Requested size: 284.52756pt x 157.59258pt.
 
 Underfull \vbox (badness 1490) has occurred while \output is active []
 
- [11 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/moodstripe.png> <C:/U
+ [13 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/moodstripe.png> <C:/U
 sers/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraph.png>]
-<images/moodgraphdvo.png, id=215, 867.24pt x 612.2875pt>
+<images/moodgraphdvo.png, id=252, 867.24pt x 612.2875pt>
 File: images/moodgraphdvo.png Graphic file (type png)
 
 <use images/moodgraphdvo.png>
-Package pdftex.def Info: images/moodgraphdvo.png used on input line 457.
+Package pdftex.def Info: images/moodgraphdvo.png used on input line 503.
 (pdftex.def)             Requested size: 284.52756pt x 200.87831pt.
- [12]
+ [14]
 Underfull \vbox (badness 6445) has occurred while \output is active []
 
- [13 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraphdvo.p
+ [15 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraphdvo.p
 ng>]
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.bbl
-[14])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 485.
- [15
+[16] (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+[17
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 485.
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 531.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 531.
 
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 485.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 485.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 531.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 531.
 Package rerunfilecheck Info: File `diploma-besedilo.out' has not changed.
-(rerunfilecheck)             Checksum: ED8033F292998768F47EB28112A49793;501.
+(rerunfilecheck)             Checksum: 494ADE4E231CF5474C1E9BB268B5908E;576.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 485.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 531.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 187 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7402 strings out of 493921
- 103958 string characters out of 3147280
- 197242 words of memory out of 3000000
- 10534 multiletter control sequences out of 15000+200000
+ 7683 strings out of 493921
+ 107262 string characters out of 3147280
+ 197472 words of memory out of 3000000
+ 10792 multiletter control sequences out of 15000+200000
  15276 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,11n,43p,1081b,573s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,43p,1198b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
@@ -648,9 +662,9 @@ lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on diploma-besedilo.pdf (35 pages, 464289 bytes).
+Output written on diploma-besedilo.pdf (38 pages, 481115 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

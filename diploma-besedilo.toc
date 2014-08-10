@@ -10,14 +10,25 @@
 \contentsline {paragraph}{Sistem za predlaganje glasbe (Music Recommendation System)}{4}{section*.5}
 \contentsline {paragraph}{Lo\IeC {\v c}evanje pesmi na ve\IeC {\v c} pasov in prepoznavanje in\IeC {\v s}trumentov}{4}{section*.6}
 \contentsline {paragraph}{Avtomati\IeC {\v c}no prepisovanje glasbe}{5}{section*.7}
-\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{8}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{9}{subsection.3.1.2}
-\contentsline {paragraph}{Prvi del}{9}{section*.8}
-\contentsline {paragraph}{Drugi del}{10}{section*.9}
-\contentsline {paragraph}{Tretji del}{12}{section*.10}
-\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{12}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Sestava datasta}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Analiza podatkov}{14}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{14}{subsection.3.3.1}
+\contentsline {paragraph}{Avtomati\IeC {\v c}na kategorizacija glasbe}{5}{section*.8}
+\contentsline {paragraph}{Generiranje glasbe}{5}{section*.9}
+\contentsline {section}{\numberline {2.2}Evalvacija \IeC {\v c}ustev iz glasbe}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Podatkovne zbirke}{6}{subsection.2.2.1}
+\contentsline {paragraph}{Podatkovna zbirka s filmsko glasbo}{6}{section*.10}
+\contentsline {paragraph}{Mood Swing Turk Dataset}{6}{section*.11}
+\contentsline {paragraph}{Cal500}{7}{section*.12}
+\contentsline {paragraph}{MTV Music Dataset}{7}{section*.13}
+\contentsline {paragraph}{LAMP}{7}{section*.14}
+\contentsline {paragraph}{Multi Modal}{7}{section*.15}
+\contentsline {subsection}{\numberline {2.2.2}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{7}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{10}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{11}{subsection.3.1.2}
+\contentsline {paragraph}{Prvi del}{11}{section*.16}
+\contentsline {paragraph}{Drugi del}{12}{section*.17}
+\contentsline {paragraph}{Tretji del}{14}{section*.18}
+\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{14}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Sestava datasta}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Analiza podatkov}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{16}{subsection.3.3.1}

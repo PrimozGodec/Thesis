@@ -367,6 +367,52 @@ Na tem področju obstaja že kar nekaj sistemov. Ti sistemi se veliko uporabljaj
 
 Ti sistemi delujejo tako, da glasbo iz posnetka pretvarjajo v simbolični zapis. Največ se to uporablja za prepisovanje glasbe v zapis MIDI. Taki sistemi vključujejo kar nekaj podsistemov: detekcijo pojavov (onset detection), ocenjevanje trajanja, identifikacijo instrumentov, prepoznavanje ritma in ostale. Sistemi, ki trenutno obstajajo še niso popolni. Predvsem nastane problem, ko je v pesmi veliko inštrumentov in več polifoničnih nivojev. 
 
+\paragraph{Avtomatična kategorizacija glasbe}
+
+To so sistemi, ki znajo razvrstiti glasbo v več prej definiranih skupin. Na prodročju MIR se raziskovalci trenutno ukvarjajo predvsez kategorizacijo po žanrih in glede na čustva v glasbi. Za obe dve temi MIREX (Music Information Retrieval Evaluation eXchange) organizira tekmovanje v kategorizaciji glasbe. Raziskovalic lahko oddajo svoj algoritem, ki ga potem pežnejo na MIREX-ovem datasetu. Za kategorizacijo se uporabljajo tehnike za strojno učenje, kot so SVM \cite{ben2010user}, regresija, različna drevesa in še ostale.
+
+\paragraph{Generiranje glasbe}
+
+Eden od ciljev raziskovalcev v MIR pa je tudi narediti dober sistem za avtomatično generiranje glasbe. Zaenkrat še ne obstaja sistem, ki bi samostojno zgenerial dobro pesem. V trenutnih sistemih je potrebno predvsem veliko ročnega prilagajanja. 
+
+\section{Evalvacija čustev iz glasbe}
+
+Eno od pomembnih področij v MIR je zagotovo evalvacija čustev iz glasbe s pomočjo računalniških algoritmov. Ti algoritmi v osnovi delujejo tako, da najprej iz zvočnega zapisa izračunajo določene opisnike. V naslednjem koraku je potrebno na podlagi že obstoječe podatkovne zbirke natrenirati algoritem. Nato pa lahko izvedemo klasifikacijo na večji zbirki zvočnih posnetkov. Za delovanje teh algoritmo potrebujemo podatkovno zbirko z že obstoječimi podatki. Zato bom v naslednjem podpoglavju opisal kaj na tem področju že obstaja. Poleg tega bom naredil še pregled algoritmov, ki že obstajajo.
+
+\subsection{Podatkovne zbirke}
+
+Na področju razpoloženja v MIR obstaja že kar nekaj podatkovnih zbirk, ki vsebujejo različne oznake za glasbo. 
+
+\paragraph{Podatkovna zbirka s filmsko glasbo}
+
+Eerola et. al \cite{eerola2010comparison} so zbrali podatkovno zbirko, ki vključuje filmsko glasbo iz različnih znanih filmov. Ta podatkovna zbirka je razdeljena na dva dela. Prvi del vsebuje 361 glasbeni odlomkov. Za vsako odlomek imajo povprečno vrednost za prijetnost (ang. valence), aktivnost (ang. arousal) in  napetost (ang. tension). Poleg tega so za vsako pesem zbrali tudi oznake za čustva (vesel, žalosten, nežen in podbne). K vsaki odlomku je dodana tudi povprečna številčna vrednost o prisotnosti posameznega čustva izmed nabora čustev: jeza, strah, veselje, žalost in nežnost. Drugi del zbirke vsebuje 110 glasbenih odlomkov, ki so podmnožica odlomkov iz prvega dela. Poleg vseh oznak, ki jih ima prvi del ima ta del dodane še številčne vrednosti, ki označujejo prisotnost za čustvi lepota (beauty) in naklonjenost (liking). Ta podatkovna zbirka poleg podatkov vsebuje tudi glasbene odseke, ki so dlogi 15 sekund. Kar je dobro za evalvacijo podatkovne zbirke na različnih algoritmih. Poleg tega podatkovna zbirka vsebuje še podatke o naslovu filma za posamezen odlomek in podatek iz katerega dela pesmi je bil odrezan. 
+
+\paragraph{Mood Swing Turk Dataset}
+
+Podatkovna zbirka Mood Swing Turk Dataset \cite{schmidt2011modeling} je bila zbrana za 240 glasbenih odlomkov popularne glasbe. Za vsak odlomek vsebuje povprečno 17 vrednosti, ki opisujejo prijetnost (valence) in aktivnost (arousal). Dodani so še podatki o glasbi (naslov, avtor, album) in tudi podatki o poteku ocenjevanja (krog ocenjevanja v katerem so bile zbrane ocene in id uporabnika, ki je podal posamezno oceno). 
+
+Sama podatkovna zbirka ne vsebuje uporabljenih glasbenih odsekov, so pa zaradi tega objavljene že izračunane značilnice za posamezno pesem. Podatkovna zbirka vsebuje naslednje zančilnice: Mel-frequency cepstral coefficients (MFCCs), Octave-Based Spectral Contrast, Statistical Spectrum Descriptors (SSDs), Chromagram in EchoNest Audio Features.
+
+\paragraph{Cal500}
+
+Podatkovna zbirka imenovana Cal500 \cite{turnbull2008semantic} ima zbrane podatek o razpoloženju za 500 pesmi. Pesmi so zbrane izmed zahodne popularne glasbe. Za vsako pesem ima oznako za razpoloženje (vesela, žalostna, jezna in podobne). V naboru imajo 18 možnih oznak. Podatkovna zbirka je bila anotirana ročno in ima 3 oznake na pesem. Poleg ročne anotacije so kaseneje anotirali tudi s pomočjo alogritma. Podatkovna zbirka vsebuje tudi glasbene datoteke.
+
+\paragraph{MTV Music Dataset}
+
+MTV Music Dataset \cite{schuller2010mister} vsebuje podatke za 192 pesmi izbrane iz MTV Europe Most Wanted lestvic med leti 1981 in 2000. Celotna podatkovna zbirka je bila anotirana s strni 5 ocenjevalcev. Vsaka ocena vsebuje vrednost za prijetnost (valence) in vrednost za aktivnost (arousal). Vsaka pesem je bila ozančena s strani 3h ocenejvalcev.
+
+\paragraph{LAMP}
+
+Podatkovna zbirka LAMP \cite{chu2010lamp} vsebuje podatke za 492 popularnih pesmi izdanih med 2002 in 2008. Podatkovna zbirka je bila labelirana s strani 400 anketirancev v treh korakih. V prvem je anketiranec dobil samo besedilo in  na podlagi tega določil prijetnost (valence) in aktivnost (arousal). V drugem koraku je dobil samo zvočni posnetek ter določal aktivnost in prijetnost. Isto je moral narediti v tretjem koraku na pdlagi besedila in zvočnega posnetka skupaj. 
+
+\paragraph{Multi Modal}
+
+Zadnja zbirka, ki jo bom opisal je tako imenovana Multi Modal \cite{panda2013multi} podatkovna zbirka. Vsebuje 903 posnetke, ki so tudi dodani podatkovni zbirki. Glasba je večinoma popularna zahodna. Za vsako pesem je določena ozanka s čustvom. Poleg tega pa je tudi vsaka pesem razvščena v enega od 5 razredov po razpoloženju. 
+
+\subsection{Algoritmi za evalvacijo čustev iz glasbe} 
+
+
+
 \chapter{Naš dataset}
 
 Tema moje diplomske naloge je vsekakor evalvacija čustev iz glasbe s pomočjo računalnikih algoritmov. Dobre evalvacije pa ni možno narediti brez dobrega dataseta, zato smo se odločili, da zgradimo svoj dataset, ki bo osnova za raziskovanje povezave med čustvi in glasbo. Poleg tega smo se odločili, da datset nadgradimo s podatki o barvah, ki po mnenju anketirancev najbolje odražajo posamezno skladbo. Tako smo s tem pridoli še povzavo med čustvi, glasbo in barvami.
