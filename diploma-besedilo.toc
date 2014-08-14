@@ -21,6 +21,8 @@
 \contentsline {paragraph}{LAMP}{7}{section*.14}
 \contentsline {paragraph}{Multi Modal}{7}{section*.15}
 \contentsline {subsection}{\numberline {2.2.2}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{7}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Pregled osnovnih elementov}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Zna\IeC {\v c}ilnice}{10}{subsection.2.3.1}
 \contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Zbiranje dataseta}{11}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{12}{subsection.3.1.1}
@@ -32,3 +34,9 @@
 \contentsline {section}{\numberline {3.2}Sestava datasta}{16}{section.3.2}
 \contentsline {section}{\numberline {3.3}Analiza podatkov}{18}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{18}{subsection.3.3.1}
+\contentsline {paragraph}{Ukvarjanje z glasbo}{18}{section*.19}
+\contentsline {paragraph}{Zdravila in droge}{18}{section*.20}
+\contentsline {paragraph}{\IeC {\v Z}anri}{19}{section*.21}
+\contentsline {subsection}{\numberline {3.3.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva ter barva}{21}{subsection.3.3.2}
+\contentsline {paragraph}{Barva}{24}{section*.22}
+\contentsline {subsection}{\numberline {3.3.3}Glasba, razpolo\IeC {\v z}enje in barva}{25}{subsection.3.3.3}

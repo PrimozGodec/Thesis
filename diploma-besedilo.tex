@@ -444,6 +444,22 @@ Sari et. al \cite{saari2013role} so uporabili Semantic Layer Projection (SLP) me
     \label{mirextask}   
 \end{table}
 
+\section{Pregled osnovnih elementov}
+
+\subsection{Značilnice}
+
+Kot ste v opisih delovanja algoritmov opazili parktično vsi za svoje delvanje uporabljajo tako imenovane značilnice. To so različne vrednosti, ki jih lahko izračunamo iz glasbenega posnetka in so definirane na različne načine.
+
+Razdelimo jih lahko v skupine po podobnosti. Eno od takih razporeditev bom predstavil v nadaljevanju. Tako so začilnice razoredili v \cite{laurier2007audio}:
+
+\begin{itemize}
+  \item \textbf{Spektralne značilnice} so značilnice, ki opisujejo obliko spektra v glasbi. Izmed teh značilnic se na MIR področju veliko uporabljaja MFCC, HFC (High Frequency Content), Chroma, Spectral Strong peak in podobni. 
+MFCC \cite{gunderson2007musical} (Mel-frequency cepstral coefficients) je koeficient kratkotrajnega močnostnega spektra zvoka. Temelji na linearni kosinusni transformaciji logaritmičnega močnostnega spektra na nelinearni mel frekvenčni skali. Spectral strong peak \cite{gouyon2001exploration} nam pove ali spekter vključuje izrazit vrh. Vrednost je večja, če je vrh višji in tanjši. 
+  \item \textbf{Značilnice, ki opisujejo glasnost} Med temi značilnicami sem v MIR zasledil uporabo naslednjih: Larm, Leq, RMS in podobnih. RMS (Root mean square) \cite{bausch1996root} je kvadratni koren povprečnih vrednosti kvadratov valovanja glasbe.
+  \item \textbf{Visoko nivojski opisniki v glasbi} Višjenivojski deskriptorji so bolj abstraktni in med seboj zelo različni. Med njimi lahko najdemo opisnike kot so 
+  \item \textbf{Časovni opisniki}
+  \item \textbf{Statistične značilnice}
+\end{itemize}
 
 \chapter{Naš dataset}
 
@@ -507,7 +523,7 @@ Uporabnik je moral svoje razpoloženje opisati tudi z tem, da je povedal kako je
 \includegraphics[width=10cm]{moodstripe.png}
 
 \caption{Element za zajemanje pristnosti posameznega čustva imenovan moodstripe.}
-\label{genresel}
+\label{moodstripe}
 \end{figure}
 
 V drugem delu smo uporabnika povprašali tudi o njegovi percepciji posameznega čustva. Anketiranec je moral za vsako čustveno oznako povedati kako prijetno je to čustvo in kako aktivno je (VA vrednost). To smo zajemali s pomočjo elementa imenovanega enokategorni MoodGraph (slika \ref{moodgraph}). To je 2D prostor, kjer je na vodoravni osi prijetnost in na navpični osi anktivnost. Uporabnik je ozake čustev prikazane nad grafom potegnil v to ravnino na mesto za katerega misli, da ga najbolje opisuje. 
@@ -548,11 +564,129 @@ V prvem delo so podatki, ki opisujejo anketirance. Za vsakega imamo podtek o sta
 
 Drugi del podatkovne zbirke vsebuje podatke o anketirancevem razpoloženju v trenutku, ko je izpolnjeval anketo in o tem kako si anketiranec predstavlja posamezna čustva. Uporabnikono razploženje opisujejo trije podatki. Prvi je točka v VA prostoru (x in y koordinata). Drugo je barva v barvnem krogu (tukaj hranimo podatek o tem katero barvo je  anketiranec izbral). Tretji pa je vrednost kako močno je posamezno čustvo iza naobra 17 čustev, izraženo pri anketirancu v tistem trenutku. Hranimo vrednost med 0 in 1 za vsako čustvo. Kot sem že omenil drugi del vsebuje tudi podatek o tem kako si anketiranec predstavlja čustva. Za nabor 10 čustev imamo podatek kam v VA prostoru spada to čustvo po mnenju anketiranca in barvo s katero ga je anketiranec ozačil. 
 
-Tretji del podatkovne zbirke je malo drugačen. Tu nimamo le enega odgovora na anketiranca ampak do 10 odgovorov. Za vsako pesem en odgovor. Imamo podatek o tem katera čustva so izražena v glasbi in katera so vzbujena pri anketirancu. Poleg tega pa imamo za vsakga od izbranih čustev še podatek kam v VA prostor ga bi anketiranec postavil. Za vsako pesem imamo še podatek o barvi s katero je anketiranec ozančil glasbeni odlomek.  
+Tretji del podatkovne zbirke je malo drugačen. Tu nimamo le enega odgovora na anketiranca ampak do 10 odgovorov. Za vsako pesem en odgovor. Imamo podatek o tem katera čustva so izražena v glasbi in katera so vzbujena pri anketirancu. Poleg tega pa imamo za vsakega od izbranih čustev še podatek kam v VA prostor ga bi anketiranec postavil. Za vsako pesem imamo še podatek o barvi s katero je anketiranec označil glasbeni odlomek.  
 
 \section{Analiza podatkov}
 
 \subsection{Demografska analiza}
+
+Povprečna starost anketirancev je 26,5 let. Najmanjši anketiranec je bil star 15, najstarejši pa 64. Največ udeležencev je bilo starih 20 let. Anketo je rešilo več anketirancev ženskega spola, kar 65\%. Večina udeležencev prihaja iz urbanega okolja, kar 66\% anketirancev živi v mestu in 34\% na podeželju.
+
+\paragraph{Ukvarjanje z glasbo}
+
+Zanimivo je, da ima kar polovica vseh anketirancev glasbeno izobrazbo, z glasbo pa se ukvarja 53\% anketirancev (igrajo inštrument ali pojejo). Udeleženci, ki so obiskovali glasbeno šolo, so jo v povprečju obiskovali 6 let. Tisti, ki se z glasbo ukvarjajo neformalno se z njo ukvarjajo povprečno 11 let. Pričakovano igranje inštrumenta in petje ter leta glasbene šole zelo dobro kolrelirata (r=0,653). Iz slike \ref{ukvarjanjeglizobrazba} je poleg te korelacije razvidno, da se večina ljudi z glasbo ukvarja tudi po dokončani formalni izobrazbi, kar sklepam iz podatka, da se večina ljudi več let neformalno ukvarja z glasbo, kot pa traja formalna izobrazba. 
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=10cm]{images/izobrazba_ukvarjanje.png}
+
+\caption{Vsaka točka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobraževanja (na vodoravni osi) in leta ukvarjanja z glasbo (igranje inštrumenta ali petje) na navpični osi. }
+\label{ukvarjanjeglizobrazba}
+\end{figure}
+
+Največ anketirancev posluša glasbo 1 do uri na dan, najmanj pa 2 do 3 ure na dan. Količina poslušanja glasbe ne korelira z nobeno od ostalih demografskih spremenljivk. 
+
+\paragraph{Zdravila in droge}
+
+4.2\% ljudi pravi, da jemljejo zdravila, ki vplivajo na razpoloženje. Kar 3\% anketirancev pa je priznalo, da so bili med reševanjem ankete pod vplivom drog. Tudi ta dva parametra dobro korelirata med sabo (r = 0,519).
+
+\paragraph{Žanri}
+
+Kot je razvidno iz grafa na sliki \cite{zanrigraf} je večina označila kot najljubši žanr rock (31,6\% anketiranih). Na drugem mestu med najljubšimi žari je pop z 16,6\% in na tretjem alternativna glasba. Na zadnjih dveh mestih sta opera, ki je najljubši žanr manj kot odstotku vprašanih. Enako velja za reggae. Žanri na prvo mesto niso izbrani enakomerno, saj kot največkrat izbrana žanra zelo izstopata rock in pop.  
+
+Na drugo mesto je spet največ vprašanih uvrstilo rock (20\% vprašanih), drugi največkrat uvrščen žanr na drugo mesto je pop z 13,9\%. Najmanjkrat uvrščen žanr na drugo mesto je Opera. Na drugem mestu so izbire že bolj raznolike kot pri najljubšem žanru, vendar vrh še vedno izstopa. 
+
+Zanimivo je, da je največ udeležencev na tretje meto uvrstilo klasično glasbo. Za to izbiro se je odločilo kar 11,9\% anketirancev. Klasiki sledi Rock (11,3\%). Najredkeje so udeleženci na tretje mesto uvrstili new age in punk. Za izbire na tretjem mestu je značilno, da so bolj raznolike, saj noben žanr ne izstopa preveč. 
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=10cm]{images/genre.png}
+
+\caption{Priljubljenost žanrov ter uvrstitev teh na prvo, drugo ali tretje mesto.  }
+\label{zanrigraf}
+\end{figure}
+
+Izmed vseh žanrov smo potem izbrali najbolj priljubljene: rock, pop, country, alternativna glasb in klasična glasba. Naredili smo primerjavo med najljubšimi žanri po starostnih skupinah (slika \ref{zanrigraftop}). Anketirance smo razdelili v 6 starostnih skupin. Vsaka od skupin zajema 10 let. Pri vseh starostnih skupinah je popularna rock glasba. Pri prvih štirih je celo na prvem mestu. Tudi pop glasba se pojavi pri vseh skupinah razen zadnjih dveh. Razlike se pojavijo v ostalih glasbenih zvrsteh. Pri mlajših so popularne še zvrsti kot so metal, alternative in elektronska glasba. Pri starejših je zelo popularna klasična glasba. V zadnjih dveh skupinah se pojavi na prvem mestu. V teh skupinah so popularne še folk, jazz in country. Srednji dve skupini pa sta mešanici obojega. V njih se pojavi še alternativna glasba in tudi jazz ter klasična glasba. 
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=10cm]{images/genretop.png}
+
+\caption{Priljubljenost posameznih glasbenih zvrsti po starostnih skupinah.  }
+\label{zanrigraftop}
+\end{figure}
+
+Naredili smo tudi analizo priljubljenosti glede na spol. Ugotovili smo, da je pri obeh spolih enako zastopana rock glasba. S tem, da pri udeležencih prevladuje še elektronska glasba in metal. Pri udeleženkah pa je na prvem mestu pop glasba. 
+
+Za konec pa postrežem še nekaj zanimivosti. Ugotovili smo, da osebe, ki se z glasbo ukvarjajo več kot 15 let najraje poslušajo klasično glasbo. Osebe, ki jemljejo zdravil sploh ne poslušajo klasične glasbe. Zanimivo je tudi, da pri ljudeh, ki uživajo droge bolj popularna elektronska glasba, kot pri ostali populaciji.
+
+\subsection{Razpoloženje, čustva ter barva}
+
+Za ta del analize smo iz podatkovne zbirke odstranili vse, ki so bili pod vplivom drog ali zdravil, ki vplivajo na razpoloženje. V anketi smo anketirančevo trenutno razpoloženje zajemali na dva načina. Najprej je anketiranec moral označiti svoje razpoloženje na VA prostoru. Torej je označeval prijetnost in aktivnost. Sledila so tudi vprašanja kjer je anketiranec trenutno razpoloženje ocenjeval z tem, da je povedal kako zelo prisotno je posamezno čustvo pri njem. Zanimala nas je predvsem korelacija med prisotnostjo posameznih čustev in med koordinatama v VA prostoru. Kot je razvidno iz slike \ref{prisotnost_kor} je prijetnost (koordinata x) najmanj oddaljena od čustev: sproščenost, sreče, zadovoljstvo, vedrost in veselje. Koordinata y pa po pričakovanjih najbolje korelira z čustvom aktivnost. Z koordinato  x se najmanj ujema s čustvi nesrečno, nezadovoljno in razočarano, kar je bilo pričakovati, saj je prijetnost (predstavlja jo koordinata x) ravno nasprotna z temi čustvi. Z koordinato y se pričakovano najmanj ujema čustvo neaktivno zaradi enakega razloga kot pri koordinati x. Med čustvi lahko opazimo še dobro ujemanje med čustvoma nezadovoljno in razočarano ter med čustvoma veselo in zadovoljno. 
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=10cm]{images/korelacija_custva_pris.png}
+
+\caption{Povprečna evklidska razdalja med posamezni atributi.  }
+\label{prisotnost_kor}
+\end{figure}
+
+Slika \ref{razpolozenjeva} prikazuje kako so ljudje uvrstili svoje razpoloženje v VA prostor. Opazno je, da so se anketiranci v večjem številu uvrstili v desno polovico koordinatnega sistema, kar pomeni, da so svoje razpoloženje označili kot bolj prijetno. Več anketirancev občuti boj neaktivno razpoloženje, kar se odraža v tem, da je več udeležencev svoje razpoloženje uvrstilo v spodnji del koordinatnega sistema. Največja gostota anketirancev se nahaja v spodnjem desnem kvadrantu, kar pomeni, da se počutijo bolj prijetno in so bolj neaktivni. 
+
+Zelo zanimivo je, da s koordinato y korelira starost in tudi poslušanje glasbe. Tisti, ki so starejši, so označili, da se počutijo manj aktivne in obenem manj poslušajo glasbo. 
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=10cm]{images/vamood.png}
+
+\caption{Razporeditev razpoloženja v VA prostoru.  }
+\label{razpolozenjeva}
+\end{figure}
+
+V anketi smo povpraševali tudi o tem kako uporabniki dojemajo posamezno razpoloženje. Razpoloženje so morali opisati tako, da so posamezno oznako postavili v VA prostor. Na sliki \ref{moodperception} je prikazana umestitev 8 čustev v VA prostor. 
+
+Slika levo zgoraj prikazuje primerjavo med čustvoma strah in sreča. Strah je zelo neprijetno čustvo, sreča pa prijetno. Oba sta razporejena praktično preko celotne y osi, kar si lahko razlagam s tem, da sta to čustva, za katera je težko določiti ali sta aktivna ali ne. 
+
+Iz slike desno zgoraj je po pričakovanjih razvidno, da je energičnost zelo prijetno in aktivno čustvo, obenem pa je žalost neprijetna in neaktivna. Zanimivo je, da je kar nekaj uporabnikov označilo, da je žalost aktivno čustvo.
+
+Na tretjem grafu (levo spodaj) je narejena primerjava med jezo in sproščenostjo. Jeza je po pričakovanjih zelo aktivno in negativno čustvo, čeprav je zanimivo, da nekaj anketirancev meni, da je neaktivna. Med tem je sproščenost prijetna in po aktivnosti razporejena preko celotnega prostora, čeprav prevladuje mnenje, da je bolj neaktivna. Tukaj je tudi veliko odgovorov, ki so nevtralni.
+
+Na četrti sliki se vidi, da je veselje zelo pozitivno in aktivno čustvo, medtem ko je nezadovoljstvo neprijetno. Po aktivnosti je nezadovoljstvo malo bolj razpršeno, kar govori o tem, da je ta parameter pri tem čustvu težje določiti.
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=10cm]{images/vamoodlables.png}
+
+\caption{Prikaz čustev v VA prostoru.}
+\label{moodperception}
+\end{figure} 
+
+\paragraph{Barva}
+
+Ugotovili smo, da obstaja zelo dobra korelacija med razpoloženjem in izbranim pozicijo razpoloženja v VA prostoru. Za prijetnejša razpoloženja so izbrane barve bolj intenzivne. Pri prijetnih čustvih se barva v večini primerih giblje med rdečo in nežno modro. Za bolj aktivna razpoloženja so anketiranci izbrali manj intenzivne barve. Odtenki pa se v tem primeru gibljejo med med modrim, zelenim in vijoličnim tonom. 
+
+Če pogledamo še izbire po čustvih so bile pri strahu pogosto izbrani bolj sivi in črni odtenki. Veselje je bilo v večini primerov označeno z bolj intenzivnimi toni. Odtenki pa so bili v tem primeru bolj rdeči, oranžni, rumeni ter svetlo zeleni. Pri energičnosti se je večina uporabnikov odločila za rdečo in črno barvo. Za sproščenost je zanimivo, da je dokaj enakomerno razporejena preko celotnega barvnega spektra. Torej si to čustvo vsak udeleženec predstavlja drugače. Pri jezi je bila pogosto izbrana barva modra ali vijolična. Izbirali so praktično med vsemi intenzivnostmi.
+
+\subsection{Glasba, razpoloženje in barva}
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=13cm]{images/moodmusic.png}
+
+\caption{Prikaz čustev v VA prostoru.}
+\label{moodmusic}
+\end{figure} 
+
+Za konec sem izbral še 4 glasbene odlomke in v sliki \ref{moodmusic} prikazal rezultate. Predstavil sem VA vrednosti, kamor so anketiranci postavili čustva, ki nastopajo v posamezni pesmi. Z krogci so označena mesta kamor so postavili čustva, ki jih po njihovem mnenju glasba vzbudi pri človeku. Z kvadratki so predstavljena čustva, ki jih pesem izraža. Obenem sem vizualiziral tudi barve, ki po mnenju uporabnikov izražajo v posamezni pesmi. 
+
+Pri prvi pesmi nastopajo čustva, ki so bolj pozitivna in aktivna (večina oznak se nahaja desno zgoraj). Tudi barve so glede na analizo barv zgoraj temu primerne, saj so svetle, saj niso tako intenzivne, kar se ujema z bolj aktivnimi čustvi. Iz grafa se opazi, da so čustva, ki jih pesem vzbudi malo bolj razpršena, kot tista, ki jih pesem izraža.
+
+Pri drugi pesmi (desno zgoraj) so čustva še vedno bolj prijetna in tudi malo bolj aktivna kot neaktivna. Tudi barve so enako kot pri prejšnji sliki temu primerne. V primerjavi s prejšnjo pesmijo pa so anketiranci veliko bolj neodločeni glede aktivnosti v pesmi. Tudi tukaj so izražena čustva maj razpršena in se v večini nahajajo v zgornjem desnem delu grafa za razliko od tistih, ki jih pesem vzbuja. 
+
+Pri pesmi na grafu levo spodaj odločitve niso tako enotne. V večji meri prevladujejo prijetna in obenem aktivna čustva. Je pa zanimivo, da se pojavijo 4 gruče odgovorov. Prva je skrajno levo zgoraj, druga levo spodaj, tretja največja je desno zgoraj in četrta levo spodaj. Zanimivo je, da so odločitve o izraženih čustvih z nekaj izjemami bolj aktivne, tiste o vzbujenih pa se v večji meri pojavijo tudi v ostalih delih prostora. 
+
+Graf za četrto pesem (desno spodaj) pa je pravo nasprotje vsem ostalim. Notri nastopajo zelo neprijetna čustva, ki pa so v večini primerov aktivna. Značilno je, da je večina ljudi prijetnost in tudi aktivnost označila na skrajnem robu prostora. V tem primeru so izražena čustva bolj razpršena kot tista, ki jih glasba vzbudi. Tudi barve pri tem grafu s primerne izbranim čustvom, saj so bolj intenzivne in predvsem v rdeče črnih odtenkih. 
 
 
 

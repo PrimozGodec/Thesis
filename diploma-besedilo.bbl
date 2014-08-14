@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{bausch1996root}
+Rainer Bausch.
+\newblock Root mean square.
+\newblock {\em Journal of Chemical Education}, 73(12):A295, 1996.
+
 \bibitem{ben2010user}
 Asa Ben-Hur and Jason Weston.
 \newblock A user’s guide to support vector machines.
@@ -23,6 +28,19 @@ Tuomas Eerola and Jonna~K Vuoskoski.
 \newblock A comparison of the discrete and dimensional models of emotion in
   music.
 \newblock {\em Psychology of Music}, 2010.
+
+\bibitem{gouyon2001exploration}
+Fabien Gouyon and Perfecto Herrera.
+\newblock Exploration of techniques for automatic labeling of audio drum tracks
+  instruments.
+\newblock In {\em Proceedings of MOSART: Workshop on Current Directions in
+  Computer Music}, 2001.
+
+\bibitem{gunderson2007musical}
+Steinar~Heimdal Gunderson.
+\newblock Musical descriptors: An assessment of psychoacoustical models in the
+  presence of lossy compression.
+\newblock 2007.
 
 \bibitem{krause2012great}
 Bernie Krause.
@@ -52,6 +70,13 @@ Matev{\v{z}} Pesek.
 \newblock {\em Prepoznavanje akordov s hierarhi{\v{c}}nim kompozicionalnim
   modelom: diplomsko delo}.
 \newblock PhD thesis, M. Pesek, 2012.
+
+\bibitem{saari2013role}
+Pasi Saari, Tuomas Eerola, Gy{\"o}rgy Fazekas, Mathieu Barthet, Olivier
+  Lartillot, and Mark~B Sandler.
+\newblock The role of audio and tags in music mood prediction: A study using
+  semantic layer projection.
+\newblock In {\em ISMIR}, pages 201--206, 2013.
 
 \bibitem{schmidt2009projection}
 Erik~M Schmidt and Youngmoo~E Kim.
