@@ -40,3 +40,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva ter barva}{21}{subsection.3.3.2}
 \contentsline {paragraph}{Barva}{24}{section*.22}
 \contentsline {subsection}{\numberline {3.3.3}Glasba, razpolo\IeC {\v z}enje in barva}{25}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Regresijski algoritem}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Delovanje algoritma}{27}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Rezultati}{28}{subsection.4.1.2}

@@ -688,8 +688,33 @@ Pri pesmi na grafu levo spodaj odločitve niso tako enotne. V večji meri prevla
 
 Graf za četrto pesem (desno spodaj) pa je pravo nasprotje vsem ostalim. Notri nastopajo zelo neprijetna čustva, ki pa so v večini primerov aktivna. Značilno je, da je večina ljudi prijetnost in tudi aktivnost označila na skrajnem robu prostora. V tem primeru so izražena čustva bolj razpršena kot tista, ki jih glasba vzbudi. Tudi barve pri tem grafu s primerne izbranim čustvom, saj so bolj intenzivne in predvsem v rdeče črnih odtenkih. 
 
+\chapter{Algoritmi za evalvacijo čustev iz glasbe}
 
+V diplomski nalogi sem si zadal, da preizkusim delovanje nekaj algoritmov za evalvacijo čustev iz glasbe. V tem poglavju bom predstavil delovanje in rezultate za nekaj algoritmov. 
 
+\section{Regresijski algoritem}
+
+Prvi algoritem, ki sem ga preizkusil je algoritem predstavljen v \cite{schmidt2009projection}. Ni mi uspelo dobiti izvirnega algoritma avtorja. Sem pa po informacijah, ki sem jih pridobil ob natančnem pregledu avtorjevega članka in nekaj izmenjanih e-poštah z avtorjem, sam implementiral algoritem, ki je ga je avtor uporabil v svojem delu. Algoritem iz glasbe izračuna značilnice. Na podlagi teh pa potem napove prijetnost (valence) in aktivnost (arousal) v skladbi. 
+
+Na začetku bom predstavil delovanje algoritma. Sledijo še rezultati.
+
+\subsection{Delovanje algoritma} 
+
+Algoritem za sovje delovanje potrebuje značilnice izračunane na podlagi glasbenih odlomkov. Uporabili smo značilnici MFCC [ref] in Chroma (kromogram) [ref]. MFCC je bil izračunan z koeficientom 20, Chroma pa je bila izračunana tako, da smo dobili 14 vrednosti (bins) za posamezen odlomek. Za računanje teh vrednosti smo uporabili Python knjižnico imenovano LibROSA. Poleg tega potrebujemo še že znane VA vrednosti za del odlomkov, da na podlagi tega treniramo algoritem. V našem primeru smo imeli za vse odlomke znane VA vrednosti, tako smo lahko naključno določili na katerem delu podatkovne zbirke bomo trenirali algoritem in na katerem delu testirali. Obenem smo na tak način lahko preverili natančnost naših napovedi.
+
+Algoritem deluje tako, da glasbene odlomke naključno razdeli na dva dela. 70\% podatkovne odlomkov tako uporabi za treniranje in ostalih 30\% za testiranje. Na delu zbirke za treniranje potem uporabi metodo najmanjših kvadratov (Leat squares method) \cite{abdi2007method} s katero izračuna vektor $b$, ki ga potem uporabimo za preslikovanje iz matrike z značilnicami v VA vrednosti z enačbo \ref{regresion}. Metod najmanjših kvadratov kot vhod vzame matriko z značilnicami za posamezno pesem in vektor z VA vrednostmi. Ta postopek izvajamo ločeno za prijetnost (valence) in aktivnost (arousal).  
+
+\begin{equation} 
+\label{regresion}
+y = X b
+\end{equation} 
+
+$X$ v enačbi \ref{regresion} je matrika, ki v vsaki vrstici vsebuje značilnice za posamezen glasbeni odlomek. $b$ je vektor, ki preslikuje iz prostora, ki ga predstavljajo značilnice v VA vrednost. $y$ je vrednost, ki jo algoritem napove. Vsaka vrednost predstavlja prijetnost ali aktivnost za en glasbeni odlomek. 
+
+Programska koda je priložena v prilogi [TODO: dodaj prilogo in referenco]
+
+\subsection{Rezultati}
+  
 
 \bibliography{diploma}{}
 \bibliographystyle{plain}
