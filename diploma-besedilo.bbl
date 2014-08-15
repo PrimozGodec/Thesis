@@ -77,6 +77,14 @@ Matev{\v{z}} Pesek.
   modelom: diplomsko delo}.
 \newblock PhD thesis, M. Pesek, 2012.
 
+\bibitem{pesek2013chord}
+Matevz Pesek and Matija Marolt.
+\newblock Chord estimation using compositional hierarchical model.
+\newblock In {\em 6th International Workshop on Machine Learning and Music,
+  held in conjunction with the European Conference on Machine Learning and
+  Principles and Practice of Knowledge Discovery in Databases, ECML/PKDD},
+  volume 2013, 2013.
+
 \bibitem{saari2013role}
 Pasi Saari, Tuomas Eerola, Gy{\"o}rgy Fazekas, Mathieu Barthet, Olivier
   Lartillot, and Mark~B Sandler.

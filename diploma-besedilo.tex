@@ -462,6 +462,7 @@ MFCC \cite{gunderson2007musical} (Mel-frequency cepstral coefficients) je koefic
 \end{itemize}
 
 \chapter{Naš dataset}
+\label{odatasetu}
 
 Tema moje diplomske naloge je vsekakor evalvacija čustev iz glasbe s pomočjo računalnikih algoritmov. Dobre evalvacije pa ni možno narediti brez dobrega dataseta, zato smo se odločili, da zgradimo svoj dataset, ki bo osnova za raziskovanje povezave med čustvi in glasbo. Poleg tega smo se odločili, da datset nadgradimo s podatki o barvah, ki po mnenju anketirancev najbolje odražajo posamezno skladbo. Tako smo s tem pridoli še povzavo med čustvi, glasbo in barvami.
 
@@ -700,7 +701,7 @@ Na začetku bom predstavil delovanje algoritma. Sledijo še rezultati.
 
 \subsection{Delovanje algoritma} 
 
-Algoritem za sovje delovanje potrebuje značilnice izračunane na podlagi glasbenih odlomkov. Uporabili smo značilnici MFCC [ref] in Chroma (kromogram) [ref]. MFCC je bil izračunan z koeficientom 20, Chroma pa je bila izračunana tako, da smo dobili 14 vrednosti (bins) za posamezen odlomek. Za računanje teh vrednosti smo uporabili Python knjižnico imenovano LibROSA. Poleg tega potrebujemo še že znane VA vrednosti za del odlomkov, da na podlagi tega treniramo algoritem. V našem primeru smo imeli za vse odlomke znane VA vrednosti, tako smo lahko naključno določili na katerem delu podatkovne zbirke bomo trenirali algoritem in na katerem delu testirali. Obenem smo na tak način lahko preverili natančnost naših napovedi.
+Algoritem za sovje delovanje potrebuje značilnice izračunane na podlagi glasbenih odlomkov. Uporabili smo značilnici MFCC [ref] in Chroma (kromogram) [ref]. MFCC je bil izračunan z koeficientom 20, Chroma pa je bila izračunana tako, da smo dobili 14 vrednosti (bins) za posamezen odlomek. Za računanje teh vrednosti smo uporabili Python knjižnico imenovano LibROSA. Poleg tega potrebujemo še že znane VA vrednosti za del odlomkov, da na podlagi tega treniramo algoritem. V našem primeru smo imeli za vse odlomke znane VA vrednosti, tako smo lahko naključno določili na katerem delu podatkovne zbirke bomo trenirali algoritem in na katerem delu testirali. Obenem smo na tak način lahko preverili natančnost naših napovedi. VA vrednosti smo smo izračunali za vsako pesem s povprečenjem vrednosti v podatkovni zbirki opisani v poglavju \ref{odatasetu}.
 
 Algoritem deluje tako, da glasbene odlomke naključno razdeli na dva dela. 70\% podatkovne odlomkov tako uporabi za treniranje in ostalih 30\% za testiranje. Na delu zbirke za treniranje potem uporabi metodo najmanjših kvadratov (Leat squares method) \cite{abdi2007method} s katero izračuna vektor $b$, ki ga potem uporabimo za preslikovanje iz matrike z značilnicami v VA vrednosti z enačbo \ref{regresion}. Metod najmanjših kvadratov kot vhod vzame matriko z značilnicami za posamezno pesem in vektor z VA vrednostmi. Ta postopek izvajamo ločeno za prijetnost (valence) in aktivnost (arousal).  
 
@@ -714,7 +715,60 @@ $X$ v enačbi \ref{regresion} je matrika, ki v vsaki vrstici vsebuje značilnice
 Programska koda je priložena v prilogi [TODO: dodaj prilogo in referenco]
 
 \subsection{Rezultati}
-  
+
+Algoritem smo kot sem že omenil trenirali z 70\% glasbenih odlomkov, test pa smo izvedli na 30\% odlomkov. Te napovedi, ki jih je algoritem dal na testnih odlomkih smo potem primerjali s podatki za vsako pesem iz podatkovne zbirke.
+
+Rezultati so predstavljeni v tabeli \ref{regressionresults} za vsako značilnico (MFCC in Chroma) posebej. Za vsak primer smo izračunali povprečno razdaljo med povprečno vrednostjo iz podatkovne zbirke in algoritmično napovedano vrednostjo. Prav tako smo izračunali povprečno razdaljo med najbližjo točko v podatkovni zbirki in napovedano vrednostjo. Povprečno razdaljo do povprečne vrednosti pa smo izrazili tudi v večkratniku standardnega odklona v podatkih iz podatkovne zbirke. Za primerjavo smo algoritem preizkusili tudi na Mood Swing podatkovni zbirki \cite{schmidt2011modeling}. 
+
+\begin{table}[hbt]
+\begin{center}
+\caption{Primerjava rezultatov dobljenih z regresijskim algoritmom na naši podatkovni zbirki in Mood Swing podatkovni zbirki z uporabo značilnic MFCC in Chroma. Rezultati so predstavljeni s povprečno razdaljo med povprečno vrednostjo iz podatkovne zbirke in napovedano vrednostjo, s povprečno razdaljo do najbližje vrednosti v podatkovni zbirki in z povprečno razdaljo do povprečne vrednosti merjeno v večkratniku standardnega odklona (standardne deviacije). }
+\begin{tabular}{| l | c | c |}
+\hline
+Značilnica & MFCC & Chroma \\  \hline
+\multicolumn{3}{| c |}{Naša podatkovna zbirka} \\  \hline
+Do povprečne vrednosti & 0.2060 & 0.2215 \\
+Do najbližje vrednosti & 0.0595 & 0.0614 \\
+Do povprečne vrednosti v std. odkl. & 0.4870 & 0.4993\\  \hline
+\multicolumn{3}{| c |}{Mood Swing podatkovna zbirka} \\  \hline
+Do povprečne vrednosti & 0.2448 & 0.3316 \\
+Do najbližje vrednosti & 0.0641 & 0.1026 \\
+Do povprečne vrednosti v std. odkl. & 0.6514 & 0.8940\\ \hline
+
+\end{tabular}
+\label{regressionresults}
+\end{center}
+\end{table} 
+
+Rezultati kažejo boljšo korelacijo med MFCC in prijetnostjo (valence) ter aktivnostjo (arousal) v primerjavi z Chromo. Prav tako lahko opazimo, da so podatki boljši na naši podatkovni zbirki kot na Mood Swing podatkovni zbirki. Verjetno gre to pripisati predvsem večjemu številu VA vrednosti v podatkovni zbirki. 
+
+Algoritem smo preizkusil tudi na Chroma značilnicah izračunanih s hierarhičnim kompozicionalnim modelom predstavljen v Pesek et. al \cite{pesek2013chord}. Uporaba te značilnice nam da boljše rezultate, kot jih dobimo z MFCC in Chromo. Na ta način dobljena povprečna razdalja do povprečne vrednosti je 0.1862, razdalja do najbližje vrednosti je 0.0719 in povprečna razdalja merjena v standardnih deviacijah je 0.4459. 
+
+\begin{table}[htb]
+\begin{center}
+\caption{Povprečna razdalja med povprečnimi vrednostmi in napovedmi izračunana ločeno za prijetnost in aktivnost. Razvidno je da so napovedi aktivnosti dosti boljše. }
+\begin{tabular}{|l|c|c|c|}
+\hline
+ & MFCC & Chroma & HKM Chroma \\
+\hline
+Prijetnost (valence) & 0.1734 & 0.1826 & 0.1494\\
+Aktivnost (arousal) & 0.0871 & 0.0940 & 0.0898\\
+\hline
+\end{tabular}
+\label{seperateresults}
+\end{center}
+\end{table}
+
+V tabeli \ref{seperateresults} so predstavljene povprečne razdalje  izračunane ločeno z prijetnost (valence) in aktivnost (arousal). Iz teh rezultatov je razvidno, da z uporabo vseh značilnic možno bolj natančno  napovedati aktivnost v primerjavi s prijetnostjo. Med tem je možno še opaziti, da Chroma izračunan z Hierarhični kompozicionalnim modelom da veliko boljše rezultate pri računanju prijetnosti kot ostale značilnice, med tem ko je aktivnost izračunana podobno natančno kot z uporabo MFCC. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=130mm]{images/graphs1.png}
+\caption{Slika predstavlja 4 VA prostore za pesmi z identifikacijskima številkama 413 (prva vrsta) in 571 (druga vrsta). Kvadrat predstavlja predstavlja povprečno vrednost iz podatkovne zbirke, trikotnik prikazuje napoved algoritma (z uporabo MFCC v prvem stolpcu in Chrome v drugem). Pike prikazujejo posamezne vrednosti iz podatkovne zbirke.}
+\label{graphs}
+\end{figure}
+
+
 
 \bibliography{diploma}{}
 \bibliographystyle{plain}
