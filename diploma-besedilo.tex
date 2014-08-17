@@ -270,7 +270,7 @@ z vpisno številko \textbf{63110452}, sem avtor  diplomskega dela z naslovom:
 % posvetilo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \thispagestyle{empty}\mbox{}{\vskip0.20\textheight}\mbox{}\hfill\begin{minipage}{0.55\textwidth}%
-...
+Moji družini in prijateljem
 \normalfont\end{minipage}
 
 % prazna stran
@@ -759,16 +759,157 @@ Aktivnost (arousal) & 0.0871 & 0.0940 & 0.0898\\
 \end{center}
 \end{table}
 
-V tabeli \ref{seperateresults} so predstavljene povprečne razdalje  izračunane ločeno z prijetnost (valence) in aktivnost (arousal). Iz teh rezultatov je razvidno, da z uporabo vseh značilnic možno bolj natančno  napovedati aktivnost v primerjavi s prijetnostjo. Med tem je možno še opaziti, da Chroma izračunan z Hierarhični kompozicionalnim modelom da veliko boljše rezultate pri računanju prijetnosti kot ostale značilnice, med tem ko je aktivnost izračunana podobno natančno kot z uporabo MFCC. 
-
-\begin{figure}[ht]
+\begin{figure}[hbt]
 \centering
 \includegraphics[width=130mm]{images/graphs1.png}
 \caption{Slika predstavlja 4 VA prostore za pesmi z identifikacijskima številkama 413 (prva vrsta) in 571 (druga vrsta). Kvadrat predstavlja predstavlja povprečno vrednost iz podatkovne zbirke, trikotnik prikazuje napoved algoritma (z uporabo MFCC v prvem stolpcu in Chrome v drugem). Pike prikazujejo posamezne vrednosti iz podatkovne zbirke.}
 \label{graphs}
 \end{figure}
 
+V tabeli \ref{seperateresults} so predstavljene povprečne razdalje  izračunane ločeno z prijetnost (valence) in aktivnost (arousal). Iz teh rezultatov je razvidno, da z uporabo vseh značilnic možno bolj natančno  napovedati aktivnost v primerjavi s prijetnostjo. Med tem je možno še opaziti, da Chroma izračunan z Hierarhični kompozicionalnim modelom da veliko boljše rezultate pri računanju prijetnosti kot ostale značilnice, med tem ko je aktivnost izračunana podobno natančno kot z uporabo MFCC. 
 
+
+
+\section{Essentia Gaiatransofrm algoritem}
+
+Drug algoritem na katerem sem preizkusil natančnost napovedovanja razpoloženja na glasbenih odlomkih iz naše podatkovne zbirke je GaiaTransform algoritem, ki na podlagi nekaterih značilnic izračuna nekatere visoko-nivojske značilnice \cite{bogdanov2013form} med katerimi je tudi razpoloženje. Algoritem se nahaja v knjižnicah Essentia in Gaia \cite{bogdanov2013essentia}, ki mi jo je po kar nekaj problemih uspelo naložiti na moj računalnik. 
+
+V tem delu bom opisal delovanje algoritma, njegovo natančnost in tudi rezultate na naši podatkovni zbirki. 
+
+\subsection{O essentii}
+
+Essentia je knjižnica namenjena analizi zvoka in predvsem uporabi na MIR področju. Napisana je v C++ jeziku, možno pa jo je uporabiti tudi v jeziku Python. Ponuja funkcionalnost kot so branje in pisanje zvoka, standardno procesiranje signalov, statistična opredelitev podatkov, izračun velikega števila spektralnih, časovnih, tonskih in ostali značilnic. Te značilnice so osnova za izračun visoko nivojskih značilnic. Essentia skupaj s knjižnico Gaia ponuja funkcionalnosti za izračun nekaterih visoko nivojskih značilnic kot so žanr, kultura (zahodna ali nezahodna), vrsto plesa na izbrano skladbo, barvo zvoka, razpoloženja v skladbi. Ugotoviti poskuša celo ali gre za inštrumental ali ne. 
+
+Ker od v tem delu preučujem predvsem razpoloženje v glasbi se bom osredotočil na funkcionalnost, ki poskuša odkriti razpoloženje v glasbi. V naslednjem podpoglavju sem bom osredotočil na kakšen način deluje algoritem za izračun visoko nivojskih značilnic. Največjo pozornost bom dal predvsem izračunu razpoloženja. 
+
+\subsection{Delovanje algoritma}
+
+Za izračun visoko nivojskih značilnic sem uporabil algoritem imenovan GaiaTransfor opisan v \cite{bogdanov2013form}. Ta visoko nivojske značilnice izračuna na podlagi nizko nivojskih, ki so prav tako izračunane na s knjižnico Essentia. Za določanje visoko nivojskih značilnic seveda ne uporabi vseh značilnic ampak samo podmnožico teh. To podmnožico so za vsak razred (na primer srečo) izračunali posebej z uporabo algoritma za izbiro značilnic na podlagi korelacije (correlationbased feature selection - CFS). 
+
+Za klasifikacijo so uporabili večrazredni (muliti-class) SVM (support vector machine) algoritem z ena proti ena (one-versus-one) strategijo glasovanja (voting strategy). Uporabili so SVM algoritem iz knjižnice libSVM. Algoritem so razširili z možnostjo napovedovanja verjetnosti pristnosti določenega razreda (na primer, da pove da je verjetnost, da v pesmi nastopa sreča 89\%). SVM je treniran s 5-fold cross-validation.  
+
+Algoritem so trenirali na 20 različnih glasbenih zbirkah. Algoritem za evalvacijo razpoloženja iz glasbe so trenirali na zbirki, ki so jo pripravili Laurier et. al \cite{laurier2010indexing}. Zbirko so potem sami še dodatno označili. 
+
+Za razpoloženje algoritem vrne verjetnost, da je v neki pesmi prisotno eno od šestih čustev: srečen (happy), žalosten (sad), agresiven (aggressive), sproščen (relaxed), akustičen (accoustic), elektronski (electronic) in zabaven (pary). Poleg tega pa algoritem glasbeni odlomek glede na čustvo razvrsti v enega od 5 razredov (clousters), ki so uporabljeni v MIREX tekmovanju (MIREX task). Ti razredi so definirani v tabeli \ref{mirextask}.
+
+\subsection{Natančnost razvrščanja}
+\label{natancnostessentia}
+
+Zgoraj opisani algoritem po podatkih avtorjev med samostojnimi oznakami za razpoloženje (vesel, žalosten, elektronski, zabaven, sproščen in agresiven) najbolje napoveduje prisotnost agresivnosti z natančnostjo 97,5\%. Potem sledi čustvo sproščen (92,92\% natančno). Sledijo jima zabaven (88,38\%), žalosten (86,96\%) in elektronski (84,59\%). Najslabše napovedi algoritem da za čustvo vesel, kjer je natančnost 82,86\%.
+
+\begin{table}[htb]
+\begin{center}
+\caption{Natančnost napovedovanja v gruče v odstotkih. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem.}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+ & Gruča 1 & Gruča 2 & Gruča 3 & Gruča 4 & Gruča 5 \\ \hline
+Gruča 1 & 58,62 & 18,97	& 10,34 & 3,45 & 8,62 \\ \hline
+Gruča 2 & 29,63 & 48,15 & 16,67 & 5,56 & 0,00 \\ \hline
+Gruča 3 & 10,81 & 13,51 & 71,62 & 4,05 & 0,00 \\ \hline
+Gruča 4 & 15,62	& 43,75	& 12,50	& 25,00	& 3,12 \\ \hline
+Gruča 5 & 25,49	& 1,96	& 0,00 & 1,96 & 70,59 \\ \hline
+
+\hline
+\end{tabular}
+\label{natancnost_gruce}
+\end{center}
+\end{table}
+
+Povsem drugačno je stanje pri natančnosti napovedovanja čustev v gruče. V tem primeru je natančnost le  59.14\%. Iz tabele \ref{natancnost_gruce} je razvidno, da algoritem najbolj natančno napoveduje gručo 3 in gručo 5. Najslabše pa gručo 4. Iz tabele je tudi očitno, da sta gruča 2 in gruča 3 od gruče 5 tako drugačni, da praktično ni napovedi, kjer bi pesem namesto v gručo 2 ali gručo 3 uvrstil v gručo 5. Med tem pa je veliko napačnih preslikav med gručama 1 in 2. Veliko je tudi takšnih napačnih napovedi, ko algoritem pesmi namesto gruče 5 določi gručo 1. Obratna korelacija ni tako močna. 
+
+\subsection{Rezultati}
+
+Primerjava rezultatov pri tem algoritmu je bila malo bolj zahtevna kot primerjava z uporabo regresije, saj v naši podatkovni zbirki nimamo enakih oznak, kot jih imam algoritem vrača kot rezultat. Zaradi tega je bilo potrebno nekako poenotiti oznake. Ugotovil sem, da bo primerjava najlažja, če uporabim MIREX gruče, ki jih vrača algoritem. Tako sem oznake, ki jih imamo v naši podatkovni zbirki razvrstil v gruče glede na podobnost s čustvi, ki se nahajajo v teh gručah in so prikazani v tabeli \ref{mirextask}. Razporeditev čustev iz naše podatkovne zbirke v gruče je prikazana v tabeli \ref{gruce_nase}. 
+
+\begin{table}[htb]
+\begin{center}
+\caption{Razvrstitev oznak razpoloženja iz naše zbirke v MIREX gruče glede na podobnost z obstoječimi čustvi iz gruč.}
+\begin{tabular}{|l|c|}
+\hline
+Gruča & Razpoloženja \\ \hline
+Gruča 1 & presenečenje, navdihnjenost\\\hline
+Gruča 2 & veselje, sreča, živahnost \\\hline
+Gruča 3 & 
+	\begin{tabular}[c]{@{}c@{}}
+		žalost, otožnost, hrepenenje, pričakovanje.\\
+		sproščenost, mirnost, zasanjanost
+	\end{tabular}\\\hline
+Gruča 4 & \\\hline
+Gruča 5 & jeza, strah\\\hline
+
+\hline
+\end{tabular}
+\label{gruce_nase}
+\end{center}
+\end{table}
+
+Primerjavo sem potem izvedel tako, da sem pogledal katero je najbolj pogosto razpoloženje v podatkovni zbirki pri pri vsakem izmed 200 glasbenih odlomkov. To razpoloženje sem potem glede na preslikavo v tabeli \ref{gruce_nase} preslikal v gručo. Potem sem te gruče primerjal z gručami, ki jih za isti glasbeni odlomek napove algoritem. 
+
+\begin{table}[htb]
+\begin{center}
+\caption{Rezultati napovedovanja v gruče v odstotkih. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem.}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+ & Gruča 1 & Gruča 2 & Gruča 3 & Gruča 4 & Gruča 5 & Št. odl.\\ \hline
+Gruča 1 & 14,29 & 14,29	& 57,14 & 0 & 14,29 & 7\\ \hline
+Gruča 2 & 12,63 & 41,05 & 15,79 & 9,47 & 21,05 & 95\\ \hline
+Gruča 3 & 8,86 & 25,32 & 58,22 & 1,27 & 6,33 & 79\\ \hline
+Gruča 4 & 0	& 0 & 0 & 0 & 0 & 0\\ \hline
+Gruča 5 & 26,32	& 5,26	& 15,79 & 5,26 & 47,37 & 19 \\ \hline
+
+\hline
+\end{tabular}
+\label{natancnost_gruce_nasa}
+\end{center}
+\end{table}
+
+Natančnost napovedovanja na naši podatkovni zbirki je 47,50\%. Bolj natančni rezultati napovedovanja so prikazani v tabeli \ref{natancnost_gruce_nasa}. Vsaka vrstica predstavlja gručo v katero paše pesem. Stolpci pa predstavljajo v katero gručo je algoritem uvrstil glasbeni odlomek. Torej na presečišču nam številka vrstice pove kam bi moral spadati določen odlomek, številka stolpca pa kam ga je uvrstil algoritem. Na presečišču je elementov uvrščenih v gručo v stolpcu glede na število elementov v dejanski gruči. 
+
+Iz teh podatkov je razvidno, da je algoritem najbolj natančno razvrstil elemente v gručo 3 med tem, ko je bil najmanj natančen pri določanju gruče 1. Tukaj so rezultati slabi, saj je algoritem večino pesmi iz te gruče uvrstil v gručo 3. Mogoče je tukaj eden od problemov v tem, da je v tej gruči malo pesmi, zato ne moramo posplošiti teh rezultatov. V četrti vrstici so vsi rezultati nič, ker v naši podatkovni zbirki nimamo čustva, za katerega bi lahko rekli, da pripada tej gruči. Temu posledično ni nobene pesmi uvrščene v to gručo. Iz rezultatov lahko opazimo, da je več pesmi, ki so v gruči 5 algoritem uvrstil v gručo 1, kar je podobno rezultatom avtorjev algoritma prikazanim v poglavju \ref{natancnostessentia}. Z avtorjevimi rezultati je podobno tudi to, da odlomki iz gruče 1 niso bili uvrščeni v gručo 4 in to, de je bilo malo odlomkov iz gruče 5 uvrščeno v gručo 2.
+
+Ker se pri določenih pesmih več razpoloženj pojavi enako pogosto v naši podatkovni zbirki, sem potem primerjavo dopolnil tako, da primerja vsa čustva, ki so blizu razpoloženja, ki se pojavi največkrat. Če je gruča enega od teh razpoloženj enaka gruči v katero je algoritem uvrstil glasbeni odlomek smatram napoved kot pravilno. 
+
+\begin{table}[htb]
+\begin{center}
+\caption{Rezultati napovedovanja v gruče v odstotkih v primeru, smo upoštevali tudi čustva, ki so blizu največkrat označenem. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem.}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+ & Gruča 1 & Gruča 2 & Gruča 3 & Gruča 4 & Gruča 5 & Št. odl.\\ \hline
+Gruča 1 & 25 & 0	& 75 & 0 & 0 & 4\\ \hline
+Gruča 2 & 12,37 & 44,33 & 15,46 & 9,28 & 18,56 & 97\\ \hline
+Gruča 3 & 9,09 & 22,08 & 61,04 & 1,30 & 6,49 & 77\\ \hline
+Gruča 4 & 0	& 0 & 0 & 0 & 0 & 0\\ \hline
+Gruča 5 & 22,73	& 4,55 & 13,64 & 4,55 & 54,55 & 22 \\ \hline
+
+\hline
+\end{tabular}
+\label{natancnost_gruce_nasa_with_second}
+\end{center}
+\end{table}
+
+Pričakovano se je na tak način natančnost napovedovanja povečala in sedaj znaša 51.5\%. Iz rezultatov v tabeli \ref{natancnost_gruce_nasa_with_second} je razvidno, da se je natančnost izražena v odstotkih najbolj povečala v prvi gruči, po številu pesmi pa v gruči 5. V gruči 1 so za razliko od prej samo še tiste napačne napovedi, ki uvrščajo v gručo 3. Odstotek teh se je povečal, ker se je zmanjšalo skupno število pesmi v tej gruči. Ostale napovedi se niso bistveno spremenile. 
+
+Kot sem že omenil algoritem poleg klasifikacije v MIREX gruče omogoča evalvacijo za 6 razpoloženj. Za vsako od razpoloženj napove ali se pojavi v glasbenem odlomku. Glede na to, da se 3 od teh oznak ujemajo z oznakami v naši podatkovni zbirki, sem iz podatkovne zbirke vzel tiste pesmi, kjer je je to razpoloženje najbolj prisotno od vseh. Te pesmi sem potem primerjal z rezultati, ki jih vrne algoritem. 
+
+\begin{table}[htb]
+\begin{center}
+\caption{Natančnost napovedovanja razpoloženj vesel, žalosten in sproščen v odstotkih.}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Srečen & 54,55\\ \hline
+Žalosten & 86,36\\ \hline
+Sproščen & 87,5\\ \hline
+
+\end{tabular}
+\label{natancnost_gruce_nasa_with_second}
+\end{center}
+\end{table}
+
+Za ta primer algoritem napove pravilno prisotnost čustva s 79,59\% natančnostjo. Natančnost je velika pri čustvih žalosten in sproščen. Dosti manjša pa je pri čustvu srečen. Kar kaže na to, da je algoritmično direktno iz glasbenih odlomkov dosti lažje napovedati sproščenost in žalost, medtem ko je to težje pri čustvu srečen. 
+
+Z uporabo algoritma za določanje MIREX gruč iz Essentie smo na naši podatkovni zbirki dobili slabše rezultate, kot so jih dobili avtorji. To gre po vsej verjetnosti pripisati temu, da naše oznake niso enake tistim, ki jih vrača algoritem, pri ročni pretvorbi pa nismo mogli zagotoviti popolnega ujemanja. 
+
+Pri napovedovanju posameznega čustva pa so rezultati približno enaki tisti, ki so jih dobili avtorji za čustvi žalosten in sproščen. Za čustvo vesel so rezultati slabši. Mogoče gre za razliko v dojemanju razpoloženja srečen v slovenščini in razpoloženja "Happy" v angleščini. 
 
 \bibliography{diploma}{}
 \bibliographystyle{plain}

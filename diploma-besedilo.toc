@@ -44,3 +44,8 @@
 \contentsline {section}{\numberline {4.1}Regresijski algoritem}{27}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Delovanje algoritma}{27}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Rezultati}{28}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Essentia Gaiatransofrm algoritem}{30}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}O essentii}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Delovanje algoritma}{32}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Natan\IeC {\v c}nost razvr\IeC {\v s}\IeC {\v c}anja}{32}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Rezultati}{33}{subsection.4.2.4}
