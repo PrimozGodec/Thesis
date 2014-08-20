@@ -6,6 +6,11 @@ Herv{\'e} Abdi.
 \newblock {\em Encyclopedia of Measurement and Statistics. CA, USA: Thousand
   Oaks}, 2007.
 
+\bibitem{bausch1996root}
+Rainer Bausch.
+\newblock Root mean square.
+\newblock {\em Journal of Chemical Education}, 73(12):A295, 1996.
+
 \bibitem{ben2010user}
 Asa Ben-Hur and Jason Weston.
 \newblock A user’s guide to support vector machines.
@@ -25,11 +30,6 @@ Dmitry Bogdanov, Nicolas Wack, Emilia G{\'o}mez, Sankalp Gulati, Perfecto
 \newblock Essentia: An audio analysis library for music information retrieval.
 \newblock In {\em ISMIR}, pages 493--498. Citeseer, 2013.
 
-\bibitem{brossier2004real}
-Paul Brossier, Juan~Pablo Bello, and Mark~D Plumbley.
-\newblock Real-time temporal segmentation of note objects in music signals.
-\newblock In {\em Proceedings of the ICMC}, 2004.
-
 \bibitem{chu2010lamp}
 Wei-rong Chu, RT-H Tsai, Ying-Sian Wu, Hui-Hsin Wu, Hung-Yi Chen, and JY-J Hsu.
 \newblock Lamp, a lyrics and audio mandopop dataset for music mood estimation:
@@ -47,12 +47,6 @@ Tuomas Eerola and Jonna~K Vuoskoski.
 \newblock A comparison of the discrete and dimensional models of emotion in
   music.
 \newblock {\em Psychology of Music}, 2010.
-
-\bibitem{gouyon2000classifying}
-F~Gouyon, O~Delerue, and F~Pachet.
-\newblock Classifying percussive sounds: a matter of zero-crossing rate?
-\newblock In {\em Proceedings of the COST G-6 Conference on Digital Audio
-  Effects}, 2000.
 
 \bibitem{gouyon2001exploration}
 Fabien Gouyon and Perfecto Herrera.
@@ -72,11 +66,6 @@ Bernie Krause.
 \newblock {\em The Great Animal Orchestra: Finding the Origins of Music in the
   World's Wild Places}.
 \newblock Hachette Digital, Inc., 2012.
-
-\bibitem{la2001harmonic}
-Jan La~Rue.
-\newblock Harmonic rhythm in the beethoven symphonies.
-\newblock {\em The Journal of Musicology}, 18(2):221--248, 2001.
 
 \bibitem{laurier2007audio}
 Cyril Laurier, Perfecto Herrera, M~Mandel, and D~Ellis.
@@ -141,12 +130,6 @@ Bj{\"o}rn Schuller, Clemens Hage, Dagmar Schuller, and Gerhard Rigoll.
   automatic mood classification.
 \newblock {\em Journal of New Music Research}, 39(1):13--34, 2010.
 
-\bibitem{terhardt1974pitch}
-Ernst Terhardt.
-\newblock Pitch, consonance, and harmony.
-\newblock {\em The Journal of the Acoustical Society of America},
-  55(5):1061--1069, 1974.
-
 \bibitem{turnbull2008semantic}
 Douglas Turnbull, Luke Barrington, David Torres, and Gert Lanckriet.
 \newblock Semantic annotation and retrieval of music and sound effects.
@@ -169,11 +152,5 @@ Bin Wu, Simon Wun, Chung Lee, and Andrew Horner.
 \newblock Spectral correlates in emotion labeling of sustained musical
   instrument tones.
 \newblock In {\em ISMIR}, pages 415--420, 2013.
-
-\bibitem{zhu2005music}
-Yongwei Zhu, Mohan~S Kankanhalli, and Sheng Gao.
-\newblock Music key detection for musical audio.
-\newblock In {\em Multimedia Modelling Conference, 2005. MMM 2005. Proceedings
-  of the 11th International}, pages 30--37. IEEE, 2005.
 
 \end{thebibliography}

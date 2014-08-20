@@ -33,13 +33,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	DIPLOMA INFO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\ttitle}{Evalvacija algoritmov za ocenjevanje čustev v glasbi}
+\newcommand{\ttitle}{Evalvacija čustev iz glasbe}
 \newcommand{\ttitleEn}{Mood evaluation from music}
 \newcommand{\tsubject}{\ttitle}
 \newcommand{\tsubjectEn}{\ttitleEn}
 \newcommand{\tauthor}{Primož Godec}
-\newcommand{\tkeywords}{glasba, razpoloženje, čustva, algoritem za ocenjevanje razpoloženja, }
-\newcommand{\tkeywordsEn}{music, mood, emotions,  mood clasification algorithm}
+\newcommand{\tkeywords}{glasba, razpoloženje, evalvacija}
+\newcommand{\tkeywordsEn}{music, mood, evaluation}
 
 
 
@@ -260,7 +260,7 @@ z vpisno številko \textbf{63110452}, sem avtor  diplomskega dela z naslovom:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % zahvala
 \thispagestyle{empty}\mbox{}\vfill\null\it%
-Želim se zahvaliti mentorju Matiji Maroltu, za pomoč in spodbujanje pri raziskovanju in izdelavi diplomske naloge. Prav tako se želim zahvaliti Matevžu Pesku, ki si je vedno vzel čas, ko sem ga potreboval in s spodbujanjem poskrbel, da je bilo diplomsko delo napisano hitreje, kot bi bilo drugače. Zahvalil bi se tudi ekipi s katero smo sodelovali na projektu raziskovanja razpoloženja in glasbe. Ekipo sestavljajo Matevž Pesek, Matija Marolt, Mojca Poredoš, Jože Guna, Gregor Strle, Emilija Stojmenova in Matevž Pogačnik. Nazadnje bi se zahvalil še družini in prijateljem, ki mi vedno stojijo ob strani. 
+Želim se zahvaliti mentorju Matiji Maroltu, za pomoč in spodbujanje pri raziskovanju in izdelavi diplomskega dela. Prav tako se želim zahvaliti Matevžu Pesku, ki si je vedno vzel čas, ko sem ga potreboval in s spodbujanjem poskrbel, da je bilo diplomsko delo napisano hitreje, kot bi bilo drugače. Zahvalil bi se tudi ekipi s katero smo sodelovali na projektu raziskovanja razpoloženja in glasbe. Ekipo sestavljajo Matevž Pesek, Matija Marolt, Mojca Poredoš, Jože Guna, Gregor Strle, Emilija Stojmenova in Matevž Pogačnik. Nazadnje bi se zahvalil še družini in prijateljem, ki mi vedno stojijo ob strani. 
 \rm\normalfont
 
 % prazna stran
@@ -270,7 +270,7 @@ z vpisno številko \textbf{63110452}, sem avtor  diplomskega dela z naslovom:
 % posvetilo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \thispagestyle{empty}\mbox{}{\vskip0.20\textheight}\mbox{}\hfill\begin{minipage}{0.55\textwidth}%
-Moji družini in prijateljem.
+Moji družini in prijateljem
 \normalfont\end{minipage}
 
 % prazna stran
@@ -295,9 +295,6 @@ Moji družini in prijateljem.
   
   {\bf SVM} & support vector machine & metoda podpornih vektorjev \\
   {\bf MIR} & music information retreival & pridobivanje informacij iz glasbe \\
-  {\bf MIREX} & Music Information Retrieval Evaluation eXchange &  \\
-  
-  
   \dots & \dots & \dots \\
 \end{tabular}
 
@@ -346,63 +343,61 @@ This thesis presents a new dataset gathered containing perceived and induced emo
 
 \chapter{Uvod}
 
-Na svetovnem spletu se velikokrat srečamo s priporočilnimi sistemi. Ko poslušamo neko pesem, si ogledamo video ali preberemo članek, nam ti sistemi sami predlagajo vsebine, ki nas bi še lahko zanimale. S takimi sistemi se srečujemo na vsakem koraku, ne zavedamo pa se, kako pravzaprav delujejo. 
+Na svetovnem spletu se velikokrat srečamo s priporočilnimi sistemi. Ko poslušamo neko pesem, si ogledamo video ali preberemo članek, nam ti sistemi sami predlagajo vsebine, ki nas bi še znale zanimati. Z takimi sistemi se srečujemo na vsakem koraku ne zavedamo pa se kako pravzaprav delujejo. 
 
-Na področju glasbe od priporočilnega sistema pričakujemo, da nam predlaga skladbe, ki bi jih želeli poslušati v danem trenutku. Najboljši sistemi so taki, ki izbor čim bolj prilagodijo našim željam in potrebam. Večino takih sistemov na področju glasbe deluje glede na podobnost uporabnikove zgodovine poslušanja, uporabljajo različne uporabniške oznake ali kakšen podoben način, ki ne vključuje elementov iz področja pridobivanja informacij iz glasbe (MIR - Music information retreival). Le redki sistemi uporabljajo podatke izračunane iz glasbe, noben priporočilni sistem pa ne uporablja podatkov o razpoloženju v glasbi. 
+Na področju glasbe od priporočilnega sistema pričakujemo, da nam predlaga skladbe, ki bi jih mi zares želeli poslušati v danem trenutku. Najboljši so taki sistemi, ki izbor čisto prilagodijo našim željam in potrebam. Večino takih sistemov na področju glasbe deluje glede na podobnost uporabnikove zgodovine poslušanja, uporabljajo različne uporabniške oznake ali kakšen podoben način, ki ne vključuje elementov iz področja pridobivanja informacij iz glasbe (MIR - Music information retreival). Torej dejansko ne uporabljajo podatkov izračunanih iz glasbe. Prav noben priporočilni sistem pa ne uporablja podatkov o razpoloženju v glasbi. 
 
-Razpoloženje je eden pomembnih dejavnikov, ki vplivajo na to, kakšno glasbo bi uporabnik želel poslušati v določenem trenutku. Obenem pa tudi izbor glasbe lahko spremeni razpoloženje uporabnika. Zaradi tega se nam zdi pomembno, da bi priporočilni sistemi vključevali tudi podatke o razpoloženju. Odločili smo se, da naredimo tak sistem. Preden pa lahko ta sistem realiziramo, bo potrebno še nekaj raziskovanja. 
+Razpoloženje je eden pomembnih dejavnikov, ki vplivajo na to kakšno glasbo bi uporabnik želel poslušati v določenem trenutku. Obenem pa tudi izbor glasbe lahko spremeni razpoloženje uporabnika. Zaradi tega se nam zdi pomembno, da bi priporočilni sistemi vključevali tudi to komponento. Odločili smo se, da naredimo tak sistem. Preden pa lahko realiziramo ta sistem pa bo potrebno še veliko raziskovanja. 
 
-Osnova za raziskavo je dobra podatkovna zbirka. Na področju razpoloženja trenutno obstaja nekaj podatkovnih zbirk\cite{eerola2010comparison} \cite{schmidt2011modeling} \cite{turnbull2008semantic} \cite{schuller2010mister} \cite{panda2013multi}, ampak nobena v celoti ne vključuje podatkov, ki bi zadostili našim potrebam. Zato smo se odločili, da zberemo svojo podatkovno zbirko. To smo izvedli z anketo. V glavnem delu ankete smo spraševali po razpoloženju v glasbi in o razpoloženju, ki ga glasba vzbudi pri uporabniku. Poleg tega nas je še zanimalo s kakšno barvo bi uporabnik opisal določeno pesem. V tem delu smo skupaj zbrali 7000 odzivov, kar pomeni, da imamo povprečno 37 odzivov na glasbeni odlomek. To je trenutno največja taka zbirka na področju razpoloženja. Poleg tega smo zbirali tudi podatke o uporabnikovi percepciji razpoloženja in barve, o njegovem trenutnem razpoloženju in nekatere demografske podatke. V tem delu smo zbrali preko 1000 odzivov. 
+Osnova za vsako raziskavo je seveda dobra podatkovna zbirka. Na področju razpoloženja trenutno obstaja nekaj podatkovnih zbirk\cite{eerola2010comparison} \cite{schmidt2011modeling} \cite{turnbull2008semantic} \cite{schuller2010mister} \cite{panda2013multi}, ampak nobena v celoti ne vključuje podatkov, ki bi zadostili našim potrebam. Zato smo se odločili, da zberemo svojo podatkovno zbirko. To smo izvedli z anketo. V glavnem delu ankete smo povpraševali po razpoloženju v glasbi in o razpoloženju v, ki ga glasba vzbudi pri uporabniku. Poleg tega nas je še zanimalo s kakšno barvo bi uporabnik opisal določeno pesem. V tem delu smo skupaj zbrali 7000. Kar pomni, da imamo na povprečno 37 odzivov na glasbe odlomek. To je trenutno največja taka zbirka na področju razpoloženja. Poleg tega smo zbirali tudi podatke o uporabnikovi percepcij razpoloženja in barve, o njegovem trenutnem razpoloženju in nekateri demografski podatki. V tem delu smo zbrali preko 1000 odzivov. 
 
-Drugi pomemben element v priporočilnem sistemu na podlagi razpoloženja je algoritem, ki bo znal določiti razpoloženje v glasbi čim bolj natančno. Zaenkrat algoritmi po podatkih MIREX-a ne presegajo 70\% natančnosti. Se pa ta iz leta v leto povečuje. 
+Ko imamo zbrane podatke imamo pripravljeno osnovo za naš priporočili sistem. Drugi pomemben element v priporočilnem sistemu na podlagi razpoloženja je algoritem, ki bo znal določiti razpoloženje v glasbi čim bolj natančno. Zaenkrat algoritmi po podatkih MIREX-a ne presegajo 70\% natančnosti. Se pa ta iz leta v leto povečuje. 
 
-Algoritmi v osnovi delujejo tako, da na podlagi značilnic iz glasbe in podatkov o razpoloženju iz podatkovne zbirke izračunajo določene parametre na podlagi katerih potem izvajajo ocenjevanje. Za ta namen so uporabljeni različni algoritmi kot so metoda podpornih vektorjev (SVM - Support Vector Machine), regresija, različna drevesa, naivni bayes in podobni. 
+Algoritmi v osnovi delujejo tako, da na podlagi značilnic iz glasbe in podatkov o razpoloženju iz podatkovne zbirke izračunajo določene parametre na podlagi katerih potem izvajajo klasifikacijo. Za ta namen so uporabljeni različni algoritmi kot so SVM, regresija, različna drevesa, naivni bayes in podobni. 
 
-V tej nalogi bom preizkusil več takih sistemov na naši podatkovni zbirki. Pokazal bom kakšni so rezultati, če uporabimo regresijski algoritem, ki določa prijetnost (valence) in aktivnost (arousal) v glasbi. Prav tako bom preizkusil algoritem, ki za svojo osnovo uporablja SVM in na podlagi tega določi enega od petih razpoloženjskih gruč, ki so uporabljene tudi na MIREX (Music Information Retreival eXchange) tekmovanju. To je algoritem iz knjižnice Essentia. [TODO: še moj algoritem]
+V tej nalogi bom preizkusil več takih sistemov na naši podatkovni zbirki. Pokazal bom kakšni so rezultati, če uporabimo regresijski algoritem, ki določa prijetnost (valence) in aktivnost (arousal) v glasbi. Prav tako bom na naši podatkovni zbirki preizkusil algoritem, ki za svojo osnovo uporablja SVM in na podlagi tega določi enega od petih razpoloženjskih gruč, ki so uporabljene tudi v MIREX tekmovanju. To je algoritem iz knjižnice Essentia. [TODO: še moj algoritem]
 
-V naslednjem poglavju bom pregledal področje, ki ga obsega moja diplomska naloga. V poglavju 3 bom bolj natančno predstavil zbiranje naše podatkovne zbirke in naredil krajšo analizo podatkov v njej. V četrtem poglavju bom predstavil kako delujejo različni algoritmi za določanje razpoloženja v glasbi in predstavil rezultate, ki jih dobimo, če te algoritme uporabimo na naši podatkovni zbirki. V zadnjem poglavju bom predstavil lasten algoritem, njegovo delovanje in rezultate. 
+V naslednjem poglavju bom pregledal področje, ki ga obsega moja diplomska naloga. V poglavju 3 bom bolj natančno predstavil zbiranje naše podatkovne zbirke in naredil krajšo analizo podatkov v njej. V četrtem poglavju bom predstavil kako delujejo različni algoritmi za določanje razpoloženja v glasbi in predstavil rezultate, ki jih dobimo če te algoritme uporabimo na naši podatkovni zbirki. V zadnjem poglavju bom predstavil lasten algoritem, njegovo delovanje in rezultate. 
 
 \chapter{Pregled področja}
 
-Lahko bi rekli, da je glasba ena najstarejših in zelo pomembnih aktivnosti na svetu. Razširjena je praktično po celem svetu in poznajo jo še tako izolirana in od ostalega sveta odmaknjena plemena. Znano je, da glasba na svetu obstaja že vsaj 50 000 let. Prvo glasbo naj bi takrat izvajali na Afriških tleh. Nato se je skozi čas razvijala in postala ena najpomembnejših sestavnih delov človekovega življenja. \cite{wallin2001origins} \cite{krause2012great} O pomembnosti glasbe priča dejstvo, da jo lahko slišimo praktično na vsakem koraku. Poslušamo jo doma, na poti, ko nam je dolgčas ali ko se želimo razvedriti, poslušamo jo ko smo na kavi ali v trgovini. Ponekod s pravo izbiro glasbe vplivajo na človekove odločitve. Na primer v raznih trgovinah in lokalih z glasbo privlačijo kupce. Vse to priča o pomembnem vplivu glasbe na človeka.  
+Lahko bi rekli, da je glasba ena najstarejših in zelo pomembnih aktivnosti na svetu. Razširjena je praktično po celem svetu in poznajo jo še tako izlirana in od ostalega sveta odmaknjena plemena. Znano je, da glasba na svetu obstaja že vsaj 50 000 let. Prva glasba naj bi takrat izvajali na Afriških tleh. Nato se je skozi čas razvijala in postala eden najpomembnejših sestavnih delov človekovega življenja. \cite{wallin2001origins} \cite{krause2012great} O pomebnosti glasbe priča dejstvo, da jo lahko slišimo praktično na vsakem koraku. Poslušamo jo doma, na poti, ko nam je dolgčas ali ko se želimo razvedriti, poslušamo jo ko smo na kavi ali ko smo v trgovini. Ponekod z pravo iziro glabe vplivajo na člonekove odločitve. Na primer v raznih trgovinah in lokalih z glasbo privlačijo kupce. Vse to priča o pomembnem vplivu glasbe pri človeku.  
 
-Glasba pomembno vpliva na človekova čustva in razpoloženje. To moč ima predvsem zaradi tega, ker ima neposredno pot do čustev. Glasbo namreč do\-živ\-lja\-mo z notranjimi čuti, zato ni potrebne predhodne interpretacije, kot je potrebna pri razumevanju tiskane besede.  Znano je da različna glasba vzbudi različna čustva in ima moč, da vzbudi potlačena čustva. Na vzdušje vpliva razmerje med toni. Mol pričara bolj melanholično vzdušje, dur pa bolj veselo. \cite{lenko2009pomen}
+Glasba pomembno vpliva na človekaova čustva in razploženje. To moč ima predvsem zaradi tega, ker ima neposredno pot do čustev. Glasbo namreč doživljamo z notranjimi čuti, zato ni potrebne predhodne interpretacije, kot je potrebna pri razumevanju tiskane besede.  Znano je da različna glasba vzbudi različna čustva in ima moč da zbudi potlačena čustva. Na vzdušje vpliva razmerje med toni. Mol pričara bolj melanholično vzdušje. Dur pa ba bolj veselo. \cite{lenko2009pomen}
 
-V nadaljevanju poglavja bom povedal še nekaj o področju imenovanem pridobivanje informacij iz glasbe (Music information retrieval - MIR). To področje je pomembno, saj je osnova za temo moje diplomske naloge. Povedal bom nekaj o povezavi med razpoloženjem in glasbo. Pregledal bom podatkovne zbirke, ki obstajajo trenutno na področju razpoloženja in glasbe. Za konec pa bom predstavil še algoritme za evalvacijo čustev iz glasbe. 
+V nadaljevanju poglavja bom povedal še nekaj o področju imenovanem pridobivanje informacij iz glasbe (Music information retrieval - MIR). To področje je pomembno, saj je osnova za temo moje diplomske naloge. Povedal bom nekaj o povezavi med razpoloženjem in glasbo. Pregledal bom datasete, ki obstajajo trenutno na področju razpoloženja in glasbe. Za konec pa bom predstavil še algoritme za evalvacijo čustev iz glasbe. 
 
 \section{Pridobivanje informacij iz glasbe}
 
-Pridobivanje informacij iz glasbe (MIR) je interdisciplinarna znanost, ki povezuje predvsem muzikologijo in računalništvo. \cite{pesek2012prepoznavanje} Vključuje pa tudi vede kot so psihologija, akademski študij glasbe, procesiranje signalov, strojno učenje in mnoge ostale. To področje je dokaj novo in se trenutno hitro širi. Kljub temu, da je področje novo, je postalo že zelo široko. Pojavljajo se velike razlike v načinu obdelave in uporabe podatkov. Prav tako so cilji raziskovalcev zelo različni.
+Pridobivanje infrormacij iz glasbe (Music information retrieval - MIR) je interdisciplinarna zannost, ki povezuje predvsem muzikologijo in računalništvo. \cite{pesek2012prepoznavanje} Vključuje pa tudi vede kot so psihologija, akademski študij glasbe, procesiranje signalov, strojno učenje in mnoge ostale. To področje je dokaj novo in se trenutno res hitro širi. Kljub temu, da je področje novo, je postalo že zelo široko. Pojavljajo se velike razlike v načinu obdelave in uporabe podatkov. Prav tako so cilji raziskovalcev zelo različni.
 
-Ključni namen področja je pridobiti informacije iz glasbe in še bolj pomembno te informacije potem uporabiti v različnih sistemih. Trenutno se največ dela na naslednjih sistemih. 
+Ključni namen področja je pridobiti infromacije iz glasbe in še bolj pomembno te informacije potem uporabiti v različnih sistemih. Trenutno se največ dela na naslednjih sistemih. 
 
-\paragraph{Priporočilni sistemi za glasbo (Music Recommendation System)}
+\paragraph{Sistem za predlaganje glasbe (Music Recommendation System)}
 
-V osnovi taki sistemi predlagajo glasbo na podlagi zgodovine poslušane glasbe s strani uporabnika. Trenutno obstaja veliko takih sistemov kot sta Pandora in Last.fm, ampak le redki uporabljajo informacije pridobljene z MIR za svoje delovanje. Namesto tega veliko sistemov uporablja informacije na podlagi primerjave med uporabniki. Na primer sistem predlaga glasbo, ki so jo poslušali uporabniki s podobno zgodovino poslušanja. Drugi spet uporabljajo oznake k določeni glasbi ali pa kakšen druge informacije, ki niso del MIR-a. Te oznake lahko dodajo uporabniki ali strokovnjaki. Pri sistemu Pandora glasbo označujejo strokovnjaki pri sistemu Last.fm pa uporabljajo oznake dodane s strani uporabnikov. Oznake, ki se uporabljajo so lahko različne. Lahko označijo zvrst glasbe (npr. Rock, Pop, ...), opisujejo razpoloženje (vesel, žalosten, sproščen, ...), povejo ali je pesem instrumental ali vsebuje vokal, je ta vokal ženski ali moški in podobno. Od kar se je področje MIR zelo razširilo vedno več sistemov uporablja tudi MIR informacije za predlaganje glasbe. 
+V osnovi taki sistemi predlagajo glasbo na podlagi zgodovine poslušane glasbe s strani uporabnika. Trenutno obstaja veliko takih sistemov kot sta Pandora in Last.fm, ampak le redki uporabljajo informacije pridobljene z MIR za svoje delovanje. Namesto tega veliko sistemov uporablja informacije na podlagi primerjave med uporabniki. Naprimer sistem predlaga glasbo, ki so jo poslušali uporabniki s podobno zgodovino poslušanja. Drugi spetu uporabljajo oznake k določeni glasbi ali pa kakšen druge informacije, ki niso del MIR-a. Te oznake lahko dodajo ali uporabniki ali pa tudi experti. Pri sistemu Pandora glasbo označujejo strokovnjaki pri sistemu Last.fm pa uporabljajo oznake dodane s strani uporabnikov. Oznake, ki se uporabljajo so lahko različne od tega, da označijo zvrst glabe, lahko oznake opisuejo tudi razploženje, ali je pesem instrumental ali ali ima voka, je vokal ženski, moški in podobno. Od kar pa se je področje MIR zelo razširilo vedno več sistemov uporablja tudi te informacije za predlaganje glasbe. 
  
 \paragraph{Ločevanje pesmi na več pasov in prepoznavanje inštrumentov}
 
-Sistem za ločevanje pesmi zna pesem v kateri nastopa več instrumentov in vokali, razstaviti tako, da imamo posamezne pasove v pesmi ločene. Na primer lahko loči glede na instrumente, za kar potrebuje sistem za prepoznavanje instrumentov. Zaradi tega sta ta sistema tako tesno povezana med seboj. 
+Sistem za ločevanje pesmi zna pesem v kateri nastopa več instrumentov in vokali, razstaviti tako, da imamo posamezne pasove v pesmi ločene. Na primer lahko loči po inštrumentih. Da lahko loči posamezne pasove potrebuje sistem za prepovznavanje inštrumentov. Zaradi tega sta ta sistema tako tesno povezana med seboj. 
 
-Na tem področju obstaja že kar nekaj sistemov. Ti sistemi se veliko uporabljajo pri ustvarjanju podlag za karaoke. Tam je potrebno pesmi odvzeti vokal. Uporabljajo se tudi za izključevanje posameznih instrumentov iz podlage. Ti sistemi pa seveda še niso popolni. Veliko je še prostora za izboljšave. Velik problem je v tem, kako najbolje ločiti vokal od ostalih delov pesmi, ker si vokal z določenimi inštrumenti deli frekvence.
+Na tem področju obstaja že kar nekaj sistemov. Ti sistemi se veliko uporabljajo pri ustvarjanju podlag za karaoke. Tam je naprimer potrebno pesmi odvzeti vokal. Uporabljajo se tudi za izključevanje posameznih inštrumetnov iz podlage. Ti sistemi pa seveda še niso popolni. Veliko je še prostora za izbolšave. Velik problem je v tem kako najbolje ločiti vokal od ostalih delov pesmi, ker si vokal z določenimi inštrumenti deli frekvence.
 
 \paragraph{Avtomatično prepisovanje glasbe}
 
-Ti sistemi delujejo tako, da glasbo iz posnetka pretvarjajo v simbolični zapis. Največ se to uporablja za prepisovanje glasbe v zapis MIDI [TODO: ref]. Taki sistemi vključujejo kar nekaj podsistemov: detekcijo pojavov (onset detection), ocenjevanje trajanja, identifikacijo instrumentov, prepoznavanje ritma in ostale. Sistemi, ki trenutno obstajajo še niso popolni. Predvsem nastane problem, ko je v pesmi veliko inštrumentov in več polifoničnih nivojev. 
+Ti sistemi delujejo tako, da glasbo iz posnetka pretvarjajo v simbolični zapis. Največ se to uporablja za prepisovanje glasbe v zapis MIDI. Taki sistemi vključujejo kar nekaj podsistemov: detekcijo pojavov (onset detection), ocenjevanje trajanja, identifikacijo instrumentov, prepoznavanje ritma in ostale. Sistemi, ki trenutno obstajajo še niso popolni. Predvsem nastane problem, ko je v pesmi veliko inštrumentov in več polifoničnih nivojev. 
 
 \paragraph{Avtomatična kategorizacija glasbe}
 
-To so sistemi, ki znajo razvrstiti glas\-bo v več prej definiranih skupin. Na področju MIR se raziskovalci trenutno ukvarjajo predvsem s kategorizacijo po žanrih in razpoloženju v glasbi. Za obe dve temi MIREX organizira tekmovanje v kategorizaciji glasbe. Raziskovalci lahko oddajo svoj algoritem, ki ga potem poženejo na MIREX-ovi podatkovni zbirki. Za kategorizacijo se uporabljajo tehnike za strojno učenje, kot so SVM \cite{ben2010user}, regresija, različna drevesa in še ostale.
+To so sistemi, ki znajo razvrstiti glasbo v več prej definiranih skupin. Na prodročju MIR se raziskovalci trenutno ukvarjajo predvsez kategorizacijo po žanrih in glede na čustva v glasbi. Za obe dve temi MIREX (Music Information Retrieval Evaluation eXchange) organizira tekmovanje v kategorizaciji glasbe. Raziskovalic lahko oddajo svoj algoritem, ki ga potem pežnejo na MIREX-ovem datasetu. Za kategorizacijo se uporabljajo tehnike za strojno učenje, kot so SVM \cite{ben2010user}, regresija, različna drevesa in še ostale.
 
 \paragraph{Generiranje glasbe}
 
-Eden od ciljev raziskovalcev v MIR pa je tudi narediti dober sistem za avtomatično generiranje glasbe. Zaenkrat še ni sistema, ki bi samostojno sestavil dobro pesem. V trenutnih sistemih je potrebno predvsem veliko ročnega prilagajanja. 
-
-
+Eden od ciljev raziskovalcev v MIR pa je tudi narediti dober sistem za avtomatično generiranje glasbe. Zaenkrat še ne obstaja sistem, ki bi samostojno zgenerial dobro pesem. V trenutnih sistemih je potrebno predvsem veliko ročnega prilagajanja. 
 
 \section{Evalvacija čustev iz glasbe}
 
-Eno od pomembnih področij v MIR je evalvacija čustev iz glasbe s pomočjo računalniških algoritmov. Ti algoritmi v osnovi delujejo tako, da najprej iz zvočnega zapisa izračunajo določene značilnice. V naslednjem koraku na podlagi že obstoječe podatkovne zbirke naučijo algoritem. To se izvede tako, da se izračunajo določeni parametri na podlagi katerih potem poteka razvrščanje. Nato izvedejo klasifikacijo na večji zbirki zvočnih posnetkov. Za delovanje teh algoritmov potrebujemo podatkovno zbirko z že obstoječimi podatki o razpoloženju, zato bom v naslednjem podpoglavju opisal, kaj na tem področju že obstaja. Poleg tega bom naredil še pregled algoritmov.
+Eno od pomembnih področij v MIR je zagotovo evalvacija čustev iz glasbe s pomočjo računalniških algoritmov. Ti algoritmi v osnovi delujejo tako, da najprej iz zvočnega zapisa izračunajo določene opisnike. V naslednjem koraku je potrebno na podlagi že obstoječe podatkovne zbirke natrenirati algoritem. Nato pa lahko izvedemo klasifikacijo na večji zbirki zvočnih posnetkov. Za delovanje teh algoritmo potrebujemo podatkovno zbirko z že obstoječimi podatki. Zato bom v naslednjem podpoglavju opisal kaj na tem področju že obstaja. Poleg tega bom naredil še pregled algoritmov, ki že obstajajo.
 
 \subsection{Podatkovne zbirke}
 
@@ -469,30 +464,21 @@ Sari et. al \cite{saari2013role} so uporabili Semantic Layer Projection (SLP) me
     \label{mirextask}   
 \end{table}
 
-% \section{Pregled osnovnih elementov}
+\section{Pregled osnovnih elementov}
 
 \subsection{Značilnice}
 
 Kot ste v opisih delovanja algoritmov opazili parktično vsi za svoje delvanje uporabljajo tako imenovane značilnice. To so različne vrednosti, ki jih lahko izračunamo iz glasbenega posnetka in so definirane na različne načine.
 
-Razdelimo jih lahko v skupine po podobnosti. Eno od takih razporeditev bom predstavil v nadaljevanju \cite{laurier2007audio} \cite{bogdanov2013form}:
+Razdelimo jih lahko v skupine po podobnosti. Eno od takih razporeditev bom predstavil v nadaljevanju. Tako so začilnice razoredili v \cite{laurier2007audio}:
 
 \begin{itemize}
-  \item \textbf{Spektralne značilnice} so značilnice, ki se nanašajo na obliko spektra v glasbi. Izmed teh značilnic se na MIR področju veliko uporabljaja MFCC, HFC (High Frequency Content), Chroma, Spektralni močnostni vrh (Spectral Strong peak), GFCC (Gammatone Feature Cepstrum Coefficients) in podobne. 
-MFCC (Mel-frequency cepstral coefficients) \cite{gunderson2007musical} je koeficient kratkotrajnega močnostnega spektra zvoka. Temelji na linearni kosinusni transformaciji logaritmičnega močnostnega spektra na nelinearni mel frekvenčni skali. Spectral strong peak \cite{gouyon2001exploration} nam pove ali spekter vključuje izrazit vrh. Vrednost je večja, če je vrh višji in tanjši. HFC je izračunan na podlagi spektra in nam pove količino visokih frekvenc v signalu \cite{brossier2004real}.
-
-  \item \textbf{Časovne značilnice} Te se nanašajo na časovne spremembe v signalu in trajanje nekega stanja v signalu. Med njimi so pogoste efektivno trajanje (Effective Duration), ki pove koliko časa je bil signal nad določeno energijo. ZCR (Zero-crossing rate) \cite{gouyon2000classifying} je, kot ime pove, vrednost, ki nam pove kolikokrat je signal prešel iz pozitivne vrednosti v negativno in obratno. Leq, LARM, Ludness, Loudness so različne mere za glasnost. 
-  
-  \item \textbf{Tonske značilnice}
-
-Med temi značilnicami so pomembne tonaliteta (key) \cite{zhu2005music}, ki  je skupnost vseh karakteristik, ki povezujejo niz tonov ali akordov neke tonalne kompozicije okrog tonike, t.j. okrog središča tonalitete. Kosonanca  (Consonance) \cite{terhardt1974pitch} je definirana s frekvenčnimi razmerji. Nanaša na akorde, harmonijo ali intervale, ki jih obravnavamo kot stabilne, ter nam izzovejo občutje ugodja. Ravno nasprotje kosonanci je disonanca (Dissonance). Ta na poslušalca deluje neugodno in se odraža z negativno psihofizično reakcijo. Harmonični ritem (Harmonic rhythm) \cite{la2001harmonic} je razmerje, ki pove kako se akordi spreminjajo v sestavi glasbe. Poleg teh se uporabljajo tudi tuning frequency, histogram akordov (chord histogram) in ostali.
-  
-  \item \textbf{Ritmične značilnice}
-  
-Zelo pomembna značilnica v tem sklopu je število ritmičnih enot na minuto (BMP - beats per minute). To je značilnica, ki nam opisuje tempo v glasbi. Ker se v večini pesmi skozi čas BMP spreminja je pomembna enota tudi BMP histogram. Uporablja se tudi BeatLoudnes, ki predstvalja glasnost signala v oknu okoli beata. 
-  
-  \item \textbf{Visoko nivojske značilnice v glasbi} Višjenivojski deskriptorji so bolj abstraktni in med seboj zelo različni. To so značilnice, ki jih v večini ocenjujemo na podlagi ostalih značilnic opisanih zgoraj. Gre za značilnice kot so razpoloženje, žanri, barva glasu in ostale. 
-  
+  \item \textbf{Spektralne značilnice} so značilnice, ki opisujejo obliko spektra v glasbi. Izmed teh značilnic se na MIR področju veliko uporabljaja MFCC, HFC (High Frequency Content), Chroma, Spectral Strong peak in podobni. 
+MFCC \cite{gunderson2007musical} (Mel-frequency cepstral coefficients) je koeficient kratkotrajnega močnostnega spektra zvoka. Temelji na linearni kosinusni transformaciji logaritmičnega močnostnega spektra na nelinearni mel frekvenčni skali. Spectral strong peak \cite{gouyon2001exploration} nam pove ali spekter vključuje izrazit vrh. Vrednost je večja, če je vrh višji in tanjši. 
+  \item \textbf{Značilnice, ki opisujejo glasnost} Med temi značilnicami sem v MIR zasledil uporabo naslednjih: Larm, Leq, RMS in podobnih. RMS (Root mean square) \cite{bausch1996root} je kvadratni koren povprečnih vrednosti kvadratov valovanja glasbe.
+  \item \textbf{Visoko nivojski opisniki v glasbi} Višjenivojski deskriptorji so bolj abstraktni in med seboj zelo različni. Med njimi lahko najdemo opisnike kot so 
+  \item \textbf{Časovni opisniki}
+  \item \textbf{Statistične značilnice}
 \end{itemize}
 
 \chapter{Naš dataset}

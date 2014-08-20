@@ -1,0 +1,51 @@
+\select@language {english}
+\select@language {slovene}
+\contentsline {chapter}{Povzetek}{}{chapter*.2}
+\select@language {english}
+\contentsline {chapter}{Abstract}{}{chapter*.3}
+\select@language {slovene}
+\contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Pregled podro\IeC {\v c}ja}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Pridobivanje informacij iz glasbe}{4}{section.2.1}
+\contentsline {paragraph}{Sistem za predlaganje glasbe (Music Recommendation System)}{4}{section*.5}
+\contentsline {paragraph}{Lo\IeC {\v c}evanje pesmi na ve\IeC {\v c} pasov in prepoznavanje in\IeC {\v s}trumentov}{4}{section*.6}
+\contentsline {paragraph}{Avtomati\IeC {\v c}no prepisovanje glasbe}{5}{section*.7}
+\contentsline {paragraph}{Avtomati\IeC {\v c}na kategorizacija glasbe}{5}{section*.8}
+\contentsline {paragraph}{Generiranje glasbe}{5}{section*.9}
+\contentsline {section}{\numberline {2.2}Evalvacija \IeC {\v c}ustev iz glasbe}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Podatkovne zbirke}{6}{subsection.2.2.1}
+\contentsline {paragraph}{Podatkovna zbirka s filmsko glasbo}{6}{section*.10}
+\contentsline {paragraph}{Mood Swing Turk Dataset}{6}{section*.11}
+\contentsline {paragraph}{Cal500}{7}{section*.12}
+\contentsline {paragraph}{MTV Music Dataset}{7}{section*.13}
+\contentsline {paragraph}{LAMP}{7}{section*.14}
+\contentsline {paragraph}{Multi Modal}{7}{section*.15}
+\contentsline {subsection}{\numberline {2.2.2}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{7}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Pregled osnovnih elementov}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Zna\IeC {\v c}ilnice}{10}{subsection.2.3.1}
+\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{12}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{13}{subsection.3.1.2}
+\contentsline {paragraph}{Prvi del}{13}{section*.16}
+\contentsline {paragraph}{Drugi del}{14}{section*.17}
+\contentsline {paragraph}{Tretji del}{16}{section*.18}
+\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{16}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Sestava datasta}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}Analiza podatkov}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{18}{subsection.3.3.1}
+\contentsline {paragraph}{Ukvarjanje z glasbo}{18}{section*.19}
+\contentsline {paragraph}{Zdravila in droge}{18}{section*.20}
+\contentsline {paragraph}{\IeC {\v Z}anri}{19}{section*.21}
+\contentsline {subsection}{\numberline {3.3.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva ter barva}{21}{subsection.3.3.2}
+\contentsline {paragraph}{Barva}{24}{section*.22}
+\contentsline {subsection}{\numberline {3.3.3}Glasba, razpolo\IeC {\v z}enje in barva}{25}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Regresijski algoritem}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Delovanje algoritma}{27}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Rezultati}{28}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Essentia Gaiatransofrm algoritem}{30}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}O essentii}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Delovanje algoritma}{32}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Natan\IeC {\v c}nost razvr\IeC {\v s}\IeC {\v c}anja}{32}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Rezultati}{33}{subsection.4.2.4}
