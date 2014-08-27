@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.7)  20 AUG 2014 19:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.7)  27 AUG 2014 18:57
 entering extended mode
 **diploma-besedilo.tex
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.tex
@@ -187,6 +187,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks26
+\float@box=\box28
+\@float@everytoks=\toks27
+\@floatcapt=\box29
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -245,13 +253,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen115
-\Hy@linkcounter=\count103
-\Hy@pagecounter=\count104
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count105
+\Hy@SavedSpaceFactor=\count106
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -264,7 +272,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count106
+\c@Hy@tempcnt=\count107
 
 (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
@@ -272,7 +280,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen116
-\Fld@menulength=\count107
+\Fld@menulength=\count108
 \Field@Width=\dimen117
 \Fld@charsize=\dimen118
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -284,17 +292,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count108
-\c@Item=\count109
-\c@Hfootnote=\count110
+\Hy@abspage=\count109
+\c@Item=\count110
+\c@Hfootnote=\count111
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count111
-\c@bookmark@seq@number=\count112
+\Fld@listcount=\count112
+\c@bookmark@seq@number=\count113
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -306,14 +314,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
+\c@izrek=\count114
+\c@trditev=\count115
+\countA=\count116
 
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 50.
-
-\c@izrek=\count113
-\c@trditev=\count114
-\countA=\count115
 (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\xmpincl\xmpincl.sty
 Package: xmpincl 2008/05/10 v2.2 Include XMP data in pdflatex
 
@@ -324,51 +328,51 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \xmpinclRead=\read1
 <<pdfa-1b.xmpi>>
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
-LaTeX Font Info:    ... okay on input line 157.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
-LaTeX Font Info:    ... okay on input line 157.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
-LaTeX Font Info:    ... okay on input line 157.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
-LaTeX Font Info:    ... okay on input line 157.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
-LaTeX Font Info:    ... okay on input line 157.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
-LaTeX Font Info:    ... okay on input line 157.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
-LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
 
 (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
+\scratchcounter=\count117
 \scratchdimen=\dimen119
-\scratchbox=\box28
-\nofMPsegments=\count117
-\nofMParguments=\count118
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count119
+\scratchbox=\box30
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count120
 \MPscratchDim=\dimen120
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks29
 )
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 157.
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 158.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 157.
-LaTeX Info: Redefining \pageref on input line 157.
-LaTeX Info: Redefining \nameref on input line 157.
+LaTeX Info: Redefining \ref on input line 158.
+LaTeX Info: Redefining \pageref on input line 158.
+LaTeX Info: Redefining \nameref on input line 158.
 
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.out)
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.out)
@@ -382,16 +386,16 @@ ing (ext4): destination with the same identifier (name{page.}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.181 \clearemptydoublepage
+l.182 \clearemptydoublepage
                             [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 191.
+LaTeX Font Info:    Try loading font information for U+msa on input line 192.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 191.
+LaTeX Font Info:    Try loading font information for U+msb on input line 192.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -399,69 +403,69 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.199 \clearemptydoublepage
+l.200 \clearemptydoublepage
                             [3]pdfTeX warning (ext4): destination with the same
  identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.199 \clearemptydoublepage
+l.200 \clearemptydoublepage
                             [4
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.228 \clearemptydoublepage
+l.229 \clearemptydoublepage
                             [5]pdfTeX warning (ext4): destination with the same
  identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.228 \clearemptydoublepage
+l.229 \clearemptydoublepage
                             [6
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 247.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 248.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 247.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 248.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.258 \clearemptydoublepage
+l.259 \clearemptydoublepage
                             [7]pdfTeX warning (ext4): destination with the same
  identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.258 \clearemptydoublepage
+l.259 \clearemptydoublepage
                             [8
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.267 \clearemptydoublepage
+l.268 \clearemptydoublepage
                             [9]pdfTeX warning (ext4): destination with the same
  identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.267 \clearemptydoublepage
+l.268 \clearemptydoublepage
                             [10
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.277 \clearemptydoublepage
+l.278 \clearemptydoublepage
                             [11]pdfTeX warning (ext4): destination with the sam
 e identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.277 \clearemptydoublepage
+l.278 \clearemptydoublepage
                             [12
 
 ]
@@ -471,18 +475,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.286 \clearemptydoublepage
+l.287 \clearemptydoublepage
                             [13
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.286 \clearemptydoublepage
+l.287 \clearemptydoublepage
                             [14
 
 ]
-Overfull \hbox (85.32338pt too wide) in paragraph at lines 294--303
+Overfull \hbox (85.32338pt too wide) in paragraph at lines 295--308
 [] 
  []
 
@@ -490,42 +494,42 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.307 \clearemptydoublepage
+l.312 \clearemptydoublepage
                             [15
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.307 \clearemptydoublepage
+l.312 \clearemptydoublepage
                             [16
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.319 \clearemptydoublepage
+l.324 \clearemptydoublepage
                             [17
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.319 \clearemptydoublepage
+l.324 \clearemptydoublepage
                             [18
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.336 \clearemptydoublepage
+l.341 \clearemptydoublepage
                             [19
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.336 \clearemptydoublepage
+l.341 \clearemptydoublepage
                             [20
 
 ]
@@ -538,225 +542,434 @@ Poglavje 2.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 365.
+(hyperref)                removing `\textasciicaron' on input line 370.
 
 [3
 
-] [4]
+]
+Overfull \hbox (3.71384pt too wide) in paragraph at lines 382--383
+[]\OT1/cmr/m/n/10.95 Sele v danasnjem casu pa je za-radi pred-vsem za-radi po
+vecanih racunskih zmoznostih
+ []
 
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 403.
 
+Underfull \vbox (badness 7704) has occurred while \output is active []
 
-Overfull \hbox (3.6733pt too wide) in paragraph at lines 405--406
+ [4]
+Overfull \hbox (3.6733pt too wide) in paragraph at lines 412--413
 \OT1/cmr/m/n/10.95 racunalniskih al-go-rit-mov. Ti al-go-ritmi v osnovi de-lu
 -jejo tako, da naj-prej iz zvocnega
  []
 
-[5] [6]
-Underfull \vbox (badness 1715) has occurred while \output is active []
-
- [7]
-[8] [9] [10] [11] [12
+[5] [6] [7] [8] [9] [10] [11] [12
 
 ]
 Poglavje 3.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (28.53384pt too wide) in paragraph at lines 541--542
+\OT1/cmr/m/n/10.95 Tema moje di-plom-ske na-loge je oce-nje-va-nje raz-polozen
+ja v glasbi s pomocjo racunalniskih
+ []
 
- [13]
-<colorwheelold.png, id=280, 401.5pt x 401.5pt>
+[13] <images/likart.png, id=287, 633.86812pt x 290.58563pt>
+File: images/likart.png Graphic file (type png)
+
+<use images/likart.png>
+Package pdftex.def Info: images/likart.png used on input line 557.
+(pdftex.def)             Requested size: 369.88582pt x 169.57289pt.
+ [14 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/likart.png>] <
+colorwheelold.png, id=301, 401.5pt x 401.5pt>
 File: colorwheelold.png Graphic file (type png)
- <use colorwheelold.png>
-Package pdftex.def Info: colorwheelold.png used on input line 525.
-(pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
 
-<colorwheel.png, id=282, 393.47pt x 340.27126pt>
+<use colorwheelold.png>
+Package pdftex.def Info: colorwheelold.png used on input line 571.
+(pdftex.def)             Requested size: 153.64487pt x 153.64983pt.
+ <colorwheel.png, id=302, 393.47pt x 340.27126pt>
 File: colorwheel.png Graphic file (type png)
- <use colorwheel.png>
-Package pdftex.def Info: colorwheel.png used on input line 526.
+
+<use colorwheel.png>
+Package pdftex.def Info: colorwheel.png used on input line 572.
 (pdftex.def)             Requested size: 170.71652pt x 147.63258pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-[15 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheelold.png> <C:
-/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheel.png>]
-<genresel.png, id=297, 843.15pt x 552.0625pt>
+ [15 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheelold.png> <C
+:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheel.png>] <genresel.p
+ng, id=311, 843.15pt x 552.0625pt>
 File: genresel.png Graphic file (type png)
  <use genresel.png>
-Package pdftex.def Info: genresel.png used on input line 544.
+Package pdftex.def Info: genresel.png used on input line 591.
 (pdftex.def)             Requested size: 284.52756pt x 186.30042pt.
 
-<moodstripe.png, id=299, 866.23625pt x 340.27126pt>
-File: moodstripe.png Graphic file (type png)
- <use moodstripe.png>
-Package pdftex.def Info: moodstripe.png used on input line 560.
-(pdftex.def)             Requested size: 284.52756pt x 111.76544pt.
-
 [16 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/genresel.png>]
-<images/moodgraph.png, id=308, 866.23625pt x 479.7925pt>
-File: images/moodgraph.png Graphic file (type png)
+<images/moodstripe.png, id=321, 658.71094pt x 263.48438pt>
+File: images/moodstripe.png Graphic file (type png)
 
-<use images/moodgraph.png>
-Package pdftex.def Info: images/moodgraph.png used on input line 570.
-(pdftex.def)             Requested size: 284.52756pt x 157.59258pt.
+<use images/moodstripe.png>
+Package pdftex.def Info: images/moodstripe.png used on input line 607.
+(pdftex.def)             Requested size: 284.52756pt x 113.8147pt.
 
-Underfull \vbox (badness 1490) has occurred while \output is active []
+<images/enomoodgraph.png, id=323, 673.01437pt x 376.40625pt>
+File: images/enomoodgraph.png Graphic file (type png)
 
- [17 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/moodstripe.png> <C:/U
-sers/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraph.png>]
-<images/moodgraphdvo.png, id=320, 867.24pt x 612.2875pt>
+<use images/enomoodgraph.png>
+Package pdftex.def Info: images/enomoodgraph.png used on input line 617.
+(pdftex.def)             Requested size: 284.52756pt x 159.1291pt.
+ [17 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodstripe.png
+>] [18 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/enomoodgraph
+.png>]
+<images/moodgraphdvo.png, id=344, 867.24pt x 612.2875pt>
 File: images/moodgraphdvo.png Graphic file (type png)
 
 <use images/moodgraphdvo.png>
-Package pdftex.def Info: images/moodgraphdvo.png used on input line 588.
+Package pdftex.def Info: images/moodgraphdvo.png used on input line 635.
 (pdftex.def)             Requested size: 284.52756pt x 200.87831pt.
- [18]
-Underfull \vbox (badness 6445) has occurred while \output is active []
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 653.
 
- [19 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraphdvo.p
-ng>]
-<images/izobrazba_ukvarjanje.png, id=333, 478.78876pt x 406.51875pt>
+Underfull \hbox (badness 10000) in paragraph at lines 654--654
+[]\OT1/cmr/m/n/12 Podrocje pre-bi-va-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]\OT1/cmr/m/n/12 Igranje in-stru-
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 658--658
+[]\OT1/cmr/m/n/12 Je bil an-ke-ti-ra-nec pod
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--658
+\OT1/cmr/m/n/12 vpli-vom drog med
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 659--659
+[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 Classical, Opera, Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/12 un-try, Folk, La-tin,
+ []
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 659--659
+\OT1/cmr/m/n/12 Dance / Di-sco, Elec-
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 659--659
+\OT1/cmr/m/n/12 tro-nic, RnB/Soul, Hip
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/12 Easy Li-ste-ning, New
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+[][]\OT1/cmr/m/n/12 Cas po-slusanja
+ []
+
+
+Overfull \hbox (1.65944pt too wide) in paragraph at lines 649--664
+ [] 
+ []
+
+[19 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraphdvo.pn
+g>]
+
+LaTeX Warning: Text page 20 contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+[]\OT1/cmr/m/n/12 Trenutno raz-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+\OT1/cmr/m/n/12 polozenje v VA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+[]\OT1/cmr/m/n/12 Uporabnik je iz-bral
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 681--681
+\OT1/cmr/m/n/12 glasbo tre-nu-tnega raz-
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 681--681
+\OT1/cmr/m/n/12 polozenja z ele-men-tom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+[]\OT1/cmr/m/n/12 Percepcija raz-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 Strah, Energicnost,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+\OT1/cmr/m/n/12 Jeza, Sproscenost,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+\OT1/cmr/m/n/12 Ve-se-lje, Razocaranje,
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 682--682
+[]\OT1/cmr/m/n/12 Uporabniki so ume-stili
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 682--682
+\OT1/cmr/m/n/12 raz-polozenja v valence-
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 682--682
+\OT1/cmr/m/n/12 arousal pro-stor z upo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+[]\OT1/cmr/m/n/12 Trenutno raz-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 polozenje z ozna-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 Aktivno, Bu-dno,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 Dre-mavo, Ne-ak-tivno,
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 Razocarano, Sprosceno,
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 Srecno, Utru-jeno, Ve-
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 683--683
+[]\OT1/cmr/m/n/12 Uporabnik je raz-vr-stil
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 vse oznake na trak,
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 glede na pri-so-tnost od
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 ne-izrazenega do zelo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
+\OT1/cmr/m/n/12 volj-stvo, Energicnost,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
+\OT1/cmr/m/n/12 Razocaranje, Ve-se-lje,
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 684--684
+\OT1/cmr/m/n/12 Sproscenost, []Zivahnost,
+ []
+
+
+Overfull \hbox (1.65944pt too wide) in paragraph at lines 677--688
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Overfull \vbox (49.33435pt too high) has occurred while \output is active []
+
+
+[22] <images/izobrazba_ukvarjanje.png, id=369, 478.78876pt x 406.51875pt>
 File: images/izobrazba_ukvarjanje.png Graphic file (type png)
 
 <use images/izobrazba_ukvarjanje.png>
-Package pdftex.def Info: images/izobrazba_ukvarjanje.png used on input line 618
+Package pdftex.def Info: images/izobrazba_ukvarjanje.png used on input line 703
 .
 (pdftex.def)             Requested size: 284.52756pt x 241.58081pt.
-
-
-LaTeX Warning: Citation `zanrigraf' on page 20 undefined on input line 632.
-
-[20] <images/genre.png, id=342, 492.03825pt x 449.88075pt>
+ [23]
+<images/genre.png, id=382, 615.0478pt x 562.35094pt>
 File: images/genre.png Graphic file (type png)
+ <use images/genre.png>
+Package pdftex.def Info: images/genre.png used on input line 725.
+(pdftex.def)             Requested size: 369.88582pt x 338.19402pt.
 
-<use images/genre.png>
-Package pdftex.def Info: images/genre.png used on input line 640.
-(pdftex.def)             Requested size: 284.52756pt x 260.14845pt.
- [21 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/izobrazba_ukva
-rjanje.png>]
-<images/genretop.png, id=350, 479.391pt x 430.60875pt>
-File: images/genretop.png Graphic file (type png)
+[24 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/izobrazba_ukvar
+janje.png>] <images/genretop1.png, id=390, 977.15062pt x 636.87938pt>
+File: images/genretop1.png Graphic file (type png)
 
-<use images/genretop.png>
-Package pdftex.def Info: images/genretop.png used on input line 650.
-(pdftex.def)             Requested size: 284.52756pt x 255.58131pt.
- [22 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genre.png>] [2
-3 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genretop.png>]
-<images/korelacija_custva_pris.png, id=367, 493.24275pt x 503.481pt>
+<use images/genretop1.png>
+Package pdftex.def Info: images/genretop1.png used on input line 735.
+(pdftex.def)             Requested size: 426.79134pt x 278.16757pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 735--736
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genre.png>]
+Underfull \vbox (badness 1742) has occurred while \output is active []
+
+ [26 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genretop1.png>
+]
+<images/korelacija_custva_pris.png, id=404, 493.24275pt x 503.481pt>
 File: images/korelacija_custva_pris.png Graphic file (type png)
 
 <use images/korelacija_custva_pris.png>
-Package pdftex.def Info: images/korelacija_custva_pris.png used on input line 6
-66.
-(pdftex.def)             Requested size: 284.52756pt x 290.44427pt.
-
-<images/vamood.png, id=369, 674.52pt x 509.5035pt>
+Package pdftex.def Info: images/korelacija_custva_pris.png used on input line 7
+51.
+(pdftex.def)             Requested size: 312.9803pt x 319.48409pt.
+ [27 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/korelacija_cus
+tva_pris.png>]
+<images/vamood.png, id=412, 674.52pt x 509.5035pt>
 File: images/vamood.png Graphic file (type png)
  <use images/vamood.png>
-Package pdftex.def Info: images/vamood.png used on input line 678.
+Package pdftex.def Info: images/vamood.png used on input line 763.
 (pdftex.def)             Requested size: 284.52756pt x 214.92293pt.
 
-[24 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/korelacija_cust
-va_pris.png>]
-Overfull \hbox (0.65529pt too wide) in paragraph at lines 690--691
+[28 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/vamood.png>]
+Overfull \hbox (0.65529pt too wide) in paragraph at lines 775--776
 []\OT1/cmr/m/n/10.95 Na tre-tjem grafu (levo spo-daj) je na-re-jena pri-mer-jav
 a med jezo in sproscenostjo.
  []
 
-<images/vamoodlables.png, id=377, 679.94025pt x 773.89125pt>
+<images/vamoodlables.png, id=420, 679.94025pt x 773.89125pt>
 File: images/vamoodlables.png Graphic file (type png)
 
 <use images/vamoodlables.png>
-Package pdftex.def Info: images/vamoodlables.png used on input line 696.
-(pdftex.def)             Requested size: 284.52756pt x 323.83943pt.
+Package pdftex.def Info: images/vamoodlables.png used on input line 781.
+(pdftex.def)             Requested size: 341.43306pt x 388.60968pt.
 
-Underfull \vbox (badness 1092) has occurred while \output is active []
-
- [25 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/vamood.png>]
-Underfull \vbox (badness 4279) has occurred while \output is active []
-
- [26 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/vamoodlables.p
-ng>]
-<images/moodmusic.png, id=390, 803.0pt x 803.0pt>
+<images/moodmusic.png, id=421, 803.0pt x 803.0pt>
 File: images/moodmusic.png Graphic file (type png)
  <use images/moodmusic.png>
-Package pdftex.def Info: images/moodmusic.png used on input line 712.
-(pdftex.def)             Requested size: 369.88582pt x 369.89911pt.
+Package pdftex.def Info: images/moodmusic.png used on input line 797.
+(pdftex.def)             Requested size: 355.65944pt x 355.66138pt.
 
-[27 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodmusic.png>]
-[28]
+[29]
+Underfull \vbox (badness 8000) has occurred while \output is active []
+
+ [30 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/vamoodlables.p
+ng>]
+[31] [32 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodmusic.
+png>]
 Poglavje 4.
+[33
 
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 728.
+]
 
-[29
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 29.42502pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-] [30]
-Overfull \hbox (3.94032pt too wide) in paragraph at lines 781--782
-[]\OT1/cmr/m/n/10.95 Algoritem smo pre-iz-ku-sil tudi na Chroma znacilnicah iz
-racunanih s hi-e-rarhicnim
+[34]
+Overfull \hbox (3.81311pt too wide) in paragraph at lines 865--874
+ [] 
  []
 
-<images/graphs1.png, id=425, 1706.375pt x 1405.25pt>
+<images/graphs1.png, id=469, 1279.78125pt x 1073.51062pt>
 File: images/graphs1.png Graphic file (type png)
- <use images/graphs1.png>
-Package pdftex.def Info: images/graphs1.png used on input line 800.
-(pdftex.def)             Requested size: 369.88582pt x 304.61017pt.
 
-[31] [32]
+<use images/graphs1.png>
+Package pdftex.def Info: images/graphs1.png used on input line 879.
+(pdftex.def)             Requested size: 369.88582pt x 310.26175pt.
+
+Underfull \vbox (badness 1810) has occurred while \output is active []
+
+ [35]
+Overfull \hbox (1.28052pt too wide) in paragraph at lines 890--891
+\OT1/cmr/m/n/10.95 Drug al-go-ri-tem, na ka-te-rem smo pre-iz-ku-sili na-tancn
+ost na-po-ve-do-va-nja raz-polozenja
+ []
+
+[36] [37 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/graphs1.pn
+g>] [38]
+Overfull \hbox (5.37279pt too wide) in paragraph at lines 927--927
+[]\OT1/cmr/bx/n/14.4 Rezultati na-po-ve-do-va-nja z al-go-rit-mom Ga-i-a-trans-
+
+ []
+
+[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/graphs1.png>] 
-[34]
-[35]
-Underfull \vbox (badness 1226) has occurred while \output is active []
-
- [36]
-[37]
-Overfull \hbox (3.42325pt too wide) in paragraph at lines 944--945
-[]\OT1/cmr/m/n/10.95 Za ta pri-mer al-go-ri-tem na-pove pra-vilno pri-so-tnost 
-custva s 79,59% na-tancnostjo.
- []
-
-(C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.bbl
-[38] (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
+ [40]
+[41] (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.bbl
+[42] (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-[39
+[43
 
-] [40] [41])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 953.
- [42]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 953.
+] [44] [45])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1024.
+ [46]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1024.
 
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 953.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 953.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1024.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1024.
+
 Package rerunfilecheck Info: File `diploma-besedilo.out' has not changed.
-(rerunfilecheck)             Checksum: 847238919D1AE253505B8FC82B755BA5;802.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 953.
+(rerunfilecheck)             Checksum: 04BA3B30CCA8263C94D8403BC6E2AC24;848.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1024.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 187 ({)
+### simple group (level 1) entered at line 188 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7850 strings out of 493921
- 109994 string characters out of 3147280
- 207175 words of memory out of 3000000
- 10877 multiletter control sequences out of 15000+200000
+ 7937 strings out of 493921
+ 111247 string characters out of 3147280
+ 209677 words of memory out of 3000000
+ 10948 multiletter control sequences out of 15000+200000
  16523 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,14n,43p,1289b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,15n,43p,1345b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
@@ -769,9 +982,9 @@ onts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on diploma-besedilo.pdf (62 pages, 2418262 bytes).
+Output written on diploma-besedilo.pdf (66 pages, 2458442 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

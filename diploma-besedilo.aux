@@ -52,14 +52,18 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Pridobivanje informacij iz glasbe}{4}{section.2.1}}
 \@writefile{toc}{\contentsline {paragraph}{Priporo\IeC {\v c}ilni sistemi za glasbo (Music Recommendation System)}{4}{section*.5}}
-\@writefile{toc}{\contentsline {paragraph}{Lo\IeC {\v c}evanje pesmi na ve\IeC {\v c} pasov in prepoznavanje in\IeC {\v s}trumentov}{4}{section*.6}}
+\citation{gerhard2003pitch}
+\citation{klapuri2006signal}
+\citation{klapuri2004automatic}
+\citation{huber2007midi}
 \citation{ben2010user}
-\@writefile{toc}{\contentsline {paragraph}{Avtomati\IeC {\v c}no prepisovanje glasbe}{5}{section*.7}}
+\@writefile{toc}{\contentsline {paragraph}{Lo\IeC {\v c}evanje pesmi na ve\IeC {\v c} pasov in prepoznavanje in\IeC {\v s}trumentov}{5}{section*.6}}
+\@writefile{toc}{\contentsline {paragraph}{Avtomati\IeC {\v c}na transkripcija glasbe}{5}{section*.7}}
 \@writefile{toc}{\contentsline {paragraph}{Avtomati\IeC {\v c}na kategorizacija glasbe}{5}{section*.8}}
 \@writefile{toc}{\contentsline {paragraph}{Generiranje glasbe}{5}{section*.9}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Evalvacija \IeC {\v c}ustev iz glasbe}{5}{section.2.2}}
 \citation{eerola2010comparison}
 \citation{schmidt2011modeling}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Ocenjevanje razpolo\IeC {\v z}enja v glasbi}{6}{section.2.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Podatkovne zbirke}{6}{subsection.2.2.1}}
 \@writefile{toc}{\contentsline {paragraph}{Podatkovna zbirka s filmsko glasbo}{6}{section*.10}}
 \@writefile{toc}{\contentsline {paragraph}{Mood Swing Turk Dataset}{6}{section*.11}}
@@ -73,15 +77,14 @@
 \@writefile{toc}{\contentsline {paragraph}{Multi Modal}{7}{section*.15}}
 \citation{schmidt2009projection}
 \citation{panda2013multi}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{8}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Algoritmi za ocenjevanje razpolo\IeC {\v z}enja v glasbi}{8}{subsection.2.2.2}}
 \citation{laurier2007audio}
 \citation{ben2010user}
 \citation{watson2012modeling}
 \citation{saari2013role}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Gru\IeC {\v c}e z \IeC {\v c}ustvi, ki se uporabljajo v MIREX mood tekmovanju}}{9}{table.2.1}}
-\newlabel{mirextask}{{2.1}{9}{Gruče z čustvi, ki se uporabljajo v MIREX mood tekmovanju}{table.2.1}{}}
 \citation{laurier2007audio}
 \citation{bogdanov2013form}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Zna\IeC {\v c}ilnice}{9}{subsection.2.2.3}}
 \citation{gunderson2007musical}
 \citation{gouyon2001exploration}
 \citation{brossier2004real}
@@ -89,120 +92,135 @@
 \citation{zhu2005music}
 \citation{terhardt1974pitch}
 \citation{la2001harmonic}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Zna\IeC {\v c}ilnice}{10}{subsection.2.2.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Gru\IeC {\v c}e razpolo\IeC {\v z}enj, ki se uporabljajo v MIREX mood tekmovanju}}{10}{table.2.1}}
+\newlabel{mirextask}{{2.1}{10}{Gruče razpoloženj, ki se uporabljajo v MIREX mood tekmovanju}{table.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Pogosto uporabljene zna\IeC {\v c}ilnice za ocenjevanje \IeC {\v c}ustev iz glasbe}}{11}{table.2.2}}
+\newlabel{znacilnice}{{2.2}{11}{Pogosto uporabljene značilnice za ocenjevanje čustev iz glasbe}{table.2.2}{}}
 \citation{dalgleish1999handbook}
 \citation{wu2013spectral}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Na\IeC {\v s} dataset}{13}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Moodo podatkovna zbirka}{13}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{odatasetu}{{3}{13}{Naš dataset}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Zbiranje dataseta}{13}{section.3.1}}
+\newlabel{odatasetu}{{3}{13}{Moodo podatkovna zbirka}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Zbiranje podatkovne zbirke}{13}{section.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{14}{subsection.3.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Prvi barni krog smo v preliminarni anketi. V zunanjem krogu je bilo mo\IeC {\v z}no izbrati odtenek (hue) v notranjem pa je bilo mo\IeC {\v z}no izbirati nasi\IeC {\v c}enost in svetlost. Drugi krog smo uporabili v glavni anketi. Imel je mo\IeC {\v z}nost izbire med 49 barvami. Rezina predstavljajo en barvni odtenek, proti notranjosti pa se spreminaja svetlost in intenzivnost. }}{15}{figure.3.1}}
-\newlabel{colorwheels}{{3.1}{15}{Prvi barni krog smo v preliminarni anketi. V zunanjem krogu je bilo možno izbrati odtenek (hue) v notranjem pa je bilo možno izbirati nasičenost in svetlost. Drugi krog smo uporabili v glavni anketi. Imel je možnost izbire med 49 barvami. Rezina predstavljajo en barvni odtenek, proti notranjosti pa se spreminaja svetlost in intenzivnost}{figure.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{15}{subsection.3.1.2}}
-\@writefile{toc}{\contentsline {paragraph}{Prvi del}{15}{section*.16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Element v anketi uporabljen za izbiro najljub\IeC {\v s}ih \IeC {\v z}anrov}}{16}{figure.3.2}}
-\newlabel{genresel}{{3.2}{16}{Element v anketi uporabljen za izbiro najljubših žanrov}{figure.3.2}{}}
-\@writefile{toc}{\contentsline {paragraph}{Drugi del}{16}{section*.17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Element za zajemanje pristnosti posameznega \IeC {\v c}ustva imenovan moodstripe.}}{17}{figure.3.3}}
-\newlabel{moodstripe}{{3.3}{17}{Element za zajemanje pristnosti posameznega čustva imenovan moodstripe}{figure.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces }}{17}{figure.3.4}}
-\newlabel{moodgraph}{{3.4}{17}{}{figure.3.4}{}}
+\newlabel{preiliminarnaana}{{3.1.1}{14}{Preliminarna analiza}{subsection.3.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Del sedem stopenjske lestvice s pomo\IeC {\v c}jo katere so anketiranci ocenjevali trenutno razpolo\IeC {\v z}enje. Oznaka 1 pomeni, da se tisto razpolo\IeC {\v z}enje pri anketirancu sploh ne pojavi, 7 pa da je zelo izrazito. }}{14}{figure.3.1}}
+\newlabel{skala}{{3.1}{14}{Del sedem stopenjske lestvice s pomočjo katere so anketiranci ocenjevali trenutno razpoloženje. Oznaka 1 pomeni, da se tisto razpoloženje pri anketirancu sploh ne pojavi, 7 pa da je zelo izrazito}{figure.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Barvni krog na levi smo uporabili v preliminarni anketi. V zunanjem krogu je bilo mo\IeC {\v z}no izbrati odtenek (hue) v notranjem pa je bilo mo\IeC {\v z}no izbirati nasi\IeC {\v c}enost in svetlost. Desni krog smo uporabili v glavni anketi. Imel je mo\IeC {\v z}nost izbire med 49 barvami. Rezina predstavlja en barvni odtenek, proti notranjosti pa se spreminja svetlost in intenzivnost. }}{15}{figure.3.2}}
+\newlabel{colorwheels}{{3.2}{15}{Barvni krog na levi smo uporabili v preliminarni anketi. V zunanjem krogu je bilo možno izbrati odtenek (hue) v notranjem pa je bilo možno izbirati nasičenost in svetlost. Desni krog smo uporabili v glavni anketi. Imel je možnost izbire med 49 barvami. Rezina predstavlja en barvni odtenek, proti notranjosti pa se spreminja svetlost in intenzivnost}{figure.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{16}{subsection.3.1.2}}
+\newlabel{glavnaanketa}{{3.1.2}{16}{Glavna anketa}{subsection.3.1.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Prvi del}{16}{section*.16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Element v anketi uporabljen za izbiro najljub\IeC {\v s}ih \IeC {\v z}anrov}}{16}{figure.3.3}}
+\newlabel{genresel}{{3.3}{16}{Element v anketi uporabljen za izbiro najljubših žanrov}{figure.3.3}{}}
+\citation{russell1980circumplex}
+\@writefile{toc}{\contentsline {paragraph}{Drugi del}{17}{section*.17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Element za zajemanje pristnosti posameznega razpolo\IeC {\v z}enja imenovan moodstripe.}}{17}{figure.3.4}}
+\newlabel{moodstripe}{{3.4}{17}{Element za zajemanje pristnosti posameznega razpoloženja imenovan moodstripe}{figure.3.4}{}}
 \citation{eerola2010comparison}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Enonivojski MoodGraph, element za zajemanje precepcije razpolo\IeC {\v z}enja v VA prostoru. }}{18}{figure.3.5}}
+\newlabel{moodgraph}{{3.5}{18}{Enonivojski MoodGraph, element za zajemanje precepcije razpoloženja v VA prostoru}{figure.3.5}{}}
 \@writefile{toc}{\contentsline {paragraph}{Tretji del}{18}{section*.18}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Evaluacijska anketa}{18}{subsection.3.1.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Sestava datasta}{18}{section.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces }}{19}{figure.3.5}}
-\newlabel{moodgraphdvo}{{3.5}{19}{}{figure.3.5}{}}
-\citation{zanrigraf}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Analiza podatkov}{20}{section.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{20}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{Ukvarjanje z glasbo}{20}{section*.19}}
-\@writefile{toc}{\contentsline {paragraph}{Zdravila in droge}{20}{section*.20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Vsaka to\IeC {\v c}ka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobra\IeC {\v z}evanja (na vodoravni osi) in leta ukvarjanja z glasbo (igranje in\IeC {\v s}trumenta ali petje) na navpi\IeC {\v c}ni osi. }}{21}{figure.3.6}}
-\newlabel{ukvarjanjeglizobrazba}{{3.6}{21}{Vsaka točka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobraževanja (na vodoravni osi) in leta ukvarjanja z glasbo (igranje inštrumenta ali petje) na navpični osi}{figure.3.6}{}}
-\@writefile{toc}{\contentsline {paragraph}{\IeC {\v Z}anri}{21}{section*.21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Priljubljenost \IeC {\v z}anrov ter uvrstitev teh na prvo, drugo ali tretje mesto. }}{22}{figure.3.7}}
-\newlabel{zanrigraf}{{3.7}{22}{Priljubljenost žanrov ter uvrstitev teh na prvo, drugo ali tretje mesto}{figure.3.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Priljubljenost posameznih glasbenih zvrsti po starostnih skupinah. }}{23}{figure.3.8}}
-\newlabel{zanrigraftop}{{3.8}{23}{Priljubljenost posameznih glasbenih zvrsti po starostnih skupinah}{figure.3.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva ter barva}{23}{subsection.3.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Povpre\IeC {\v c}na evklidska razdalja med posamezni atributi. }}{24}{figure.3.9}}
-\newlabel{prisotnost_kor}{{3.9}{24}{Povprečna evklidska razdalja med posamezni atributi}{figure.3.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Razporeditev razpolo\IeC {\v z}enja v VA prostoru. }}{25}{figure.3.10}}
-\newlabel{razpolozenjeva}{{3.10}{25}{Razporeditev razpoloženja v VA prostoru}{figure.3.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Prikaz \IeC {\v c}ustev v VA prostoru.}}{26}{figure.3.11}}
-\newlabel{moodperception}{{3.11}{26}{Prikaz čustev v VA prostoru}{figure.3.11}{}}
-\@writefile{toc}{\contentsline {paragraph}{Barva}{26}{section*.22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Glasba, razpolo\IeC {\v z}enje in barva}{27}{subsection.3.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Prikaz \IeC {\v c}ustev v VA prostoru.}}{27}{figure.3.12}}
-\newlabel{moodmusic}{{3.12}{27}{Prikaz čustev v VA prostoru}{figure.3.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Dvonivojski MoodGraph, element za zajemanje razpolo\IeC {\v z}enja v glasbi in njegovo umestitev v VA prostor. }}{19}{figure.3.6}}
+\newlabel{moodgraphdvo}{{3.6}{19}{Dvonivojski MoodGraph, element za zajemanje razpoloženja v glasbi in njegovo umestitev v VA prostor}{figure.3.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Sestava podatkovne zbirke}{19}{section.3.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Vpra\IeC {\v s}anje prvega dela ankete. Tabela poleg vpra\IeC {\v s}anja vsebuje \IeC {\v s}e podatke o mo\IeC {\v z}nih odgovorih in komentar. Odgovori iz prvega dela vsebujejo nekatere demografske podatke in podatke o uporabnikovih izku\IeC {\v s}njah z glasbo.}}{20}{table.3.1}}
+\newlabel{prvidel}{{3.1}{20}{Vprašanje prvega dela ankete. Tabela poleg vprašanja vsebuje še podatke o možnih odgovorih in komentar. Odgovori iz prvega dela vsebujejo nekatere demografske podatke in podatke o uporabnikovih izkušnjah z glasbo}{table.3.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Vpra\IeC {\v s}anje drugega dela ankete. Tabela poleg vpra\IeC {\v s}anja vsebuje \IeC {\v s}e podatke o mo\IeC {\v z}nih odgovorih in komentar. Vpra\IeC {\v s}anja v drugem delu povpra\IeC {\v s}ujejo po anketiran\IeC {\v c}evem razpolo\IeC {\v z}enju, njegovi percepciji razpolo\IeC {\v z}enja in povezavi med barvami in razpolo\IeC {\v z}enjem.}}{22}{table.3.2}}
+\newlabel{drugidel}{{3.2}{22}{Vprašanje drugega dela ankete. Tabela poleg vprašanja vsebuje še podatke o možnih odgovorih in komentar. Vprašanja v drugem delu povprašujejo po anketirančevem razpoloženju, njegovi percepciji razpoloženja in povezavi med barvami in razpoloženjem}{table.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Analiza podatkov}{23}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Demografska analiza}{23}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {paragraph}{Ukvarjanje z glasbo}{23}{section*.19}}
+\@writefile{toc}{\contentsline {paragraph}{Zdravila in droge}{23}{section*.20}}
+\@writefile{toc}{\contentsline {paragraph}{\IeC {\v Z}anri}{23}{section*.21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Vsaka to\IeC {\v c}ka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobra\IeC {\v z}evanja (na vodoravni osi) in leta ukvarjanja z glasbo (igranje in\IeC {\v s}trumenta ali petje) na navpi\IeC {\v c}ni osi. }}{24}{figure.3.7}}
+\newlabel{ukvarjanjeglizobrazba}{{3.7}{24}{Vsaka točka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobraževanja (na vodoravni osi) in leta ukvarjanja z glasbo (igranje inštrumenta ali petje) na navpični osi}{figure.3.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Priljubljenost \IeC {\v z}anrov ter uvrstitev teh na prvo, drugo ali tretje mesto. }}{25}{figure.3.8}}
+\newlabel{zanrigraf}{{3.8}{25}{Priljubljenost žanrov ter uvrstitev teh na prvo, drugo ali tretje mesto}{figure.3.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Priljubljenost posameznih glasbenih zvrsti po starostnih skupinah. Na vodoravni osi so ozna\IeC {\v c}ene starostne skupine. \IeC {\v S}ir\IeC {\v s}i stolpci predstavljajo razporeditev posameznih \IeC {\v z}anrov, zeleni pa \IeC {\v s}tevilo anketirance v posamezni starostni skupini. }}{26}{figure.3.9}}
+\newlabel{zanrigraftop}{{3.9}{26}{Priljubljenost posameznih glasbenih zvrsti po starostnih skupinah. Na vodoravni osi so označene starostne skupine. Širši stolpci predstavljajo razporeditev posameznih žanrov, zeleni pa število anketirance v posamezni starostni skupini}{figure.3.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva in barva}{26}{subsection.3.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Povpre\IeC {\v c}na evklidska razdalja med posamezni atributi. Iz slike je razvidno, da prijetnost najbolje korelira z razpolo\IeC {\v z}enji: spro\IeC {\v s}\IeC {\v c}enost, sre\IeC {\v c}a, zadovoljstvo, vedrost in veselje. Aktivnost (koordinata y) se najbolje ujema z razpolo\IeC {\v z}enji aktivno, vedro, veselo in zadovoljno. Opazimo lahko tudi ujemanje med razpolo\IeC {\v z}enji nezadovoljno in razo\IeC {\v c}arano ter veselo in zadovoljno.}}{27}{figure.3.10}}
+\newlabel{prisotnost_kor}{{3.10}{27}{Povprečna evklidska razdalja med posamezni atributi. Iz slike je razvidno, da prijetnost najbolje korelira z razpoloženji: sproščenost, sreča, zadovoljstvo, vedrost in veselje. Aktivnost (koordinata y) se najbolje ujema z razpoloženji aktivno, vedro, veselo in zadovoljno. Opazimo lahko tudi ujemanje med razpoloženji nezadovoljno in razočarano ter veselo in zadovoljno}{figure.3.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Slika prikazuje odgovore vseh uporabnikov o razpolo\IeC {\v z}enju v VA prostoru. Vidi se, da je bilo najve\IeC {\v c} anketirance v \IeC {\v c}asu re\IeC {\v s}evanja ankete prijetnega in bolj neaktivnega razpolo\IeC {\v z}enja. }}{28}{figure.3.11}}
+\newlabel{razpolozenjeva}{{3.11}{28}{Slika prikazuje odgovore vseh uporabnikov o razpoloženju v VA prostoru. Vidi se, da je bilo največ anketirance v času reševanja ankete prijetnega in bolj neaktivnega razpoloženja}{figure.3.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{Barva}{29}{section*.22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Glasba, razpolo\IeC {\v z}enje in barva}{29}{subsection.3.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces V zgornjih valence-arousal prostorih je prikazana razporeditev 8 razpolo\IeC {\v z}enj, glede na to kako so jih v ta prostor uvrstili anketiranci. V splo\IeC {\v s}nem je opazno, do so se anketiranci glede prijetnosti odlo\IeC {\v c}ili dokaj enotno, medtem ko so ve\IeC {\v c}je razlike v aktivnosti.}}{30}{figure.3.12}}
+\newlabel{moodperception}{{3.12}{30}{V zgornjih valence-arousal prostorih je prikazana razporeditev 8 razpoloženj, glede na to kako so jih v ta prostor uvrstili anketiranci. V splošnem je opazno, do so se anketiranci glede prijetnosti odločili dokaj enotno, medtem ko so večje razlike v aktivnosti}{figure.3.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Prikaz razpolo\IeC {\v z}enj v VA prostoru skupaj z barvami, s katerimi so razpolo\IeC {\v z}enja ozna\IeC {\v c}ili anketiranci. S krogci so ozna\IeC {\v c}ena razpolo\IeC {\v z}enja, ki jih po njihovem mnenju glasba vzbudi pri poslu\IeC {\v s}alcu, z kvadrati pa razpolo\IeC {\v z}enja, ki so izra\IeC {\v z}ena v glasbi.}}{32}{figure.3.13}}
+\newlabel{moodmusic}{{3.13}{32}{Prikaz razpoloženj v VA prostoru skupaj z barvami, s katerimi so razpoloženja označili anketiranci. S krogci so označena razpoloženja, ki jih po njihovem mnenju glasba vzbudi pri poslušalcu, z kvadrati pa razpoloženja, ki so izražena v glasbi}{figure.3.13}{}}
 \citation{schmidt2009projection}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Algoritmi za evalvacijo \IeC {\v c}ustev iz glasbe}{29}{chapter.4}}
+\citation{logan2000mel}
+\citation{bello2005robust}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Algoritmi za ocenjevanje razpolo\IeC {\v z}enja v glasbi}{33}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Regresijski algoritem}{29}{section.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Delovanje algoritma}{29}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Regresijski algoritem}{33}{section.4.1}}
 \citation{abdi2007method}
 \citation{schmidt2011modeling}
-\newlabel{regresion}{{4.1}{30}{Delovanje algoritma}{equation.4.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Rezultati}{30}{subsection.4.1.2}}
+\newlabel{regresion}{{4.1}{34}{Regresijski algoritem}{equation.4.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Rezultati za regresijski algoritem}{34}{subsection.4.1.1}}
 \citation{pesek2013chord}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Primerjava rezultatov dobljenih z regresijskim algoritmom na na\IeC {\v s}i podatkovni zbirki in Mood Swing podatkovni zbirki z uporabo zna\IeC {\v c}ilnic MFCC in Chroma. Rezultati so predstavljeni s povpre\IeC {\v c}no razdaljo med povpre\IeC {\v c}no vrednostjo iz podatkovne zbirke in napovedano vrednostjo, s povpre\IeC {\v c}no razdaljo do najbli\IeC {\v z}je vrednosti v podatkovni zbirki in z povpre\IeC {\v c}no razdaljo do povpre\IeC {\v c}ne vrednosti merjeno v ve\IeC {\v c}kratniku standardnega odklona (standardne deviacije). }}{31}{table.4.1}}
-\newlabel{regressionresults}{{4.1}{31}{Primerjava rezultatov dobljenih z regresijskim algoritmom na naši podatkovni zbirki in Mood Swing podatkovni zbirki z uporabo značilnic MFCC in Chroma. Rezultati so predstavljeni s povprečno razdaljo med povprečno vrednostjo iz podatkovne zbirke in napovedano vrednostjo, s povprečno razdaljo do najbližje vrednosti v podatkovni zbirki in z povprečno razdaljo do povprečne vrednosti merjeno v večkratniku standardnega odklona (standardne deviacije)}{table.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Primerjava rezultatov dobljenih z regresijskim algoritmom na na\IeC {\v s}i podatkovni zbirki in Mood Swing podatkovni zbirki z uporabo zna\IeC {\v c}ilnic MFCC in kromatski vektor. Rezultati so predstavljeni s povpre\IeC {\v c}no razdaljo med povpre\IeC {\v c}no vrednostjo iz podatkovne zbirke in napovedano vrednostjo, s povpre\IeC {\v c}no razdaljo do najbli\IeC {\v z}je vrednosti v podatkovni zbirki in z povpre\IeC {\v c}no razdaljo do povpre\IeC {\v c}ne vrednosti merjeno v ve\IeC {\v c}kratniku standardnega odklona (standardne deviacije). }}{35}{table.4.1}}
+\newlabel{regressionresults}{{4.1}{35}{Primerjava rezultatov dobljenih z regresijskim algoritmom na naši podatkovni zbirki in Mood Swing podatkovni zbirki z uporabo značilnic MFCC in kromatski vektor. Rezultati so predstavljeni s povprečno razdaljo med povprečno vrednostjo iz podatkovne zbirke in napovedano vrednostjo, s povprečno razdaljo do najbližje vrednosti v podatkovni zbirki in z povprečno razdaljo do povprečne vrednosti merjeno v večkratniku standardnega odklona (standardne deviacije)}{table.4.1}{}}
 \citation{bogdanov2013form}
 \citation{bogdanov2013essentia}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Povpre\IeC {\v c}na razdalja med povpre\IeC {\v c}nimi vrednostmi in napovedmi izra\IeC {\v c}unana lo\IeC {\v c}eno za prijetnost in aktivnost. Razvidno je da so napovedi aktivnosti dosti bolj\IeC {\v s}e. }}{32}{table.4.2}}
-\newlabel{seperateresults}{{4.2}{32}{Povprečna razdalja med povprečnimi vrednostmi in napovedmi izračunana ločeno za prijetnost in aktivnost. Razvidno je da so napovedi aktivnosti dosti boljše}{table.4.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Essentia Gaiatransofrm algoritem}{32}{section.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}O essentii}{32}{subsection.4.2.1}}
-\citation{bogdanov2013form}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Slika predstavlja 4 VA prostore za pesmi z identifikacijskima \IeC {\v s}tevilkama 413 (prva vrsta) in 571 (druga vrsta). Kvadrat predstavlja predstavlja povpre\IeC {\v c}no vrednost iz podatkovne zbirke, trikotnik prikazuje napoved algoritma (z uporabo MFCC v prvem stolpcu in Chrome v drugem). Pike prikazujejo posamezne vrednosti iz podatkovne zbirke.}}{33}{figure.4.1}}
-\newlabel{graphs}{{4.1}{33}{Slika predstavlja 4 VA prostore za pesmi z identifikacijskima številkama 413 (prva vrsta) in 571 (druga vrsta). Kvadrat predstavlja predstavlja povprečno vrednost iz podatkovne zbirke, trikotnik prikazuje napoved algoritma (z uporabo MFCC v prvem stolpcu in Chrome v drugem). Pike prikazujejo posamezne vrednosti iz podatkovne zbirke}{figure.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Povpre\IeC {\v c}na razdalja med povpre\IeC {\v c}nimi vrednostmi in napovedmi izra\IeC {\v c}unana lo\IeC {\v c}eno za prijetnost in aktivnost. Razvidno je da so napovedi aktivnosti dosti bolj\IeC {\v s}e. }}{36}{table.4.2}}
+\newlabel{seperateresults}{{4.2}{36}{Povprečna razdalja med povprečnimi vrednostmi in napovedmi izračunana ločeno za prijetnost in aktivnost. Razvidno je da so napovedi aktivnosti dosti boljše}{table.4.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Essentia Gaiatransofrm algoritem}{36}{section.4.2}}
 \citation{laurier2010indexing}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Delovanje algoritma}{34}{subsection.4.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Natan\IeC {\v c}nost razvr\IeC {\v s}\IeC {\v c}anja}{34}{subsection.4.2.3}}
-\newlabel{natancnostessentia}{{4.2.3}{34}{Natančnost razvrščanja}{subsection.4.2.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Natan\IeC {\v c}nost napovedovanja v gru\IeC {\v c}e v odstotkih. V navpi\IeC {\v c}nem stolpcu so gru\IeC {\v c}e katerim pesem dejansko pripada, v vodoravnem pa gru\IeC {\v c}e kamor je algoritem uvrsti pesem.}}{35}{table.4.3}}
-\newlabel{natancnost_gruce}{{4.3}{35}{Natančnost napovedovanja v gruče v odstotkih. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem}{table.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Rezultati}{35}{subsection.4.2.4}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Razvrstitev oznak razpolo\IeC {\v z}enja iz na\IeC {\v s}e zbirke v MIREX gru\IeC {\v c}e glede na podobnost z obstoje\IeC {\v c}imi \IeC {\v c}ustvi iz gru\IeC {\v c}.}}{36}{table.4.4}}
-\newlabel{gruce_nase}{{4.4}{36}{Razvrstitev oznak razpoloženja iz naše zbirke v MIREX gruče glede na podobnost z obstoječimi čustvi iz gruč}{table.4.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Rezultati napovedovanja v gru\IeC {\v c}e v odstotkih. V navpi\IeC {\v c}nem stolpcu so gru\IeC {\v c}e katerim pesem dejansko pripada, v vodoravnem pa gru\IeC {\v c}e kamor je algoritem uvrsti pesem.}}{36}{table.4.5}}
-\newlabel{natancnost_gruce_nasa}{{4.5}{36}{Rezultati napovedovanja v gruče v odstotkih. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem}{table.4.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Rezultati napovedovanja v gru\IeC {\v c}e v odstotkih v primeru, smo upo\IeC {\v s}tevali tudi \IeC {\v c}ustva, ki so blizu najve\IeC {\v c}krat ozna\IeC {\v c}enem. V navpi\IeC {\v c}nem stolpcu so gru\IeC {\v c}e katerim pesem dejansko pripada, v vodoravnem pa gru\IeC {\v c}e kamor je algoritem uvrsti pesem.}}{37}{table.4.6}}
-\newlabel{natancnost_gruce_nasa_with_second}{{4.6}{37}{Rezultati napovedovanja v gruče v odstotkih v primeru, smo upoštevali tudi čustva, ki so blizu največkrat označenem. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem}{table.4.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Slika predstavlja 4 VA prostore za pesmi z identifikacijskima \IeC {\v s}tevilkama 413 (prva vrsta) in 571 (druga vrsta). Kvadrat predstavlja predstavlja povpre\IeC {\v c}no vrednost iz podatkovne zbirke, trikotnik prikazuje napoved algoritma (z uporabo MFCC v prvem stolpcu in Chrome v drugem). Pike prikazujejo posamezne vrednosti iz podatkovne zbirke.}}{37}{figure.4.1}}
+\newlabel{graphs}{{4.1}{37}{Slika predstavlja 4 VA prostore za pesmi z identifikacijskima številkama 413 (prva vrsta) in 571 (druga vrsta). Kvadrat predstavlja predstavlja povprečno vrednost iz podatkovne zbirke, trikotnik prikazuje napoved algoritma (z uporabo MFCC v prvem stolpcu in Chrome v drugem). Pike prikazujejo posamezne vrednosti iz podatkovne zbirke}{figure.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Natan\IeC {\v c}nost razvr\IeC {\v s}\IeC {\v c}anja}{38}{subsection.4.2.1}}
+\newlabel{natancnostessentia}{{4.2.1}{38}{Natančnost razvrščanja}{subsection.4.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Natan\IeC {\v c}nost napovedovanja v gru\IeC {\v c}e v odstotkih. V navpi\IeC {\v c}nem stolpcu so gru\IeC {\v c}e katerim pesem pripada, v vodoravnem pa gru\IeC {\v c}e kamor je algoritem uvrsti pesem.}}{38}{table.4.3}}
+\newlabel{natancnost_gruce}{{4.3}{38}{Natančnost napovedovanja v gruče v odstotkih. V navpičnem stolpcu so gruče katerim pesem pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem}{table.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Rezultati napovedovanja z algoritmom Gaiatransform}{39}{subsection.4.2.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Razvrstitev oznak razpolo\IeC {\v z}enja iz na\IeC {\v s}e zbirke v MIREX gru\IeC {\v c}e glede na podobnost z obstoje\IeC {\v c}imi razpolo\IeC {\v z}enji iz gru\IeC {\v c}. V \IeC {\v c}etrti gru\IeC {\v c}i ni nobenega razpolo\IeC {\v z}enja, saj se nobeno razpolo\IeC {\v z}enje iz na\IeC {\v s}e zbirke ne ujema z razpolo\IeC {\v z}enji iz te gru\IeC {\v c}e.}}{39}{table.4.4}}
+\newlabel{gruce_nase}{{4.4}{39}{Razvrstitev oznak razpoloženja iz naše zbirke v MIREX gruče glede na podobnost z obstoječimi razpoloženji iz gruč. V četrti gruči ni nobenega razpoloženja, saj se nobeno razpoloženje iz naše zbirke ne ujema z razpoloženji iz te gruče}{table.4.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Rezultati napovedovanja v gru\IeC {\v c}e v odstotkih. V navpi\IeC {\v c}nem stolpcu so gru\IeC {\v c}e katerim pesem pripada, v vodoravnem pa gru\IeC {\v c}e kamor je algoritem uvrsti pesem. V \IeC {\v c}etrti so ni\IeC {\v c}le, ker se nobeno razpolo\IeC {\v z}enje iz na\IeC {\v s}e zbirke ne ujema z razpolo\IeC {\v z}enji iz te gru\IeC {\v c}e. Zaradi tega tudi nobena pesem ne pripada tej gru\IeC {\v c}i. Najbolj natan\IeC {\v c}ne ocene smo dobili za gru\IeC {\v c}o 3, najslab\IeC {\v s}e za gru\IeC {\v c}o 1.}}{40}{table.4.5}}
+\newlabel{natancnost_gruce_nasa}{{4.5}{40}{Rezultati napovedovanja v gruče v odstotkih. V navpičnem stolpcu so gruče katerim pesem pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem. V četrti so ničle, ker se nobeno razpoloženje iz naše zbirke ne ujema z razpoloženji iz te gruče. Zaradi tega tudi nobena pesem ne pripada tej gruči. Najbolj natančne ocene smo dobili za gručo 3, najslabše za gručo 1}{table.4.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Rezultati napovedovanja v gru\IeC {\v c}e v odstotkih v primeru, smo upo\IeC {\v s}tevali tudi razpolo\IeC {\v z}enja, ki so blizu najve\IeC {\v c}krat ozna\IeC {\v c}enem. V navpi\IeC {\v c}nem stolpcu so gru\IeC {\v c}e katerim pesem dejansko pripada, v vodoravnem pa gru\IeC {\v c}e kamor je algoritem uvrsti pesem. V \IeC {\v c}etrto gru\IeC {\v c}o nismo uvrstili nobene pesmi, zaradi neujemanja vseh na\IeC {\v s}ih razpolo\IeC {\v z}enj z razpolo\IeC {\v z}enji v tej gru\IeC {\v c}i. Kot pri tabeli \ref  {natancnost_gruce_nasa} so tudi tukaj najbolj\IeC {\v s}e napovedi za gru\IeC {\v c}o 3 in najslab\IeC {\v s}e za gru\IeC {\v c}o 1. }}{41}{table.4.6}}
+\newlabel{natancnost_gruce_nasa_with_second}{{4.6}{41}{Rezultati napovedovanja v gruče v odstotkih v primeru, smo upoštevali tudi razpoloženja, ki so blizu največkrat označenem. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem. V četrto gručo nismo uvrstili nobene pesmi, zaradi neujemanja vseh naših razpoloženj z razpoloženji v tej gruči. Kot pri tabeli \ref {natancnost_gruce_nasa} so tudi tukaj najboljše napovedi za gručo 3 in najslabše za gručo 1}{table.4.6}{}}
 \bibdata{diploma}
-\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Natan\IeC {\v c}nost napovedovanja razpolo\IeC {\v z}enj vesel, \IeC {\v z}alosten in spro\IeC {\v s}\IeC {\v c}en v odstotkih.}}{38}{table.4.7}}
-\newlabel{natancnost_es_custva}{{4.7}{38}{Natančnost napovedovanja razpoloženj vesel, žalosten in sproščen v odstotkih}{table.4.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Natan\IeC {\v c}nost napovedovanja razpolo\IeC {\v z}enj vesel, \IeC {\v z}alosten in spro\IeC {\v s}\IeC {\v c}en v odstotkih.}}{42}{table.4.7}}
+\newlabel{natancnost_es_custva}{{4.7}{42}{Natančnost napovedovanja razpoloženj vesel, žalosten in sproščen v odstotkih}{table.4.7}{}}
 \bibcite{abdi2007method}{1}
-\bibcite{ben2010user}{2}
-\bibcite{bogdanov2013form}{3}
-\bibcite{bogdanov2013essentia}{4}
-\bibcite{brossier2004real}{5}
-\bibcite{chu2010lamp}{6}
-\bibcite{dalgleish1999handbook}{7}
-\bibcite{eerola2010comparison}{8}
-\bibcite{gouyon2000classifying}{9}
-\bibcite{gouyon2001exploration}{10}
-\bibcite{gunderson2007musical}{11}
-\bibcite{krause2012great}{12}
-\bibcite{la2001harmonic}{13}
-\bibcite{laurier2007audio}{14}
-\bibcite{laurier2010indexing}{15}
-\bibcite{lenko2009pomen}{16}
-\bibcite{panda2013multi}{17}
-\bibcite{pesek2012prepoznavanje}{18}
-\bibcite{pesek2013chord}{19}
-\bibcite{saari2013role}{20}
-\bibcite{schmidt2009projection}{21}
-\bibcite{schmidt2011modeling}{22}
-\bibcite{schuller2010mister}{23}
-\bibcite{terhardt1974pitch}{24}
-\bibcite{turnbull2008semantic}{25}
-\bibcite{wallin2001origins}{26}
-\bibcite{watson2012modeling}{27}
-\bibcite{wu2013spectral}{28}
-\bibcite{zhu2005music}{29}
+\bibcite{bello2005robust}{2}
+\bibcite{ben2010user}{3}
+\bibcite{bogdanov2013form}{4}
+\bibcite{bogdanov2013essentia}{5}
+\bibcite{brossier2004real}{6}
+\bibcite{chu2010lamp}{7}
+\bibcite{dalgleish1999handbook}{8}
+\bibcite{eerola2010comparison}{9}
+\bibcite{gerhard2003pitch}{10}
+\bibcite{gouyon2000classifying}{11}
+\bibcite{gouyon2001exploration}{12}
+\bibcite{gunderson2007musical}{13}
+\bibcite{huber2007midi}{14}
+\bibcite{klapuri2006signal}{15}
+\bibcite{klapuri2004automatic}{16}
+\bibcite{krause2012great}{17}
+\bibcite{la2001harmonic}{18}
+\bibcite{laurier2007audio}{19}
+\bibcite{laurier2010indexing}{20}
+\bibcite{lenko2009pomen}{21}
+\bibcite{logan2000mel}{22}
+\bibcite{panda2013multi}{23}
+\bibcite{pesek2012prepoznavanje}{24}
+\bibcite{pesek2013chord}{25}
+\bibcite{russell1980circumplex}{26}
+\bibcite{saari2013role}{27}
+\bibcite{schmidt2009projection}{28}
+\bibcite{schmidt2011modeling}{29}
+\bibcite{schuller2010mister}{30}
+\bibcite{terhardt1974pitch}{31}
+\bibcite{turnbull2008semantic}{32}
+\bibcite{wallin2001origins}{33}
+\bibcite{watson2012modeling}{34}
+\bibcite{wu2013spectral}{35}
+\bibcite{zhu2005music}{36}
 \bibstyle{plain}
