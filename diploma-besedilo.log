@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.7)  27 AUG 2014 18:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.7)  29 AUG 2014 20:28
 entering extended mode
 **diploma-besedilo.tex
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.tex
@@ -547,146 +547,137 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 [3
 
 ]
-Overfull \hbox (3.71384pt too wide) in paragraph at lines 382--383
-[]\OT1/cmr/m/n/10.95 Sele v danasnjem casu pa je za-radi pred-vsem za-radi po
-vecanih racunskih zmoznostih
- []
-
-
-Underfull \vbox (badness 7704) has occurred while \output is active []
+Underfull \vbox (badness 1424) has occurred while \output is active []
 
  [4]
+[5]
 Overfull \hbox (3.6733pt too wide) in paragraph at lines 412--413
 \OT1/cmr/m/n/10.95 racunalniskih al-go-rit-mov. Ti al-go-ritmi v osnovi de-lu
 -jejo tako, da naj-prej iz zvocnega
  []
 
-[5] [6] [7] [8] [9] [10] [11] [12
+[6] [7] [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+[10] [11] [12
 
 ]
 Poglavje 3.
-
-Overfull \hbox (28.53384pt too wide) in paragraph at lines 541--542
-\OT1/cmr/m/n/10.95 Tema moje di-plom-ske na-loge je oce-nje-va-nje raz-polozen
-ja v glasbi s pomocjo racunalniskih
- []
-
-[13] <images/likart.png, id=287, 633.86812pt x 290.58563pt>
+[13] <images/likart.png, id=291, 633.86812pt x 290.58563pt>
 File: images/likart.png Graphic file (type png)
 
 <use images/likart.png>
-Package pdftex.def Info: images/likart.png used on input line 557.
+Package pdftex.def Info: images/likart.png used on input line 555.
 (pdftex.def)             Requested size: 369.88582pt x 169.57289pt.
  [14 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/likart.png>] <
-colorwheelold.png, id=301, 401.5pt x 401.5pt>
+colorwheelold.png, id=304, 401.5pt x 401.5pt>
 File: colorwheelold.png Graphic file (type png)
 
 <use colorwheelold.png>
-Package pdftex.def Info: colorwheelold.png used on input line 571.
+Package pdftex.def Info: colorwheelold.png used on input line 569.
 (pdftex.def)             Requested size: 153.64487pt x 153.64983pt.
- <colorwheel.png, id=302, 393.47pt x 340.27126pt>
+ <colorwheel.png, id=305, 393.47pt x 340.27126pt>
 File: colorwheel.png Graphic file (type png)
 
 <use colorwheel.png>
-Package pdftex.def Info: colorwheel.png used on input line 572.
+Package pdftex.def Info: colorwheel.png used on input line 570.
 (pdftex.def)             Requested size: 170.71652pt x 147.63258pt.
- [15 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheelold.png> <C
-:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheel.png>] <genresel.p
-ng, id=311, 843.15pt x 552.0625pt>
+ [15] <genresel.png, id=314, 843.15pt x 552.0625pt>
 File: genresel.png Graphic file (type png)
- <use genresel.png>
-Package pdftex.def Info: genresel.png used on input line 591.
-(pdftex.def)             Requested size: 284.52756pt x 186.30042pt.
 
-[16 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/genresel.png>]
-<images/moodstripe.png, id=321, 658.71094pt x 263.48438pt>
+<use genresel.png>
+Package pdftex.def Info: genresel.png used on input line 589.
+(pdftex.def)             Requested size: 284.52756pt x 186.30042pt.
+ [16 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheelold.png> <C
+:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/colorwheel.png>] <images/moo
+dstripe.png, id=325, 658.71094pt x 263.48438pt>
 File: images/moodstripe.png Graphic file (type png)
 
 <use images/moodstripe.png>
-Package pdftex.def Info: images/moodstripe.png used on input line 607.
+Package pdftex.def Info: images/moodstripe.png used on input line 606.
 (pdftex.def)             Requested size: 284.52756pt x 113.8147pt.
-
-<images/enomoodgraph.png, id=323, 673.01437pt x 376.40625pt>
+ [17 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/genresel.png> <C:/Use
+rs/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodstripe.png>] <images/e
+nomoodgraph.png, id=335, 673.01437pt x 376.40625pt>
 File: images/enomoodgraph.png Graphic file (type png)
 
 <use images/enomoodgraph.png>
-Package pdftex.def Info: images/enomoodgraph.png used on input line 617.
+Package pdftex.def Info: images/enomoodgraph.png used on input line 616.
 (pdftex.def)             Requested size: 284.52756pt x 159.1291pt.
- [17 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodstripe.png
->] [18 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/enomoodgraph
-.png>]
-<images/moodgraphdvo.png, id=344, 867.24pt x 612.2875pt>
+ [18 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/enomoodgraph.p
+ng>]
+<images/moodgraphdvo.png, id=347, 867.24pt x 612.2875pt>
 File: images/moodgraphdvo.png Graphic file (type png)
 
 <use images/moodgraphdvo.png>
-Package pdftex.def Info: images/moodgraphdvo.png used on input line 635.
+Package pdftex.def Info: images/moodgraphdvo.png used on input line 634.
 (pdftex.def)             Requested size: 284.52756pt x 200.87831pt.
+ [19 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraphdvo.p
+ng>]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 653.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 654.
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--654
+Underfull \hbox (badness 10000) in paragraph at lines 655--655
 []\OT1/cmr/m/n/12 Podrocje pre-bi-va-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
-[]\OT1/cmr/m/n/12 Igranje in-stru-
+Underfull \hbox (badness 10000) in paragraph at lines 657--657
+[]\OT1/cmr/m/n/12 Igranje
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 658--658
+Underfull \hbox (badness 10000) in paragraph at lines 657--657
+\OT1/cmr/m/n/12 instrumenta ali
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 659--659
 []\OT1/cmr/m/n/12 Je bil an-ke-ti-ra-nec pod
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--658
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
 \OT1/cmr/m/n/12 vpli-vom drog med
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 659--659
-[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 Classical, Opera, Co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
-\OT1/cmr/m/n/12 un-try, Folk, La-tin,
- []
-
-
-Underfull \hbox (badness 3977) in paragraph at lines 659--659
-\OT1/cmr/m/n/12 Dance / Di-sco, Elec-
- []
-
-
-Underfull \hbox (badness 2088) in paragraph at lines 659--659
-\OT1/cmr/m/n/12 tro-nic, RnB/Soul, Hip
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
-\OT1/cmr/m/n/12 Easy Li-ste-ning, New
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 classical, opera, co-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 660--660
+\OT1/cmr/m/n/12 un-try, folk, la-tin,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+\OT1/cmr/m/n/12 dance/disco, elec-tro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+\OT1/cmr/m/n/12 nic, RnB/soul, hip
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 660--660
+\OT1/cmr/m/n/12 hop/rap, re-ggae, pop,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 [][]\OT1/cmr/m/n/12 Cas po-slusanja
  []
 
 
-Overfull \hbox (1.65944pt too wide) in paragraph at lines 649--664
+Overfull \hbox (1.65944pt too wide) in paragraph at lines 650--665
  [] 
  []
 
-[19 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodgraphdvo.pn
-g>]
 
-LaTeX Warning: Text page 20 contains only floats.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
 Underfull \hbox (badness 10000) in paragraph at lines 680--680
 []\OT1/cmr/m/n/12 Trenutno raz-
  []
@@ -697,18 +688,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 680--680
  []
 
 
+Underfull \hbox (badness 7925) in paragraph at lines 680--680
+\OT1/cmr/m/n/12 polozenje v VA pro-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []\OT1/cmr/m/n/12 Uporabnik je iz-bral
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 681--681
-\OT1/cmr/m/n/12 glasbo tre-nu-tnega raz-
+Underfull \hbox (badness 7796) in paragraph at lines 681--681
+\OT1/cmr/m/n/12 barvo tre-nu-tnega raz-
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 681--681
-\OT1/cmr/m/n/12 polozenja z ele-men-tom
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+\OT1/cmr/m/n/12 polozenja z barv-nim
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 681--681
+\OT1/cmr/m/n/12 kro-gom pred-sta-vljeni v
  []
 
 
@@ -718,17 +719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 682--682
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 682--682
-[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 Strah, Energicnost,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 682--682
-\OT1/cmr/m/n/12 Jeza, Sproscenost,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 682--682
-\OT1/cmr/m/n/12 Ve-se-lje, Razocaranje,
+[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 strah, energicnost,
  []
 
 
@@ -737,13 +728,13 @@ Underfull \hbox (badness 2452) in paragraph at lines 682--682
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 682--682
-\OT1/cmr/m/n/12 raz-polozenja v valence-
+Underfull \hbox (badness 1789) in paragraph at lines 682--682
+\OT1/cmr/m/n/12 stor z upo-rabo Mo-od-
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 682--682
-\OT1/cmr/m/n/12 arousal pro-stor z upo-
+Underfull \hbox (badness 3088) in paragraph at lines 682--682
+\OT1/cmr/m/n/12 Grapha pred-sta-vlje-nega
  []
 
 
@@ -757,23 +748,28 @@ Underfull \hbox (badness 2503) in paragraph at lines 683--683
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 Aktivno, Bu-dno,
+Underfull \hbox (badness 4132) in paragraph at lines 683--683
+[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 aktivno, bu-dno, dre-
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 mavo, ne-ak-tivno, ne-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\OT1/cmr/m/n/12 Dre-mavo, Ne-ak-tivno,
+\OT1/cmr/m/n/12 srecno, ne-za-do-voljno,
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 683--683
-\OT1/cmr/m/n/12 Razocarano, Sprosceno,
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 razocarano, sprosceno,
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 683--683
-\OT1/cmr/m/n/12 Srecno, Utru-jeno, Ve-
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 srecno, utru-jeno, ve-
  []
 
 
@@ -782,33 +778,48 @@ Underfull \hbox (badness 5302) in paragraph at lines 683--683
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\OT1/cmr/m/n/12 vse oznake na trak,
+Underfull \hbox (badness 3713) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 vse oznake na Mo-od-
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 683--683
-\OT1/cmr/m/n/12 glede na pri-so-tnost od
+Underfull \hbox (badness 6825) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 Stripe (pred-sta-vljen v
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 po-glavju []3.1.2[]), glede
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 683--683
+\OT1/cmr/m/n/12 na pri-so-tnost od ne-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\OT1/cmr/m/n/12 ne-izrazenega do zelo
+\OT1/cmr/m/n/12 izrazenega do zelo
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 684--684
+[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 sreca, zalost, ne-za-do-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 684--684
-\OT1/cmr/m/n/12 volj-stvo, Energicnost,
+\OT1/cmr/m/n/12 volj-stvo, energicnost,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 684--684
-\OT1/cmr/m/n/12 Razocaranje, Ve-se-lje,
+\OT1/cmr/m/n/12 razocaranje, ve-se-lje,
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 684--684
-\OT1/cmr/m/n/12 Sproscenost, []Zivahnost,
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
+\OT1/cmr/m/n/12 sproscenost, zivahnost,
  []
 
 
@@ -816,14 +827,18 @@ Overfull \hbox (1.65944pt too wide) in paragraph at lines 677--688
  [] 
  []
 
+[20]
+
+LaTeX Warning: Text page 21 contains only floats.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-Overfull \vbox (49.33435pt too high) has occurred while \output is active []
+Overfull \vbox (11.63428pt too high) has occurred while \output is active []
 
 
-[22] <images/izobrazba_ukvarjanje.png, id=369, 478.78876pt x 406.51875pt>
+[22] <images/izobrazba_ukvarjanje.png, id=373, 478.78876pt x 406.51875pt>
 File: images/izobrazba_ukvarjanje.png Graphic file (type png)
 
 <use images/izobrazba_ukvarjanje.png>
@@ -831,14 +846,14 @@ Package pdftex.def Info: images/izobrazba_ukvarjanje.png used on input line 703
 .
 (pdftex.def)             Requested size: 284.52756pt x 241.58081pt.
  [23]
-<images/genre.png, id=382, 615.0478pt x 562.35094pt>
+<images/genre.png, id=386, 615.0478pt x 562.35094pt>
 File: images/genre.png Graphic file (type png)
  <use images/genre.png>
 Package pdftex.def Info: images/genre.png used on input line 725.
 (pdftex.def)             Requested size: 369.88582pt x 338.19402pt.
 
 [24 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/izobrazba_ukvar
-janje.png>] <images/genretop1.png, id=390, 977.15062pt x 636.87938pt>
+janje.png>] <images/genretop1.png, id=394, 977.15062pt x 636.87938pt>
 File: images/genretop1.png Graphic file (type png)
 
 <use images/genretop1.png>
@@ -850,126 +865,148 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 735--736
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2359) has occurred while \output is active []
 
- [25 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genre.png>]
-Underfull \vbox (badness 1742) has occurred while \output is active []
-
- [26 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genretop1.png>
-]
-<images/korelacija_custva_pris.png, id=404, 493.24275pt x 503.481pt>
+ [25 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genre.png>] [2
+6 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/genretop1.png>]
+<images/korelacija_custva_pris.png, id=408, 493.24275pt x 503.481pt>
 File: images/korelacija_custva_pris.png Graphic file (type png)
 
 <use images/korelacija_custva_pris.png>
 Package pdftex.def Info: images/korelacija_custva_pris.png used on input line 7
 51.
 (pdftex.def)             Requested size: 312.9803pt x 319.48409pt.
+
+Underfull \vbox (badness 4316) has occurred while \output is active []
+
  [27 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/korelacija_cus
-tva_pris.png>]
-<images/vamood.png, id=412, 674.52pt x 509.5035pt>
+tva_pris.png>] <images/vamood.png, id=415, 674.52pt x 509.5035pt>
 File: images/vamood.png Graphic file (type png)
  <use images/vamood.png>
 Package pdftex.def Info: images/vamood.png used on input line 763.
 (pdftex.def)             Requested size: 284.52756pt x 214.92293pt.
 
 [28 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/vamood.png>]
-Overfull \hbox (0.65529pt too wide) in paragraph at lines 775--776
+<images/vamoodlables.png, id=424, 679.94025pt x 773.89125pt>
+File: images/vamoodlables.png Graphic file (type png)
+
+<use images/vamoodlables.png>
+Package pdftex.def Info: images/vamoodlables.png used on input line 777.
+(pdftex.def)             Requested size: 341.43306pt x 388.60968pt.
+
+Overfull \hbox (0.65529pt too wide) in paragraph at lines 783--784
 []\OT1/cmr/m/n/10.95 Na tre-tjem grafu (levo spo-daj) je na-re-jena pri-mer-jav
 a med jezo in sproscenostjo.
  []
 
-<images/vamoodlables.png, id=420, 679.94025pt x 773.89125pt>
-File: images/vamoodlables.png Graphic file (type png)
 
-<use images/vamoodlables.png>
-Package pdftex.def Info: images/vamoodlables.png used on input line 781.
-(pdftex.def)             Requested size: 341.43306pt x 388.60968pt.
+Underfull \vbox (badness 3792) has occurred while \output is active []
 
-<images/moodmusic.png, id=421, 803.0pt x 803.0pt>
+ [29 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/vamoodlables.p
+ng>]
+<images/mood_color.png, id=431, 1304.875pt x 1122.1925pt>
+File: images/mood_color.png Graphic file (type png)
+
+<use images/mood_color.png>
+Package pdftex.def Info: images/mood_color.png used on input line 789.
+(pdftex.def)             Requested size: 398.33858pt x 342.56787pt.
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 789--790
+ [][] 
+ []
+
+<images/moodmusic.png, id=434, 803.0pt x 803.0pt>
 File: images/moodmusic.png Graphic file (type png)
  <use images/moodmusic.png>
-Package pdftex.def Info: images/moodmusic.png used on input line 797.
+Package pdftex.def Info: images/moodmusic.png used on input line 806.
 (pdftex.def)             Requested size: 355.65944pt x 355.66138pt.
 
-[29]
-Underfull \vbox (badness 8000) has occurred while \output is active []
+[30]
+Underfull \vbox (badness 1325) has occurred while \output is active []
 
- [30 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/vamoodlables.p
-ng>]
-[31] [32 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodmusic.
-png>]
-Poglavje 4.
-[33
+ [31 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/mood_color.png
+>] [32]
+[33 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/moodmusic.png>]
+[34
 
 ]
+Poglavje 4.
+[35]
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
  Make it at least 29.42502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
-Overfull \hbox (3.81311pt too wide) in paragraph at lines 865--874
+[36]
+Overfull \hbox (3.81311pt too wide) in paragraph at lines 874--883
  [] 
  []
 
-<images/graphs1.png, id=469, 1279.78125pt x 1073.51062pt>
+<images/graphs1.png, id=486, 1279.78125pt x 1073.51062pt>
 File: images/graphs1.png Graphic file (type png)
 
 <use images/graphs1.png>
-Package pdftex.def Info: images/graphs1.png used on input line 879.
+Package pdftex.def Info: images/graphs1.png used on input line 888.
 (pdftex.def)             Requested size: 369.88582pt x 310.26175pt.
 
 Underfull \vbox (badness 1810) has occurred while \output is active []
 
- [35]
-Overfull \hbox (1.28052pt too wide) in paragraph at lines 890--891
+ [37]
+Overfull \hbox (1.28052pt too wide) in paragraph at lines 899--900
 \OT1/cmr/m/n/10.95 Drug al-go-ri-tem, na ka-te-rem smo pre-iz-ku-sili na-tancn
 ost na-po-ve-do-va-nja raz-polozenja
  []
 
-[36] [37 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/graphs1.pn
-g>] [38]
-Overfull \hbox (5.37279pt too wide) in paragraph at lines 927--927
+[38] [39 <C:/Users/Primoz/Dropbox/sola_moja/mood/diploma/main/images/graphs1.pn
+g>] [40]
+Overfull \hbox (5.37279pt too wide) in paragraph at lines 936--936
 []\OT1/cmr/bx/n/14.4 Rezultati na-po-ve-do-va-nja z al-go-rit-mom Ga-i-a-trans-
 
  []
 
-[39]
+[41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
-[41] (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.bbl
-[42] (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
+ [42]
+[43] (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.bbl
+[44] (C:\Users\Primoz\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-[43
+[45
 
-] [44] [45])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1024.
- [46]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1024.
+] [46]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
+ [47])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1033.
+ [48]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1033.
 
 (C:\Users\Primoz\Dropbox\sola_moja\mood\diploma\main\diploma-besedilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1024.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1024.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1033.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1033.
 
 Package rerunfilecheck Info: File `diploma-besedilo.out' has not changed.
 (rerunfilecheck)             Checksum: 04BA3B30CCA8263C94D8403BC6E2AC24;848.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1024.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1033.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 188 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7937 strings out of 493921
- 111247 string characters out of 3147280
- 209677 words of memory out of 3000000
- 10948 multiletter control sequences out of 15000+200000
+ 7951 strings out of 493921
+ 111289 string characters out of 3147280
+ 217211 words of memory out of 3000000
+ 10957 multiletter control sequences out of 15000+200000
  16523 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,15n,43p,1345b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,14n,43p,1344b,688s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
@@ -982,9 +1019,9 @@ onts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on diploma-besedilo.pdf (66 pages, 2458442 bytes).
+Output written on diploma-besedilo.pdf (68 pages, 2753958 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 160 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
