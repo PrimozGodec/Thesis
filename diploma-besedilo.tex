@@ -562,27 +562,27 @@ Zanimala nas je tudi struktura vprašalnika, ki je ostala približno enaka v gla
 
 Poleg tega smo testirali tudi elemente uporabljene v anketi (sedem stopenjska skala, neskončni barvni krog, izbira z radio gumbi in tekstovnimi polji). Ugotovili smo, da moramo nekatere elemente spremeniti. Spremenili smo barvno skalo, saj smo jo omejili na barvni krog z 49 možnostmi izbire. To je bilo potrebno, ker je imel uporabnik na neskončni skali preveliko možnost izbiranja, obenem pa je bil sistem tri dimenzionalen, kar večina uporabnikov ni opazila in so nastavljali samo odtenek barve, na svetlost in nasičenost pa so pozabili. Skala z 49 možnostmi (prikazana na sliki \ref{colorwheels}) se je izkazala kot boljša alternativa, saj še vedno ponuja veliko možnosti izbire barv, je prijazna uporabniku in pridobljeni podatki so boljši.
 
-Poleg zamenjave barvnega kroga smo zamenjali tudi nekaj ostalih elementov. V delu, kjer uporabnik označi tri svoje najljubše žanre smo se odločili, da namesto vpisnih polj uporabniku ponudimo, da iz seznama izbere in na drug seznam potegne svojo izbiro. Za to smo se odločili, ker so uporabniki v preliminarni analizi v prostor vpisovali tudi žanre, ki niso osnovni in oznake, ki sploh niso žanri. Prav tako nam je ta preliminarni vprašalnik pomagal izbrati, kateri žanri so tisti, ki jih bomo uporabniku ponudili. Zamenjali smo še način, kako uporabnik vnese svoje trenutno razpoloženje in za ta namen uporabili nov element MoodGraph, ki ga bom opisal v poglavju \ref{glavnaanketa}. 
+Poleg zamenjave barvnega kroga smo zamenjali tudi nekaj ostalih elementov. V delu, kjer uporabnik označi tri svoje najljubše žanre, smo se odločili namesto vpisnih polj ponuditi uporabniku seznam 20 žanrov, iz katerega je izbral in potegnil svoje tri izbire na nov seznam.  Za to smo se odločili, ker so uporabniki v preliminarni analizi v prostor vpisovali tudi žanre, ki niso osnovni in oznake, ki sploh niso žanri. Prav tako nam je preliminarni vprašalnik pomagal izbrati, kateri žanri so tisti, ki jih bomo uporabniku ponudili. Zamenjali smo tudi način, kako uporabnik vnese svoje trenutno razpoloženje in za ta namen uporabili nov element MoodGraph, ki ga bom opisal v poglavju \ref{glavnaanketa}. 
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=54mm]{colorwheelold.png}
 \includegraphics[width=60mm]{colorwheel.png}
 
-\caption{Barvni krog na levi smo uporabili v preliminarni anketi. V zunanjem krogu je bilo možno izbrati odtenek (hue) v notranjem pa je bilo možno izbirati nasičenost in svetlost. Desni krog smo uporabili v glavni anketi. Imel je možnost izbire med 49 barvami. Rezina predstavlja en barvni odtenek, proti notranjosti pa se spreminja svetlost in intenzivnost. }
+\caption{Barvni krog na levi smo uporabili v preliminarni anketi. V zunanjem krogu je bilo možno izbrati odtenek (hue) v notranjem pa je bilo možno izbirati nasičenost in svetlost. Desni krog smo uporabili v glavni anketi. Krog je omogoča izbiro med 49 barvami. Rezina predstavlja en barvni odtenek, proti notranjosti pa se spreminja svetlost in intenzivnost. }
 \label{colorwheels}
 \end{figure}
 
 \subsection{Glavna anketa}
 \label{glavnaanketa}
 
-Preliminarno anketo smo nadgradili z izbranimi oznakami in prenovljeno strukturo vprašanj. Novo oblikovani vprašalnik je predstavljal glavni vprašalnik za zbiranje naše podatkovne zbirke.
+Glavni vprašalnik, s katerim smo zbrali našo podatkovno zbirko, je bil implementacija preliminarne analize, saj smo v skladu z zbranimi podatki prilagodili oznake in strukturo vprašalnika.
 
-Glavni vprašalnik je bil sestavljen iz treh delov. V prvem delu smo spraševali po uporabnikovih demografskih podatkih, o poslušanju glasbe in glasbeni izobrazbi. V drugem delu nas je zanimala predvsem uporabnikova percepcija razpoloženja, glasbe in barv. V tretjem delu so morali uporabniki označiti razpoloženje in barve v odlomku glasbe. 
+Glavni vprašalnik je bil sestavljen iz treh delov. V prvem delu smo spraševali o uporabnikovih navadah, o poslušanju glasbe in njegovi glasbeni izobrazbi. V drugem delu nas je zanimala predvsem uporabnikova percepcija razpoloženja, glasbe in barv. V tretjem delu so morali uporabniki označiti razpoloženje in barve v odlomku glasbe. 
 
 \paragraph{Prvi del}
 
-V tem delu smo spraševali o anketirančevi starosti, spolu in o tem ali živi na podeželju ali v mestu. Uporabnika smo vprašali tudi o tem, če je pod vplivom drog ali drugih substanc. Zanimali so nas podatki o glasbeni izobrazbi in o tem, če udeleženec igra inštrument ali poje. Poleg tega nas je zanimalo še, koliko časa dnevno uporabnik posluša glasbo. Udeleženec je moral izbrati do tri svoje najljubše žanre in jih razporediti glede na priljubljenost. To smo zajemali s pomočjo elementa prikazanega na sliki \ref{genresel}, kjer je uporabnik izmed nabora 20 žanrov izbral najljubše in jih povlekel v stolpec desno ter razporedil glede na priljubljenost. 
+V tem delu smo spraševali o udeleženčevi starosti, spolu in o tem, ali živi na podeželju, ali v mestu.  Uporabnika smo vprašali tudi, če je pod vplivom drog ali drugih substanc. Zanimali so nas podatki o glasbeni izobrazbi in o tem, če udeleženec igra inštrument ali poje, kljub temu da ne obiskuje več glasbene šole ali pa je ni nikoli obiskoval. Poleg tega nas je zanimalo še, koliko časa dnevno uporabnik posluša glasbo in kateri so njegovi najljubši žanri. Izbrati je moral tri svoje najljubše žanre in jih razporediti po priljubljenosti. To smo zajemali s pomočjo elementa prikazanega na sliki \ref{genresel}, kjer je uporabnik izmed nabora 20 žanrov izbral najljubše in jih povlekel v stolpec desno ter razporedil glede na priljubljenost. 
 
 \begin{figure}[h!t]
 \centering
@@ -595,11 +595,11 @@ V tem delu smo spraševali o anketirančevi starosti, spolu in o tem ali živi n
 \paragraph{Drugi del}
 \label{ank2del}
 
-Drugi del je namenjen zaznavanju anketirančevega trenutnega razpoloženja in njegove percepcije oznak za razpoloženje in barve za razpoloženje. Te podatke zajemamo, ker na tak način lahko ugotovimo vzrok v različnih ocenah razpoloženja pri delu z glasbo. 
+Drugi del je namenjen ocenjevanju anketirančevega trenutnega razpoloženja, njegove percepcije oznak za razpoloženje in barve za razpoloženje. Te podatke zajemamo zato, ker nam omogočajo, da ugotovimo povezave med različnimi ocenami razpoloženja v tretjem delu, ki vključuje glasbene odlomke.
 
-Na začetku je bil uporabnik vprašan kako bi svoje razpoloženje opisal s točko v prostoru, kjer zajemamo prijetnost in aktivnost (VA - valence-arousal prostor) \cite{Colibazzi2010}. To je dvodimenzionalen prostor, kjer na vodoravni osi od leve proti desni narašča prijetnost in od spodaj navzgor aktivnost. Svoje razpoloženje je moral opisati tudi z izbiro barve s pomočjo elementa predstavljenega v poglavju \ref{preiliminarnaana}. 
+Na začetku smo udeleženca vprašali, kako bi svoje razpoloženje označil s točko v prostoru, ki ga označujeta prijetnost in aktivnost (valence-arousal space) \cite{Colibazzi2010}. To je dvodimenzionalen prostor, kjer na vodoravni osi od leve proti desni narašča prijetnost in od spodaj navzgor aktivnost. Svoje razpoloženje je moral udeleženec opisati tudi z izbiro barve s pomočjo barvnega kroga predstavljenega v poglavju \ref{preiliminarnaana}. 
 
-Uporabnik je moral svoje razpoloženje opisati tudi s tem, da je povedal, kako je posamezno razpoloženje pri njem izraženo v trenutku reševanja ankete. To smo zajemali s pomočjo novega elementa imenovanega MoodStripe. Potrebno je bilo potegniti posamezne oznake razpoloženj v prostor, kjer od leve proti desni narašča prisotnost posameznega razpoloženja. Če je anketiranec postavil razpoloženje skrajno levo to pomeni, da to razpoloženje pri njem ni prisotno, če pa ga je postavil skrajno desno to pomeni, da je razpoloženje zelo prisotno.
+Udeleženec je moral svoje razpoloženje opisati tudi s tem, da je označil, kako je posamezno razpoloženje pri njem izraženo v trenutku reševanja ankete. To smo zajemali s pomočjo novega elementa imenovanega MoodStripe. Potrebno je bilo potegniti posamezne oznake razpoloženj v prostor, kjer od leve proti desni narašča prisotnost posameznega razpoloženja. Če je anketiranec postavil razpoloženje skrajno levo to pomeni, da to razpoloženje pri njem ni prisotno, če pa ga je postavil skrajno desno to pomeni, da je razpoloženje zelo prisotno.
 
 \begin{figure}[ht]
 \centering
@@ -609,7 +609,7 @@ Uporabnik je moral svoje razpoloženje opisati tudi s tem, da je povedal, kako j
 \label{moodstripe}
 \end{figure}
 
-V drugem delu smo uporabnike povprašali tudi o njihovi percepciji posameznega razpoloženja. Anketiranec je za vsako razpoloženjsko oznako povedal kako prijetno je to razpoloženje in kako aktivno je. To smo zajemali s pomočjo elementa imenovanega enokategorni MoodGraph (slika \ref{moodgraph}). To je dvodimenzionalen prostor, kjer je na vodoravni osi prijetnost in na navpični osi aktivnost. Uporabnik je oznake razpoloženj prikazane nad grafom potegnil v to ravnino na mesto za katerega je mislil, da najbolje opisuje razpoloženje. 
+V drugem delu smo uporabnike povprašali tudi o njihovi percepciji posameznega razpoloženja. Udeleženec je za vsako razpoloženjsko oznako v elementu MoodGraph (slika \ref{moodgraph}) označil, kako prijetno in aktivno je posamezno razpoloženje. To je dvodimenzionalen prostor, kjer je na vodoravni osi prijetnost in na navpični osi aktivnost. Uporabnik je oznake razpoloženj prikazane nad grafom potegnil v to ravnino na, mesto za katerega je mislil, da najbolje opisuje razpoloženje. 
 
 \begin{figure}[ht]
 \centering
@@ -619,30 +619,28 @@ V drugem delu smo uporabnike povprašali tudi o njihovi percepciji posameznega r
 \label{moodgraph}
 \end{figure}
 
-Poleg tega kako si uporabnik predstavlja posamezno razpoloženje v VA prostoru nas je zanimalo tudi kako bi uporabnik opisal ista razpoloženja z barvo. To smo izvedli s pomočjo barvnega kroga (slika \ref{colorwheels}), ki sem ga že opisal zgoraj. 
+Poleg tega, kako si uporabnik predstavlja posamezno razpoloženje v VA prostoru, nas je zanimalo tudi, kako bi uporabnik opisal ista razpoloženja z barvo. To smo izvedli s pomočjo barvnega kroga (slika \ref{colorwheels}), ki sem ga že opisal zgoraj. 
 
 \paragraph{Tretji del}
 
-V tretjem delu smo želeli, da anketiranci označijo 10 glasbenih odlomkov dolgih 15 sekund. Odlomki so bili izbrani iz nabora 200 odlomkov. Glasba je bila izbrana tako, da je bila uporabnikom nepoznana. To smo dosegli tako, da smo glasbo izbirali iz zbirk, ki vsebujejo uporabnikom nepoznano glasbo. S tem smo se izognili pristranskosti zaradi uporabnikovega poznavanja določene glasbe in vpliva dogodkov, ki so se mu zgodili ob poslušanju določene pesmi. 
+V tretjem delu smo želeli, da udeleženci za 10 glasbenih odlomkov dolgih 15 sekund označijo razpoloženje, ki ga zaznavajo pri glasbi (percived) in tistega, ki občutijo (induced) ter razpoloženje opišejo z barvo. Odlomki so bili naključno izbrani iz nabora 200 odlomkov. Ker smo se želeli izogniti pristranskosti uporabnika zaradi poznavanja določene glasbe ali dogodkov, ki so se mu zgodili ob poslušanju določene pesmi, smo odlomke izbrali iz zbirk, ki vsebujejo uporabnikom nepoznano glasbo (Jamendo, zbirka s filmsko glasbo, zbirka slovenskih ljudskih pesmi in zbirka moderne elektro-akustične glasbe).  
 
-Vsak uporabnik je dobil samo 10 odlomkov iz tega razloga, da uporabnikov ne bi preveč obremenili. Glasba je bila izbrana iz štirih različnih virov. 80 pesmi smo izbrali iz odprte podatkovne zbirke Jamendo. Iz tega vira smo izbrali bolj vsakdanjo glasbo različnih zvrsti. Naslednjih 80 pesmi smo vzeli iz zbirke filmske glasbe opisane v \cite{Eerola2010}. Dodali smo še 20 slovenskih ljudskih pesmi in 20 pesmi iz nabora moderne elektro-akustične glasbe. 
+Glasba je bila izbrana iz štirih različnih virov. Iz odprte podatkovne zbirke Jamendo smo izbrali 80 pesmi, ki so bile iz različnih žanrov in dokaj vsakdanje. Naslednjih 80 pesmi smo vzeli iz zbirke filmske glasbe opisane v \cite{Eerola2010}. Dodali smo še 20 slovenskih ljudskih pesmi in 20 pesmi iz nabora moderne elektro-akustične glasbe. Uporabnikov nismo želeli preveč obremeniti, zato je bilo vsakemu uporabniku naključno dodeljenih zgolj 10 odlomkov.
 
-Za vsak odlomek je uporabnik moral narediti dve stvari. Najprej je s pomočjo barvnega kroga (slika \ref{colorwheels}) povedal s katero barvo bi opisal posamezno pesem. Nato pa je v drugem koraku izbral katera razpoloženja so izražena v odlomku in katera razpoloženja posamezna glasba vzbudi pri njem. Za prvo je izbiral iz nabora 14 oznak, za drugo iz nabora 10 oznak. Poleg tega, da je izbral posamezno oznako jo je moral še uvrstiti v VA prostor. S tem smo zajeli tudi podatek kako si predstavlja določeno oznako pri posamezni pesmi. Na primer pri neki pesmi je lahko veselje zelo aktivno, pri drugi pa manj. Poleg tega nam ta podatek da možnost, da raziskujemo tudi, kako si uporabnik v VA prostoru predstavlja posamezno pesem. Za zajemanje tega podatka smo uporabili dvokategorni MoodGraph prikazan na sliki \ref{moodgraphdvo}.
+Pri vsakem odlomku je udeleženec označil, katera razpoloženja so izražena v odlomku, katera razpoloženja posamezna glasba vzbudi v njem in s katero barvo iz barvnega kroga (slika \ref{colorwheels}) bi posamezno pesem opisal. Razpoloženja izražena v odlomku je izbiral iz nabora 14 oznak, razpoloženja, ki jih je glasba pri njem vzbudila, pa iz nabora 10 oznak. Udeleženec je lahko za posamezen odlomek izbral več oznak iz obeh naborov. Poleg tega, da je izbral posamezno oznako jo je moral še uvrstiti v VA prostor. S tem smo zajeli tudi podatek kako si predstavlja določeno oznako pri posamezni pesmi. Na primer, pri neki pesmi je lahko veselje zelo aktivno, pri drugi pa manj. Poleg tega nam ta podatek omogoča, da raziskujemo tudi, kako si uporabnik v VA prostoru predstavlja posamezno pesem. Za zajemanje tega podatka smo uporabili dvokategorni MoodGraph prikazan na sliki \ref{moodgraphdvo}.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=10cm]{images/moodgraphdvo.png}
 
-\caption{Dvonivojski MoodGraph, element za zajemanje razpoloženja v glasbi in njegovo umestitev v VA prostor. Anketiranec je iz prve skupine izbral razpoloženja, ki jih pesem vzbudi pri poslušalcu in iz druge razpoloženja, ki so prisotna v pesmi. Ta razpoloženja je uvrstil v VA graf glede na prijetnost in aktivnost.}
+\caption{Dvonivojski MoodGraph, element za zajemanje razpoloženja v glasbi in njegovo umestitev v VA prostor. Nota označuje nabor razpoloženj, ki jih udeleženec zazna v glasbi (percived). Figura človeka označuje nabor razpoloženj, ki jih udeleženec občuti (induced). Udeleženec je iz vsake skupine razpoloženj izbral tista, ki po njegovem izražene ali vzbujene in jih umestil na v VA prostor glede na prijetnost in aktivnost.}
 \label{moodgraphdvo}
 \end{figure}
 
 
 \section{Sestava podatkovne zbirke}
 
-
-
-Kot anketa so tudi podatki razdeljeni v tri dele. V prvem delu smo zbrali 1423 odgovorov in s tem tudi toliko vpisov v našo zbirko. V drugem delu je vpisov 1090. V tretjem delu, kjer je moral anketiranec oceniti 10 pesmi, smo zbrali 7187 odgovorov. Ta del je izpolnjevalo 741 anketirancev.
+Struktura podatkovne zbirke sledi strukturi uporabljene ankete, zato je razdeljena v tri dele.  V prvem delu smo zbrali 1423 odgovorov in s tem tudi toliko vpisov v našo zbirko. V drugem delu je vpisov 1090. V tretjem delu, kjer je moral anketiranec oceniti 10 pesmi, smo zbrali 7187 odgovorov. Ta del je izpolnjevalo 741 anketirancev.
 
 \begin{table}[!hbt]
 \begin{center}
@@ -652,9 +650,9 @@ Kot anketa so tudi podatki razdeljeni v tri dele. V prvem delu smo zbrali 1423 o
 Vprašanje & Odgovori & Komentar \\ \hline \hline
 Starost & [5, 99] & izražena v letih \\ \hline
 Spol & \{Moški, Ženski\} & \\ \hline
-Področje prebivanja & {mesto, podeželje} & \\ \hline
+Področje prebivanja & \{mesto, podeželje\} & \\ \hline
 Leta glasbenega izobraževanja & [0, 20] & v letih, 0 - pomeni, da se ni glasbeno izobraževal \\ \hline
-Igranje inštrumenta ali petje & [0, 20] & v letih, 0 - pomeni, da se ne ni ukvarjal z glasbo \\ \hline
+Igranje inštrumenta ali petje & [0, 20] & v letih, 0 - pomeni, da se nikoli ni ukvarjal z glasbo \\ \hline
 Uživanje drog & \{da, ne\} & \\ \hline
 Vpliv drog & \{da, ne\} &  Je bil anketiranec pod vplivom drog med reševanjem ankete? \\ \hline
 Najljubši žanri & \{classical, opera, country, folk, latin, dance/disco, electronic, RnB/soul, hip hop/rap, reggae, pop, rock, alternative, metal, blues, jazz, vocal, easy listening, new age, punk\} & Anketiranec je moral izbrati do tri žanre (najmanj enega) in jih razvrstiti od najljubšega do najmanj priljubljenega. \\ \hline
@@ -665,15 +663,15 @@ Najljubši žanri & \{classical, opera, country, folk, latin, dance/disco, elect
 \end{center}
 \end{table} 
 
-V prvem delo so podatki, ki opisujejo anketirance (podrobnosti so predstavljene v tabeli \ref{prvidel}). Za vsakega imamo podatek o starosti na leto natančno, o spolu in o tem ali živi na podeželju ali v mestu. Poleg tega smo zbrali podatke o tem koliko časa se ukvarja z glasbo in koliko časa je hodil v glasbeno šolo do leta natančno ter koliko časa na dan posluša glasbo. Tukaj je uporabnik poslušanje glasbe uvrstil v eno od kategorij: do 1 ure, od 1 do 2 ure, od 2 do 3 ure in več kot 3 ure. Imamo tudi podatek o največ treh najljubših glasbenih zvrsteh, ki jih anketiranec najraje posluša. Anketiranec je podal najmanj eno in največ tri zvrsti. Zanimalo nas je še psihofizično stanje anketiranca med reševanjem. Torej imamo podatek ali jemlje zdravila, ki vplivajo na razpoloženje ter če je bil v trenutku reševanja pod vplivom drog ali alkohola. 
+V prvem delo so podatki, ki opisujejo udeležence (podrobnosti so predstavljene v tabeli \ref{prvidel}). Za vsakega udeleženca zbirka vsebuje podatek o starosti na leto natančno, o spolu in o tem ali živi na podeželju ali v mestu. Poleg tega smo zbrali podatke o tem, koliko časa se ukvarja z glasbo, koliko časa je hodil v glasbeno šolo do leta natančno ter koliko časa na dan posluša glasbo. Tukaj je uporabnik poslušanje glasbe uvrstil v eno od kategorij: do 1 ure, od 1 do 2 uri, od 2 do 3 ure in več kot 3 ure. Imamo tudi podatek o najljubših glasbenih žanrih udeleženca. Udeleženec je podal najmanj en in največ tri žanre. Zanimalo nas je še psihofizično stanje anketiranca med reševanjem. Torej imamo podatek ali jemlje zdravila, ki vplivajo na razpoloženje ter, če je bil v trenutku reševanja pod vplivom drog ali alkohola. 
 
-Drugi del podatkovne zbirke vsebuje podatke o anketirančevem razpoloženju v trenutku, ko je izpolnjeval anketo in o tem kako si anketiranec predstavlja posamezna razpoloženja. Uporabnikovo razpoloženje opisujejo trije podatki. Prvi je točka v VA prostoru (x in y koordinata). Drugi je barva v barvnem krogu (tukaj hranimo podatek o tem katero barvo je  anketiranec izbral). Tretji pa je vrednost, kako močno je posamezno razpoloženje iz nabora 17 razpoloženj, izraženo pri anketirancu v tistem trenutku. Hranimo vrednost med 0 in 1 za vsako razpoloženje. Kot sem že omenil drugi del vsebuje tudi podatek o tem, kako si anketiranec predstavlja razpoloženja. Za nabor 10 razpoloženj imamo podatek kam v VA prostoru spada to razpoloženje po mnenju anketiranca in barvo s katero ga je anketiranec označil. 
+Drugi del podatkovne zbirke vsebuje podatke o udeleženčevem razpoloženju v trenutku, ko je izpolnjeval anketo in o tem kako si anketiranec predstavlja posamezna razpoloženja. Uporabnikovo razpoloženje opisujejo trije podatki. Prvi je točka v VA prostoru (x in y koordinata). Drugi je barva v barvnem krogu (tukaj hranimo podatek o tem, katero barvo je  udeleženec izbral). Tretji pa je vrednost, kako močno je posamezno razpoloženje iz nabora 17 razpoloženj, izraženo pri udeležencu v tistem trenutku. Hranimo vrednost med 0 in 1 za vsako razpoloženje. Kot smo že omenili, drugi del vsebuje tudi podatek o tem, kako si udeleženec predstavlja razpoloženja. Za nabor 10 razpoloženj imamo podatek, kam v VA prostoru spada to razpoloženje po mnenju udeleženca in barvo, s katero ga je anketiranec označil. 
 
-Tretji del podatkovne zbirke je malo drugačen. Tu nimamo le enega odgovora na anketiranca ampak do 10 odgovorov. Za vsako pesem en odgovor. Imamo podatek o tem katera razpoloženja so izražena v glasbi in katera razpoloženja glasba vzbudi pri anketirancu. Poleg tega pa imamo za vsakega od izbranih razpoloženj še podatek kam v VA prostor bi ga anketiranec umestil. Za vsako pesem imamo še podatek o barvi s katero je anketiranec označil glasbeni odlomek.  
+Tretji del podatkovne zbirke je malo drugačen. Tu nimamo le enega odgovora na od posameznega udeleženca, ampak do 10 odgovorov, za vsako pesem en odgovor. Imamo podatek o tem, katera razpoloženja so izražena v glasbi in katera razpoloženja glasba vzbudi pri anketirancu. Izbrana razpoloženja je udeleženec umestil v VA prostor, zato imamo tudi podatek, kam v tem prostoru se umeščajo.  Za vsako pesem imamo tudi podatek o barvi, s katero je udeleženec označil glasbeni odlomek.  
 
 \begin{table}[H]
 \begin{center}
-\caption{Vprašanja drugega dela ankete. Tabela vsebuje vprašanja, možne odgovore in komentar. Vprašanja sprašujejo po anketirančevem razpoloženju, percepciji razpoloženja in povezavi med barvami in razpoloženjem.}
+\caption{Vprašanja drugega dela ankete. Tabela vsebuje vprašanja, možne odgovore in komentar. Vprašanja sprašujejo po udeleženčevem razpoloženju, percepciji razpoloženja in povezavi med barvami in razpoloženjem.}
 \begin{tabular}{| p{3.5cm} | p{4.5cm} | p{4.5cm} |}
 \hline
 Vprašanje & Odgovori & Komentar \\ \hline \hline
@@ -692,17 +690,17 @@ Barva razpoloženja & \{sreča, žalost, nezadovoljstvo, energičnost, razočara
 
 \subsection{Demografska analiza}
 
-Povprečna starost anketirancev je 26,5 let. Najmanjši anketiranec je bil star 15, najstarejši pa 64. Največ udeležencev je bilo starih 20 let. Anketo je rešilo več anketirancev ženskega spola, kar 65\%. Večina udeležencev prihaja iz urbanega okolja. 66\% anketirancev živi v mestu in 34\% na podeželju.
+Povprečna starost anketirancev je 26,5 let. Najmanjši anketiranec je bil star 15 let, najstarejši pa 64 let. Največ udeležencev je bilo starih 20 let. Anketo je rešilo več udeleženk ženskega spola, kar 65\%. Večina udeležencev prihaja iz urbanega okolja, 66\% anketirancev živi v mestu in 34\% na podeželju.
 
 \paragraph{Ukvarjanje z glasbo}
 
-Zanimivo je, da ima kar polovica vseh anketirancev glasbeno izobrazbo, z glasbo pa se ukvarja 53\% anketirancev (igrajo inštrument ali pojejo). Udeleženci, ki so obiskovali glasbeno šolo, so jo v povprečju obiskovali 6 let. Tisti, ki se z glasbo ukvarjajo neformalno se z njo ukvarjajo povprečno 11 let. Pričakovano igranje inštrumenta in petje ter leta glasbene šole zelo dobro korelirata (r=0,653). Iz slike \ref{ukvarjanjeglizobrazba} je poleg te korelacije razvidno, da se večina ljudi z glasbo ukvarja tudi po dokončani formalni izobrazbi, kar sklepamo iz podatka, da se večina ljudi več let neformalno ukvarja z glasbo, kot pa traja formalna izobrazba. 
+Zanimivo je, da ima kar polovica vseh anketirancev glasbeno izobrazbo, z glasbo pa se ukvarja 53\% anketirancev (igrajo inštrument ali pojejo). Udeleženci, ki so obiskovali glasbeno šolo, so jo v povprečju obiskovali 6 let. Tisti, ki se z glasbo ukvarjajo neformalno se z njo ukvarjajo povprečno 11 let. Pričakovano igranje inštrumenta in petje ter leta glasbene šole zelo visoko korelirata (r=0,653). Iz slike \ref{ukvarjanjeglizobrazba} poleg korelacije razberemo tudi, da se večina ljudi z glasbo ukvarja tudi po dokončani formalni izobrazbi, kar sklepamo iz podatka, da se večina ljudi z glasbo ukvarja dlje, kot traja zgolj formalna izobrazba. 
 
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=10cm]{images/izobrazba_ukvarjanje.png}
 
-\caption{Vsaka točka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobraževanja (na vodoravni osi) in leta ukvarjanja z glasbo (igranje inštrumenta ali petje) na navpični osi.  Iz slike je razvidno, da se večina anketirancev tudi po končani formalni izobrazbi ukvarja z glasbo.  }
+\caption{Vsaka točka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobraževanja na vodoravni osi in leta ukvarjanja z glasbo (igranje inštrumenta ali petje) na navpični osi.  Iz slike je razvidno, da se večina anketirancev tudi po končani formalni izobrazbi ukvarja z glasbo.  }
 \label{ukvarjanjeglizobrazba}
 \end{figure}
 
@@ -710,25 +708,25 @@ Največ anketirancev posluša glasbo 1 do 2 uri na dan, najmanj pa 2 do 3 ure na
 
 \paragraph{Zdravila in droge}
 
-4.2\% ljudi pravi, da jemljejo zdravila, ki vplivajo na razpoloženje. Kar 3\% anketirancev pa je priznalo, da so bili med reševanjem ankete pod vplivom drog ali alkohola. Tudi ta dva parametra dobro korelirata med seboj (r = 0,519).
+Zdravila, ki vplivajo na razpoloženje, uživa 4,2\% udeležencev. Kar 3\% udeležencev je poročalo, da so bili med reševanjem ankete pod vplivom drog ali alkohola. Tudi ta dva parametra visoko korelirata med seboj (r = 0,519).
 
 \paragraph{Žanri}
 
-Kot je razvidno iz grafa na sliki \ref{zanrigraf}, je večina anketirancev kot najljubši žanr označila rock (31,6\% anketirancev). Na drugem mestu med najljubšimi žanri je pop z 16,6\% in na tretjem alternativna glasba. Na zadnjih dveh mestih sta opera, ki je najljubši žanr manj kot odstotku vprašanih. Enako velja za reggae. Razporeditev žanrov, ki so jih uporabniki uvrstili na prvo mesto, ni enakomerna, saj kot največkrat izbrana žanra zelo izstopata rock in pop.  
+Kot je razvidno iz grafa na sliki \ref{zanrigraf}, je večina udeležencev kot najljubši žanr označila rock (31,6\% anketirancev). Na drugem mestu med najljubšimi žanri je pop z 16,6\% in na tretjem alternativna glasba. Na zadnjih dveh mestih sta opera in reggae, ki sta najljubši žanr manj kot odstotku vprašanih. Razporeditev žanrov, ki so jih uporabniki uvrstili na prvo mesto, ni enakomerna, saj kot največkrat izbrana žanra zelo izstopata rock in pop.  
 
-Na drugo mesto je spet največ vprašanih uvrstilo rock (20\% vprašanih), drugi največkrat uvrščen žanr na drugo mesto je pop z 13,9\%. Najmanjkrat uvrščen žanr je opera. Na drugem mestu so izbire že bolj raznolike kot pri najljubšem žanru, vendar vrh še vedno izstopa. 
+Na drugo mesto je spet največ vprašanih uvrstilo rock (20\% vprašanih), drugi največkrat uvrščen žanr na drugo mesto je pop z 13,9\%. Najmanjkrat izbran žanr je opera. Na drugem mestu so izbire že bolj raznolike kot pri najljubšem žanru, vendar vrh še vedno izstopa. 
 
-Zanimivo je, da je največ udeležencev na tretje mesto uvrstilo klasično glasbo. Za to izbiro se je odločilo 11,9\% anketirancev. Klasiki sledi rock (11,3\%). Najredkeje so udeleženci na tretje mesto uvrstili new age in punk. Za izbire na tretjem mestu je značilno, da so bolj raznolike, saj noben žanr ne izstopa preveč. 
+Zanimivo je, da je največ udeležencev na tretje mesto uvrstilo klasično glasbo. Za to izbiro se je odločilo 11,9\% anketirancev. Klasiki sledi rock (11,3\%). Najredkeje so udeleženci na tretje mesto uvrstili new age in punk. Za izbire na tretjem mestu je značilno, da so bolj raznolike, saj noben žanr ne izstopa. 
 
 \begin{figure}[hbt]
 \centering
-\includegraphics[width=13cm]{images/genre.png}
+\includegraphics{images/genre.png}
 
-\caption{Priljubljenost žanrov ter uvrstitev teh na prvo, drugo ali tretje mesto. Razvidno je, da je najljubši žanr rock, sledi mu pop in klasična glasba. Najmanj popularen žanr je opera.}
+\caption{Priljubljenost žanrov ter uvrstitev teh na prvo, drugo ali tretje mesto. Razvidno je, da je najbolj priljubljen žanr rock, sledi mu pop in klasična glasba. Najmanj popularen žanr je opera.}
 \label{zanrigraf}
 \end{figure}
 
-Izmed vseh žanrov smo potem izbrali najbolj priljubljene: rock, pop, country, alternativna glasba in klasična glasba. Naredili smo primerjavo med najljubšimi žanri po starostnih skupinah (slika \ref{zanrigraftop}). Anketirance smo razdelili v 6 starostnih skupin. Vsaka od skupin zajema 10 let. Pri vseh starostnih skupinah je popularna rock glasba. Pri prvih štirih je celo na prvem mestu. Tudi pop glasba se pojavi pri vseh skupinah razen zadnjih dveh. Razlike se pojavijo v ostalih glasbenih zvrsteh. Pri mlajših so popularne še zvrsti kot so metal, alternative in elektronska glasba. Pri starejših je zelo popularna klasična glasba. V zadnjih dveh skupinah se pojavi na prvem mestu. V teh skupinah so popularne še folk, jazz in country. Srednji dve skupini pa sta kombinacija obojega. V njih se pojavi še alternativna glasba in tudi jazz ter klasična glasba. 
+Izmed vseh žanrov smo potem izbrali najbolj priljubljene: rock, pop, country, alternativna glasba in klasična glasba. Naredili smo primerjavo med najljubšimi žanri po starostnih skupinah (slika \ref{zanrigraftop}). Anketirance smo razdelili v 6 starostnih skupin. Vsaka od skupin zajema 10 let. Pri vseh starostnih skupinah je popularna rock glasba. Pri najmlajših štirih starostnih skupinah je na prvem mestu. Tudi pop glasba se pojavi pri vseh skupinah razen najstarejših dveh. Razlike se pojavijo v ostalih glasbenih zvrsteh. Pri mlajših so popularne še zvrsti kot so metal, alternative in elektronska glasba. Pri starejših je zelo popularna klasična glasba. V najstarejših dveh skupinah se pojavi na prvem mestu. V teh skupinah so popularne še folk, jazz in country. Srednji dve starostni skupini pa sta kombinacija obojega. V njih se pojavi še alternativna glasba in tudi jazz ter klasična glasba. 
 
 \begin{figure}[hbt]
 \centering
@@ -740,7 +738,12 @@ Izmed vseh žanrov smo potem izbrali najbolj priljubljene: rock, pop, country, a
 
 Naredili smo tudi analizo priljubljenosti glede na spol. Ugotovili smo, da je pri obeh spolih enako zastopana rock glasba. S tem, da pri udeležencih prevladuje še elektronska glasba in metal. Pri udeleženkah pa je na prvem mestu pop glasba. 
 
-Za konec še nekaj zanimivosti. Podatki iz ankete kažejo, da osebe, ki se z glasbo ukvarjajo več kot 15 let, najraje poslušajo klasično glasbo. Osebe, ki jemljejo zdravila ne poslušajo klasične glasbe. Po naših podatkih je med ljudmi, ki uživajo droge bolj popularna elektronska glasba, kot pri ostali populaciji.
+Za konec še nekaj zanimivosti:
+\begin{itemize}
+\item Podatki iz ankete kažejo, da osebe, ki se z glasbo ukvarjajo več kot 15 let, najraje poslušajo klasično glasbo.
+\item Osebe, ki jemljejo zdravila ne poslušajo klasične glasbe.
+\item Po podatkih iz ankete je med ljudmi, ki uživajo droge bolj popularna elektronska glasba, kot pri ostali populaciji.
+\end{itemize}
 
 \subsection{Razpoloženje, čustva in barva}
 
@@ -748,7 +751,7 @@ Za ta del analize smo iz podatkovne zbirke odstranili vse, ki so bili pod vplivo
 
 \begin{figure}[hbt]
 \centering
-\includegraphics[width=11cm]{images/korelacija_custva_pris.png}
+\includegraphics[width=10cm]{images/korelacija.png}
 
 \caption{Povprečna evklidska razdalja med posamezni atributi. Iz slike je razvidno, da prijetnost najbolje korelira z razpoloženji: sproščenost, sreča, zadovoljstvo, vedrost in veselje. Aktivnost (koordinata y) se najbolje ujema z razpoloženji aktivno, vedro, veselo in zadovoljno. Opazimo lahko tudi ujemanje med razpoloženji nezadovoljno in razočarano ter veselo in zadovoljno.}
 \label{prisotnost_kor}
