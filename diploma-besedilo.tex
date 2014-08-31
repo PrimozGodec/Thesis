@@ -40,7 +40,7 @@
 \newcommand{\tsubjectEn}{\ttitleEn}
 \newcommand{\tauthor}{Primož Godec}
 \newcommand{\tkeywords}{glasba, razpoloženje, čustva, algoritem za ocenjevanje razpoloženja, }
-\newcommand{\tkeywordsEn}{music, mood, emotions,  mood clasification algorithm}
+\newcommand{\tkeywordsEn}{music, mood, emotions,  mood clasification algorithms}
 
 
 
@@ -261,7 +261,7 @@ z vpisno številko \textbf{63110452}, sem avtor  diplomskega dela z naslovom:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % zahvala
 \thispagestyle{empty}\mbox{}\vfill\null\it%
-Želim se zahvaliti mentorju Matiji Maroltu, za pomoč in spodbujanje pri raziskovanju in izdelavi diplomske naloge. Prav tako se želim zahvaliti Matevžu Pesku, ki si je vedno vzel čas, ko sem ga potreboval in s spodbujanjem poskrbel, da je bilo diplomsko delo napisano hitreje, kot bi bilo drugače. Zahvalil bi se tudi ekipi s katero smo sodelovali na projektu raziskovanja razpoloženja in glasbe. Ekipo sestavljajo Matevž Pesek, Matija Marolt, Mojca Poredoš, Jože Guna, Gregor Strle, Emilija Stojmenova in Matevž Pogačnik. Nazadnje bi se zahvalil še družini in prijateljem, ki mi vedno stojijo ob strani. 
+Želim se zahvaliti mentorju Matiji Maroltu, za pomoč in spodbudo pri raziskovanju in izdelavi diplomske naloge. Prav tako bi se zahvalil Matevžu Pesku, ki si je vedno vzel čas, ko sem ga potreboval in s spodbujanjem poskrbel, da je bilo diplomsko delo napisano hitreje, kot bi bilo drugače. Zahvalil bi se tudi ekipi s katero smo sodelovali na projektu raziskovanja razpoloženja in glasbe. Ekipo sestavljajo Matevž, Matija, Mojca, Jože, Gregor, Emilija in Matevž. Zahvala gre tudi moji družini, ki me je podpiral skozi celotno študijsko pot in prijateljem, ki so mi vedno stali ob strani, mi pomagali in poskrbeli, da sem z veseljem hodil na fakulteto: Manca, Petra, Luka, Primož, Ožbolt, Rok, Jerneja in Kristina. Zahvalil bi se tudi Mojci Poredoš, ki je pomagala z lektoriranjem naloge. 
 \rm\normalfont
 
 % prazna stran
@@ -316,7 +316,7 @@ Moji družini in prijateljem.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \addcontentsline{toc}{chapter}{Povzetek}
 \chapter*{Povzetek}
-V vzorcu je predstavljen postopek priprave diplomskega dela z uporabo okolja \LaTeX. Vaš povzetek mo ra sicer vsebovati približno 100 besed, ta tukaj je odločno prekratek.
+
 \bigskip
 
 \noindent\textbf{Ključne besede:} \tkeywords.
@@ -329,9 +329,11 @@ V vzorcu je predstavljen postopek priprave diplomskega dela z uporabo okolja \La
 \addcontentsline{toc}{chapter}{Abstract}
 \chapter*{Abstract}
 
-This thesis present an evaluation of mood estimation algorithms. 
+% ni potrebno pregledovati, ker še ni popravljeno
+%This thesis presents a new dataset gathered containing perceived and induced emotions for 200 audio clips. The gathered dataset also provides users' association of color for each clip, along with users' demographic and personal data, such as users' emotion state, preferred genres, music experience and daily inference, and others. With an online survey we collected more than 7000 responses for a dataset of 200 audio excerpts, thus providing about 37 user responses per clip.
 
-This thesis presents a new dataset gathered containing perceived and induced emotions for 200 audio clips. The gathered dataset also provides users' association of color for each clip, along with users' demographic and personal data, such as users' emotion state, preferred genres, music experience and daily inference, and others. With an online survey we collected more than 7000 responses for a dataset of 200 audio excerpts, thus providing about 37 user responses per clip. We introduced a new methodology for gathering user perception of emotions in a form of two new interfaces - the MoodGraph and MoodStripe. We present a preliminary evaluation of classifying the present emotions with a regression algorithm on the gathered dataset, and perform a comparison towards other datasets.
+%This thesis also presents evaluation of classifying the present emotions in audio with two existing algorithms. Regression algorithm was used, which estimates valence and arousal for audio. Second used algorithm is Gaiatransform algorithm form library Essentia. This algorithm classifies in five clusters defined by MIREX. Algorithm also provide probability of presence for six moods in song. Finally we tested possibility of mood prediction from color with regression algorithm, what gave us results that show, high correlation between color and valence-arousal value. 
+ 
 
 \bigskip
 
@@ -435,7 +437,7 @@ MTV Music Dataset \cite{schuller2010mister} vsebuje podatke za 192 pesmi izbrane
 
 \paragraph{LAMP}
 
-Podatkovna zbirka LAMP \cite{chu2010lamp} vsebuje podatke za 492 popularnih pesmi izdanih med 2002 in 2008. Ta zbirka je bila označena s strani 400 anketirancev v treh korakih. V prvem je anketiranec dobil samo besedilo in  na podlagi tega določil prijetnost (valence) in aktivnost (arousal). V drugem koraku je dobil samo zvočni posnetek ter določal aktivnost in prijetnost. V tretjem koraku je postopek ponovil z zvočnim posnetkom in besedilom.
+Podatkovna zbirka LAMP \cite{chu2010lamp} vsebuje podatke za 492 popularnih pesmi izdanih med 2002 in 2008. Ta zbirka je bila označena s strani 400 udeležencev v treh korakih. V prvem je udeleženec dobil samo besedilo in  na podlagi tega določil prijetnost (valence) in aktivnost (arousal). V drugem koraku je dobil samo zvočni posnetek ter določal aktivnost in prijetnost. V tretjem koraku je postopek ponovil z zvočnim posnetkom in besedilom.
 
 \paragraph{Multi Modal}
 
@@ -536,7 +538,7 @@ MFCC (mel-frequency cepstral coefficients) \cite{gunderson2007musical} je koefic
 \chapter{Moodo podatkovna zbirka}
 \label{odatasetu}
 
-Tema moje diplomske naloge je ocenjevanje razpoloženja v glasbi s pomočjo ra\-ču\-nal\-niš\-kih algoritmov. Dobrega algoritma za ocenjevanje ni možno narediti brez dobre podatkovne zbirke. Na področju razpoloženja obstaja že nekaj podatkovnih zbirk, vendar glede na naše informacije nobena ne vključuje dodatnih povezav, kot je povezava med glasbo in barvo ali podatkov o percepciji razpoloženja. Zaradi tega smo se odločili, da zberemo svojo podatkovno zbirko, ki bo osnova za raziskovanje povezave med razpoloženjem in glasbo. Vključevala bo tudi podatke o barvah, ki po mnenju anketirancev najbolje opisujejo posamezno pesem, uporabnikovo percepcijo povezave med glasbo, barvami in razpoloženjem ter nekatere demografske podatke.
+Tema moje diplomske naloge je ocenjevanje razpoloženja v glasbi s pomočjo ra\-ču\-nal\-niš\-kih algoritmov. Dobrega algoritma za ocenjevanje ni možno narediti brez dobre podatkovne zbirke. Na področju razpoloženja obstaja že nekaj podatkovnih zbirk, vendar glede na naše informacije nobena ne vključuje dodatnih povezav, kot je povezava med glasbo in barvo ali podatkov o percepciji razpoloženja. Zaradi tega smo se odločili, da zberemo svojo podatkovno zbirko, ki bo osnova za raziskovanje povezave med razpoloženjem in glasbo. Vključevala bo tudi podatke o barvah, ki po mnenju udeležencev najbolje opisujejo posamezno pesem, uporabnikovo percepcijo povezave med glasbo, barvami in razpoloženjem ter nekatere demografske podatke.
 
 V tem poglavju bomo opisali, kako smo zbirali podatke, namenil nekaj besed preliminarni analizi, ki smo jo opravili na krajši anketi. Opisali bomo glavno anketo, s katero smo zbirali podatke, ki sestavljajo podatkovno zbirko. Za konec bomo še opisali, kaj sestavlja podatkovno zbirko in podatke analizirali. 
 
@@ -554,7 +556,7 @@ Kot omenjeno, smo preliminarno analizo izvajali s pomočjo ankete, ki smo jo izv
 \centering
 \includegraphics[width=13cm]{images/likart.png}
 
-\caption{Del sedem stopenjske lestvice, s pomočjo katere so anketiranci ocenjevali trenutno razpoloženje. Oznaka 1 pomeni, da se tisto razpoloženje pri anketirancu sploh ne pojavi, 7 pa da je zelo izrazito. }
+\caption{Del sedem stopenjske lestvice, s pomočjo katere so udeleženci ocenjevali trenutno razpoloženje. Oznaka 1 pomeni, da se tisto razpoloženje pri udeležencu sploh ne pojavi, 7 pa da je zelo izrazito. }
 \label{skala}
 \end{figure}
 
@@ -595,17 +597,17 @@ V tem delu smo spraševali o udeleženčevi starosti, spolu in o tem, ali živi 
 \paragraph{Drugi del}
 \label{ank2del}
 
-Drugi del je namenjen ocenjevanju anketirančevega trenutnega razpoloženja, njegove percepcije oznak za razpoloženje in barve za razpoloženje. Te podatke zajemamo zato, ker nam omogočajo, da ugotovimo povezave med različnimi ocenami razpoloženja v tretjem delu, ki vključuje glasbene odlomke.
+Drugi del je namenjen ocenjevanju udeleženčevega trenutnega razpoloženja, njegove percepcije oznak za razpoloženje in barve za razpoloženje. Te podatke zajemamo zato, ker nam omogočajo, da ugotovimo povezave med različnimi ocenami razpoloženja v tretjem delu, ki vključuje glasbene odlomke.
 
 Na začetku smo udeleženca vprašali, kako bi svoje razpoloženje označil s točko v prostoru, ki ga označujeta prijetnost in aktivnost (valence-arousal space) \cite{Colibazzi2010}. To je dvodimenzionalen prostor, kjer na vodoravni osi od leve proti desni narašča prijetnost in od spodaj navzgor aktivnost. Svoje razpoloženje je moral udeleženec opisati tudi z izbiro barve s pomočjo barvnega kroga predstavljenega v poglavju \ref{preiliminarnaana}. 
 
-Udeleženec je moral svoje razpoloženje opisati tudi s tem, da je označil, kako je posamezno razpoloženje pri njem izraženo v trenutku reševanja ankete. To smo zajemali s pomočjo novega elementa imenovanega MoodStripe. Potrebno je bilo potegniti posamezne oznake razpoloženj v prostor, kjer od leve proti desni narašča prisotnost posameznega razpoloženja. Če je anketiranec postavil razpoloženje skrajno levo to pomeni, da to razpoloženje pri njem ni prisotno, če pa ga je postavil skrajno desno to pomeni, da je razpoloženje zelo prisotno.
+Udeleženec je moral svoje razpoloženje opisati tudi s tem, da je označil, kako je posamezno razpoloženje pri njem izraženo v trenutku reševanja ankete. To smo zajemali s pomočjo novega elementa imenovanega MoodStripe. Potrebno je bilo potegniti posamezne oznake razpoloženj v prostor, kjer od leve proti desni narašča prisotnost posameznega razpoloženja. Če je udeleženec postavil razpoloženje skrajno levo to pomeni, da to razpoloženje pri njem ni prisotno, če pa ga je postavil skrajno desno to pomeni, da je razpoloženje zelo prisotno.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=10cm]{images/moodstripe.png}
 
-\caption{Element za zajemanje pristnosti posameznega razpoloženja imenovan moodstripe. Anketiranec je iz zgornjega pravokotnika povlekel razpoloženja in jih vstavil na ustrezno mesto na traku glede na prisotnost posameznega razpoloženja. Prisotnost narašča iz leve (razpoloženje ni izrazito) proti desni (razpoloženje je zelo izrazito). }
+\caption{Element za zajemanje pristnosti posameznega razpoloženja imenovan moodstripe. Udeleženec je iz zgornjega pravokotnika povlekel razpoloženja in jih vstavil na ustrezno mesto na traku glede na prisotnost posameznega razpoloženja. Prisotnost narašča iz leve (razpoloženje ni izrazito) proti desni (razpoloženje je zelo izrazito). }
 \label{moodstripe}
 \end{figure}
 
@@ -615,7 +617,7 @@ V drugem delu smo uporabnike povprašali tudi o njihovi percepciji posameznega r
 \centering
 \includegraphics[width=10cm]{images/enomoodgraph.png}
 
-\caption{Enonivojski MoodGraph, element za zajemanje precepcije razpoloženja v VA prostoru. Anketiranec je razpoloženjske oznake uvrstil v graf glede na prijetnost in aktivnost. Prijetnost narašča iz leve proti desni. Aktivnost narašča od spodaj navzgor. }
+\caption{Enonivojski MoodGraph, element za zajemanje precepcije razpoloženja v VA prostoru. Udeleženec je razpoloženjske oznake uvrstil v graf glede na prijetnost in aktivnost. Prijetnost narašča iz leve proti desni. Aktivnost narašča od spodaj navzgor. }
 \label{moodgraph}
 \end{figure}
 
@@ -640,7 +642,7 @@ Pri vsakem odlomku je udeleženec označil, katera razpoloženja so izražena v 
 
 \section{Sestava podatkovne zbirke}
 
-Struktura podatkovne zbirke sledi strukturi uporabljene ankete, zato je razdeljena v tri dele.  V prvem delu smo zbrali 1423 odgovorov in s tem tudi toliko vpisov v našo zbirko. V drugem delu je vpisov 1090. V tretjem delu, kjer je moral anketiranec oceniti 10 pesmi, smo zbrali 7187 odgovorov. Ta del je izpolnjevalo 741 anketirancev.
+Struktura podatkovne zbirke sledi strukturi uporabljene ankete, zato je razdeljena v tri dele.  V prvem delu smo zbrali 1423 odgovorov in s tem tudi toliko vpisov v našo zbirko. V drugem delu je vpisov 1090. V tretjem delu, kjer je moral udeleženec oceniti 10 pesmi, smo zbrali 7187 odgovorov. Ta del je izpolnjevalo 741 udeležencev.
 
 \begin{table}[!hbt]
 \begin{center}
@@ -654,8 +656,8 @@ Področje prebivanja & \{mesto, podeželje\} & \\ \hline
 Leta glasbenega izobraževanja & [0, 20] & v letih, 0 - pomeni, da se ni glasbeno izobraževal \\ \hline
 Igranje inštrumenta ali petje & [0, 20] & v letih, 0 - pomeni, da se nikoli ni ukvarjal z glasbo \\ \hline
 Uživanje drog & \{da, ne\} & \\ \hline
-Vpliv drog & \{da, ne\} &  Je bil anketiranec pod vplivom drog med reševanjem ankete? \\ \hline
-Najljubši žanri & \{classical, opera, country, folk, latin, dance/disco, electronic, RnB/soul, hip hop/rap, reggae, pop, rock, alternative, metal, blues, jazz, vocal, easy listening, new age, punk\} & Anketiranec je moral izbrati do tri žanre (najmanj enega) in jih razvrstiti od najljubšega do najmanj priljubljenega. \\ \hline
+Vpliv drog & \{da, ne\} &  Je bil udeleženec pod vplivom drog med reševanjem ankete? \\ \hline
+Najljubši žanri & \{classical, opera, country, folk, latin, dance/disco, electronic, RnB/soul, hip hop/rap, reggae, pop, rock, alternative, metal, blues, jazz, vocal, easy listening, new age, punk\} & Udeleženec je moral izbrati do tri žanre (najmanj enega) in jih razvrstiti od najljubšega do najmanj priljubljenega. \\ \hline
 Čas poslušanja glasbe & \{manj kot 1, 1-2, 2-3, več kot 3\} & v urah na dan \\ \hline
 
 \end{tabular}
@@ -663,11 +665,11 @@ Najljubši žanri & \{classical, opera, country, folk, latin, dance/disco, elect
 \end{center}
 \end{table} 
 
-V prvem delo so podatki, ki opisujejo udeležence (podrobnosti so predstavljene v tabeli \ref{prvidel}). Za vsakega udeleženca zbirka vsebuje podatek o starosti na leto natančno, o spolu in o tem ali živi na podeželju ali v mestu. Poleg tega smo zbrali podatke o tem, koliko časa se ukvarja z glasbo, koliko časa je hodil v glasbeno šolo do leta natančno ter koliko časa na dan posluša glasbo. Tukaj je uporabnik poslušanje glasbe uvrstil v eno od kategorij: do 1 ure, od 1 do 2 uri, od 2 do 3 ure in več kot 3 ure. Imamo tudi podatek o najljubših glasbenih žanrih udeleženca. Udeleženec je podal najmanj en in največ tri žanre. Zanimalo nas je še psihofizično stanje anketiranca med reševanjem. Torej imamo podatek ali jemlje zdravila, ki vplivajo na razpoloženje ter, če je bil v trenutku reševanja pod vplivom drog ali alkohola. 
+V prvem delo so podatki, ki opisujejo udeležence (podrobnosti so predstavljene v tabeli \ref{prvidel}). Za vsakega udeleženca zbirka vsebuje podatek o starosti na leto natančno, o spolu in o tem ali živi na podeželju ali v mestu. Poleg tega smo zbrali podatke o tem, koliko časa se ukvarja z glasbo, koliko časa je hodil v glasbeno šolo do leta natančno ter koliko časa na dan posluša glasbo. Tukaj je uporabnik poslušanje glasbe uvrstil v eno od kategorij: do 1 ure, od 1 do 2 uri, od 2 do 3 ure in več kot 3 ure. Imamo tudi podatek o najljubših glasbenih žanrih udeleženca. Udeleženec je podal najmanj en in največ tri žanre. Zanimalo nas je še psihofizično stanje udeleženca med reševanjem. Torej imamo podatek ali jemlje zdravila, ki vplivajo na razpoloženje ter, če je bil v trenutku reševanja pod vplivom drog ali alkohola. 
 
-Drugi del podatkovne zbirke vsebuje podatke o udeleženčevem razpoloženju v trenutku, ko je izpolnjeval anketo in o tem kako si anketiranec predstavlja posamezna razpoloženja. Uporabnikovo razpoloženje opisujejo trije podatki. Prvi je točka v VA prostoru (x in y koordinata). Drugi je barva v barvnem krogu (tukaj hranimo podatek o tem, katero barvo je  udeleženec izbral). Tretji pa je vrednost, kako močno je posamezno razpoloženje iz nabora 17 razpoloženj, izraženo pri udeležencu v tistem trenutku. Hranimo vrednost med 0 in 1 za vsako razpoloženje. Kot smo že omenili, drugi del vsebuje tudi podatek o tem, kako si udeleženec predstavlja razpoloženja. Za nabor 10 razpoloženj imamo podatek, kam v VA prostoru spada to razpoloženje po mnenju udeleženca in barvo, s katero ga je anketiranec označil. 
+Drugi del podatkovne zbirke vsebuje podatke o udeleženčevem razpoloženju v trenutku, ko je izpolnjeval anketo in o tem kako si udeleženec predstavlja posamezna razpoloženja. Uporabnikovo razpoloženje opisujejo trije podatki. Prvi je točka v VA prostoru (x in y koordinata). Drugi je barva v barvnem krogu (tukaj hranimo podatek o tem, katero barvo je  udeleženec izbral). Tretji pa je vrednost, kako močno je posamezno razpoloženje iz nabora 17 razpoloženj, izraženo pri udeležencu v tistem trenutku. Hranimo vrednost med 0 in 1 za vsako razpoloženje. Kot smo že omenili, drugi del vsebuje tudi podatek o tem, kako si udeleženec predstavlja razpoloženja. Za nabor 10 razpoloženj imamo podatek, kam v VA prostoru spada to razpoloženje po mnenju udeleženca in barvo, s katero ga je udeleženec označil. 
 
-Tretji del podatkovne zbirke je malo drugačen. Tu nimamo le enega odgovora na od posameznega udeleženca, ampak do 10 odgovorov, za vsako pesem en odgovor. Imamo podatek o tem, katera razpoloženja so izražena v glasbi in katera razpoloženja glasba vzbudi pri anketirancu. Izbrana razpoloženja je udeleženec umestil v VA prostor, zato imamo tudi podatek, kam v tem prostoru se umeščajo.  Za vsako pesem imamo tudi podatek o barvi, s katero je udeleženec označil glasbeni odlomek.  
+Tretji del podatkovne zbirke je malo drugačen. Tu nimamo le enega odgovora na od posameznega udeleženca, ampak do 10 odgovorov, za vsako pesem en odgovor. Imamo podatek o tem, katera razpoloženja so izražena v glasbi in katera razpoloženja glasba vzbudi pri udeležencu. Izbrana razpoloženja je udeleženec umestil v VA prostor, zato imamo tudi podatek, kam v tem prostoru se umeščajo.  Za vsako pesem imamo tudi podatek o barvi, s katero je udeleženec označil glasbeni odlomek.  
 
 \begin{table}[H]
 \begin{center}
@@ -690,21 +692,21 @@ Barva razpoloženja & \{sreča, žalost, nezadovoljstvo, energičnost, razočara
 
 \subsection{Demografska analiza}
 
-Povprečna starost anketirancev je 26,5 let. Najmanjši anketiranec je bil star 15 let, najstarejši pa 64 let. Največ udeležencev je bilo starih 20 let. Anketo je rešilo več udeleženk ženskega spola, kar 65\%. Večina udeležencev prihaja iz urbanega okolja, 66\% anketirancev živi v mestu in 34\% na podeželju.
+Povprečna starost udeležencev je 26,5 let. Najmanjši udeleženec je bil star 15 let, najstarejši pa 64 let. Največ udeležencev je bilo starih 20 let. Anketo je rešilo več udeleženk ženskega spola, kar 65\%. Večina udeležencev prihaja iz urbanega okolja, 66\% udeležencev živi v mestu in 34\% na podeželju.
 
 \paragraph{Ukvarjanje z glasbo}
 
-Zanimivo je, da ima kar polovica vseh anketirancev glasbeno izobrazbo, z glasbo pa se ukvarja 53\% anketirancev (igrajo inštrument ali pojejo). Udeleženci, ki so obiskovali glasbeno šolo, so jo v povprečju obiskovali 6 let. Tisti, ki se z glasbo ukvarjajo neformalno se z njo ukvarjajo povprečno 11 let. Pričakovano igranje inštrumenta in petje ter leta glasbene šole zelo visoko korelirata (r=0,653). Iz slike \ref{ukvarjanjeglizobrazba} poleg korelacije razberemo tudi, da se večina ljudi z glasbo ukvarja tudi po dokončani formalni izobrazbi, kar sklepamo iz podatka, da se večina ljudi z glasbo ukvarja dlje, kot traja zgolj formalna izobrazba. 
+Zanimivo je, da ima kar polovica vseh udeležencev glasbeno izobrazbo, z glasbo pa se ukvarja 53\% udeležencev (igrajo inštrument ali pojejo). Udeleženci, ki so obiskovali glasbeno šolo, so jo v povprečju obiskovali 6 let. Tisti, ki se z glasbo ukvarjajo neformalno se z njo ukvarjajo povprečno 11 let. Pričakovano igranje inštrumenta in petje ter leta glasbene šole zelo visoko korelirata (r=0,653). Iz slike \ref{ukvarjanjeglizobrazba} poleg korelacije razberemo tudi, da se večina ljudi z glasbo ukvarja tudi po dokončani formalni izobrazbi, kar sklepamo iz podatka, da se večina ljudi z glasbo ukvarja dlje, kot traja zgolj formalna izobrazba. 
 
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=10cm]{images/izobrazba_ukvarjanje.png}
 
-\caption{Vsaka točka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobraževanja na vodoravni osi in leta ukvarjanja z glasbo (igranje inštrumenta ali petje) na navpični osi.  Iz slike je razvidno, da se večina anketirancev tudi po končani formalni izobrazbi ukvarja z glasbo.  }
+\caption{Vsaka točka na sliki prikazuje povezavo med trajanjem formalnega glasbenega izobraževanja na vodoravni osi in leta ukvarjanja z glasbo (igranje inštrumenta ali petje) na navpični osi.  Iz slike je razvidno, da se večina udeležencev tudi po končani formalni izobrazbi ukvarja z glasbo.  }
 \label{ukvarjanjeglizobrazba}
 \end{figure}
 
-Največ anketirancev posluša glasbo 1 do 2 uri na dan, najmanj pa 2 do 3 ure na dan. Količina poslušanja glasbe ne korelira z nobeno od ostalih demografskih spremenljivk. 
+Največ udeležencev posluša glasbo 1 do 2 uri na dan, najmanj pa 2 do 3 ure na dan. Količina poslušanja glasbe ne korelira z nobeno od ostalih demografskih spremenljivk. 
 
 \paragraph{Zdravila in droge}
 
@@ -712,11 +714,11 @@ Zdravila, ki vplivajo na razpoloženje, uživa 4,2\% udeležencev. Kar 3\% udele
 
 \paragraph{Žanri}
 
-Kot je razvidno iz grafa na sliki \ref{zanrigraf}, je večina udeležencev kot najljubši žanr označila rock (31,6\% anketirancev). Na drugem mestu med najljubšimi žanri je pop z 16,6\% in na tretjem alternativna glasba. Na zadnjih dveh mestih sta opera in reggae, ki sta najljubši žanr manj kot odstotku vprašanih. Razporeditev žanrov, ki so jih uporabniki uvrstili na prvo mesto, ni enakomerna, saj kot največkrat izbrana žanra zelo izstopata rock in pop.  
+Kot je razvidno iz grafa na sliki \ref{zanrigraf}, je večina udeležencev kot najljubši žanr označila rock (31,6\% udeležencev). Na drugem mestu med najljubšimi žanri je pop z 16,6\% in na tretjem alternativna glasba. Na zadnjih dveh mestih sta opera in reggae, ki sta najljubši žanr manj kot odstotku vprašanih. Razporeditev žanrov, ki so jih uporabniki uvrstili na prvo mesto, ni enakomerna, saj kot največkrat izbrana žanra zelo izstopata rock in pop.  
 
 Na drugo mesto je spet največ vprašanih uvrstilo rock (20\% vprašanih), drugi največkrat uvrščen žanr na drugo mesto je pop z 13,9\%. Najmanjkrat izbran žanr je opera. Na drugem mestu so izbire že bolj raznolike kot pri najljubšem žanru, vendar vrh še vedno izstopa. 
 
-Zanimivo je, da je največ udeležencev na tretje mesto uvrstilo klasično glasbo. Za to izbiro se je odločilo 11,9\% anketirancev. Klasiki sledi rock (11,3\%). Najredkeje so udeleženci na tretje mesto uvrstili new age in punk. Za izbire na tretjem mestu je značilno, da so bolj raznolike, saj noben žanr ne izstopa. 
+Zanimivo je, da je največ udeležencev na tretje mesto uvrstilo klasično glasbo. Za to izbiro se je odločilo 11,9\% udeležencev. Klasiki sledi rock (11,3\%). Najredkeje so udeleženci na tretje mesto uvrstili new age in punk. Za izbire na tretjem mestu je značilno, da so bolj raznolike, saj noben žanr ne izstopa. 
 
 \begin{figure}[hbt]
 \centering
@@ -726,13 +728,13 @@ Zanimivo je, da je največ udeležencev na tretje mesto uvrstilo klasično glasb
 \label{zanrigraf}
 \end{figure}
 
-Izmed vseh žanrov smo potem izbrali najbolj priljubljene: rock, pop, country, alternativna glasba in klasična glasba. Naredili smo primerjavo med najljubšimi žanri po starostnih skupinah (slika \ref{zanrigraftop}). Anketirance smo razdelili v 6 starostnih skupin. Vsaka od skupin zajema 10 let. Pri vseh starostnih skupinah je popularna rock glasba. Pri najmlajših štirih starostnih skupinah je na prvem mestu. Tudi pop glasba se pojavi pri vseh skupinah razen najstarejših dveh. Razlike se pojavijo v ostalih glasbenih zvrsteh. Pri mlajših so popularne še zvrsti kot so metal, alternative in elektronska glasba. Pri starejših je zelo popularna klasična glasba. V najstarejših dveh skupinah se pojavi na prvem mestu. V teh skupinah so popularne še folk, jazz in country. Srednji dve starostni skupini pa sta kombinacija obojega. V njih se pojavi še alternativna glasba in tudi jazz ter klasična glasba. 
+Izmed vseh žanrov smo potem izbrali najbolj priljubljene: rock, pop, country, alternativna glasba in klasična glasba. Naredili smo primerjavo med najljubšimi žanri po starostnih skupinah (slika \ref{zanrigraftop}). Udeležence smo razdelili v 6 starostnih skupin. Vsaka od skupin zajema 10 let. Pri vseh starostnih skupinah je popularna rock glasba. Pri najmlajših štirih starostnih skupinah je na prvem mestu. Tudi pop glasba se pojavi pri vseh skupinah razen najstarejših dveh. Razlike se pojavijo v ostalih žanrih. Pri mlajših so popularni še žanri kot so metal, alternative in elektronska glasba. Pri starejših je zelo popularna klasična glasba. V najstarejših dveh skupinah se pojavi na prvem mestu. V teh skupinah so popularne še folk, jazz in country. Srednji dve starostni skupini pa sta kombinacija obojega. V njih se pojavi še alternativna glasba in tudi jazz ter klasična glasba. 
 
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=15cm]{images/genretop1.png}
 
-\caption{Priljubljenost posameznih glasbenih zvrsti po starostnih skupinah. Na vodoravni osi so označene starostne skupine. Širši stolpci predstavljajo razporeditev posameznih žanrov v odstotkih, zeleni pa število anketirancev v posamezni starostni skupini.  }
+\caption{Priljubljenost posameznih glasbenih žanrov po starostnih skupinah. Na vodoravni osi so označene starostne skupine. Širši stolpci predstavljajo razporeditev posameznih žanrov v odstotkih, zeleni pa število udeležencev v posamezni starostni skupini.  }
 \label{zanrigraftop}
 \end{figure}
 
@@ -747,17 +749,17 @@ Za konec še nekaj zanimivosti:
 
 \subsection{Razpoloženje, čustva in barva}
 
-Za ta del analize smo iz podatkovne zbirke odstranili vse, ki so bili pod vplivom drog ali zdravil, ki vplivajo na razpoloženje. V anketi smo anketirančevo trenutno razpoloženje zajemali na dva načina. Najprej je anketiranec moral označiti svoje razpoloženje na VA prostoru. Torej je označeval prijetnost in aktivnost. Sledila so tudi vprašanja kjer je anketiranec trenutno razpoloženje ocenjeval z tem, da je povedal kako zelo prisotno je posamezno razpoloženje pri njem. Zanimala nas je predvsem korelacija med prisotnostjo posameznih razpoloženj in med koordinatama v VA prostoru. Kot je razvidno iz slike \ref{prisotnost_kor} je prijetnost (koordinata x) najmanj oddaljena od razpoloženj: sproščenost, sreče, zadovoljstvo, vedrost in veselje. Koordinata y pa po pričakovanjih najbolje korelira z razpoloženjem aktivnost. Z koordinata x se najmanj ujema s razpoloženjem nesrečno, nezadovoljno in razočarano, kar je bilo pričakovati, saj je prijetnost (predstavlja jo koordinata x) ravno nasprotna s temi razpoloženji. Z koordinato y se pričakovano najmanj ujema razpoloženjem neaktivno zaradi enakega razloga kot pri koordinati x. Med razpoloženji lahko opazimo še dobro ujemanje med razpoloženji nezadovoljno in razočarano ter med razpoloženji veselo in zadovoljno. 
+Za ta del analize smo iz podatkovne zbirke odstranili vse, ki so bili pod vplivom drog ali zdravil, ki vplivajo na razpoloženje. V anketi smo udeleženčevo trenutno razpoloženje zajemali na dva načina. Najprej je udeleženec moral označiti svoje razpoloženje v VA prostoru. Torej je označeval prijetnost in aktivnost trenutnega razpoloženja. Sledila so tudi vprašanja, kjer je udeleženec trenutno razpoloženje ocenjeval z tem, da je označil, v kakšni meri je prisotno posamezno razpoloženje pri njem. Zanimala nas je predvsem korelacija med prisotnostjo posameznih razpoloženj in med koordinatama v VA prostoru. Kot je razvidno iz slike \ref{prisotnost_kor} je prijetnost (koordinata x) najmanj oddaljena od razpoloženj: sproščenost, sreča, zadovoljstvo, vedrost in veselje. Koordinata y je po pričakovanjih najbolje podobna z razpoloženjem aktivnost. Koordinata x se najmanj ujema s razpoloženji nesrečno, nezadovoljno in razočarano, kar je bilo pričakovati, saj je prijetnost (predstavlja jo koordinata x) ravno nasprotna s tem razpoloženjem. S koordinato y se pričakovano najmanj ujema razpoložene neaktivno zaradi enakega razloga kot pri koordinati x.Opazimo lahko tudi dobro ujemanje med razpoloženji nezadovoljno in razočarano ter med razpoloženji veselo in zadovoljno. 
 
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=10cm]{images/korelacija.png}
 
-\caption{Povprečna evklidska razdalja med posamezni atributi. Iz slike je razvidno, da prijetnost najbolje korelira z razpoloženji: sproščenost, sreča, zadovoljstvo, vedrost in veselje. Aktivnost (koordinata y) se najbolje ujema z razpoloženji aktivno, vedro, veselo in zadovoljno. Opazimo lahko tudi ujemanje med razpoloženji nezadovoljno in razočarano ter veselo in zadovoljno.}
+\caption{Povprečna evklidska razdalja med posamezni atributi. Iz slike je razvidno, da je prijetnost najbolj podobna z razpoloženji: sproščenost, sreča, zadovoljstvo, vedrost in veselje. Aktivnost (koordinata y) se najbolje ujema z razpoloženji aktivno, vedro, veselo in zadovoljno. Opazimo lahko tudi ujemanje med razpoloženji nezadovoljno in razočarano ter veselo in zadovoljno.}
 \label{prisotnost_kor}
 \end{figure}
 
-Slika \ref{razpolozenjeva} prikazuje kako so ljudje uvrstili svoje razpoloženje v VA prostor. Opazno je, da so se anketiranci v večjem številu uvrstili v desno polovico koordinatnega sistema, kar pomeni, da so svoje razpoloženje označili kot bolj prijetno. Več anketirancev občuti bolj neaktivno razpoloženje, kar se odraža v tem, da je več udeležencev svoje razpoloženje uvrstilo v spodnji del koordinatnega sistema. Največja gostota anketirancev se nahaja v spodnjem desnem kvadrantu, kar pomeni, da se počutijo bolj prijetno in so bolj neaktivni. 
+Slika \ref{razpolozenjeva} prikazuje kako so ljudje umestili svoje razpoloženje v VA prostor. Opazno je, da so se udeleženci v večjem številu umestili v desno polovico koordinatnega sistema, kar pomeni, da so svoje razpoloženje označili kot bolj prijetno. Več udeležencev občuti bolj neaktivno razpoloženje, kar se odraža v tem, da je več udeležencev svoje razpoloženje uvrstilo v spodnji del koordinatnega sistema. Največja gostota razpoloženj udeležencev se nahaja v spodnjem desnem kvadrantu, kar pomeni, da se počutijo bolj prijetno in so bolj neaktivni. 
 
 Zelo zanimivo je, da s koordinato y korelira starost in tudi poslušanje glasbe. Tisti, ki so starejši, so označili, da se počutijo manj aktivne in obenem manj poslušajo glasbo. 
 
@@ -765,13 +767,13 @@ Zelo zanimivo je, da s koordinato y korelira starost in tudi poslušanje glasbe.
 \centering
 \includegraphics[width=10cm]{images/vamood.png}
 
-\caption{Slika prikazuje odgovore vseh uporabnikov o razpoloženju v VA prostoru. Vidi se, da je bilo največ anketirance v času reševanja ankete prijetnega in bolj neaktivnega razpoloženja.  }
+\caption{Slika prikazuje odgovore vseh uporabnikov o razpoloženju v VA prostoru. Vidi se, da je bilo največ udeležencev v času reševanja ankete prijetnega in neaktivnega razpoloženja.  }
 \label{razpolozenjeva}
 \end{figure}
 
-V anketi smo povpraševali tudi o tem kako uporabniki dojemajo posamezno razpoloženje. Razpoloženje so morali opisati tako, da so posamezno oznako postavili v VA prostor. Na sliki \ref{moodperception} je prikazana umestitev 8 razpoloženj v VA prostor. 
+V anketi smo spraševali tudi o tem, kako uporabniki dojemajo posamezno razpoloženje. Razpoloženje so morali opisati tako, da so posamezno oznako postavili v VA prostor. Na sliki \ref{moodperception} je prikazana umestitev 8 razpoloženj v VA prostor. 
 
-Slika levo zgoraj prikazuje primerjavo med razpoloženjema strah in sreča. Strah je zelo neprijetno razpoloženje, sreča pa prijetno. Oba sta razporejena praktično preko celotne y osi, kar si lahko razlagamo s tem, da sta to razpoloženji, za katera je težko določiti ali sta aktivna ali ne. 
+Slika levo zgoraj prikazuje primerjavo med razpoloženjema strah in sreča. Strah je zelo neprijetno razpoloženje, sreča pa prijetno. Oba sta razporejena praktično preko celotne y osi, kar si lahko razlagamo s tem, da sta to razpoloženji, za katera je težko določiti ali sta aktivni ali ne. 
 
 Iz slike desno zgoraj je po pričakovanjih razvidno, da je energičnost zelo prijetno in aktivno razpoloženje, obenem pa je žalost neprijetna in neaktivna. Zanimivo je, da je kar nekaj uporabnikov označilo, da je žalost aktivno razpoloženje.
 
@@ -779,13 +781,13 @@ Iz slike desno zgoraj je po pričakovanjih razvidno, da je energičnost zelo pri
 \centering
 \includegraphics[width=12cm]{images/vamoodlables.png}
 
-\caption{V zgornjih valence-arousal prostorih je prikazana razporeditev 8 razpoloženj, glede na to kako so jih v ta prostor uvrstili anketiranci. V splošnem je opazno, do so se anketiranci glede prijetnosti odločili dokaj enotno, medtem ko so večje razlike v aktivnosti.}
+\caption{V zgornjih valence-arousal prostorih je prikazana razporeditev 8 razpoloženj, glede na to, kako so jih v ta prostor uvrstili udeleženci. V splošnem je opazno, da so se udeleženci glede prijetnosti odločili dokaj enotno, medtem ko so večje razlike v aktivnosti.}
 \label{moodperception}
 \end{figure} 
 
-Na tretjem grafu (levo spodaj) je narejena primerjava med jezo in sproščenostjo. Jeza je po pričakovanjih zelo aktivno in negativno razpoloženje, čeprav je zanimivo, da nekaj anketirancev meni, da je neaktivna. Med tem je sproščenost prijetna in po aktivnosti razporejena preko celotnega prostora, čeprav prevladuje mnenje, da je bolj neaktivna. Tukaj je tudi veliko odgovorov, ki so nevtralni.
+Na tretjem grafu (levo spodaj) je narejena primerjava med jezo in sproščenostjo. Jeza je po pričakovanjih zelo aktivno in negativno razpoloženje, čeprav je zanimivo, da nekaj udeležencev meni, da je neaktivna. Sproščenost je prijetna in glede na aktivnost razporejena preko celotnega prostora, čeprav prevladuje mnenje, da je bolj neaktivno razpoloženje. Tukaj je tudi veliko odgovorov, ki so nevtralni.
 
-Iz četrte slike se vidi, da je veselje zelo prijetno in aktivno, medtem ko je nezadovoljstvo neprijetno. Po aktivnosti je nezadovoljstvo malo bolj razpršeno, kar govori o tem, da je ta parameter pri tem razpoloženju težje določiti.
+Iz četrte slike je razvidno, da je veselje zelo prijetno in aktivno razpoloženje, medtem ko je nezadovoljstvo neprijetno. Po aktivnosti je nezadovoljstvo bolj razpršeno, kar govori o tem, da je ta parameter pri tem razpoloženju težje določiti.
 
 \begin{figure}[!hbt]
 \centering
@@ -797,9 +799,9 @@ Iz četrte slike se vidi, da je veselje zelo prijetno in aktivno, medtem ko je n
 
 \paragraph{Barva}
 
-Ugotovili smo, da obstaja zelo dobra korelacija med razpoloženjem in  pozicijo razpoloženja v VA prostoru, kar je možno opaziti na sliki \ref{moodcolor}. Pri prijetnih razpoloženjih se barva v večini primerih giblje med rdečo in nežno modro. Pri neprijetnih razpoloženjih so odtenki večinoma modri, črni, rdeči in vijolični. Barve so tu zelo intenzivne.
+Ugotovili smo, da obstaja zelo dobra korelacija med barvo in  pozicijo razpoloženja v VA prostoru, kar je možno opaziti na sliki \ref{moodcolor}. Pri prijetnih razpoloženjih se barva v večini primerih giblje med rdečo in nežno modro. Pri neprijetnih razpoloženjih so odtenki večinoma modri, črni, rdeči in vijolični. Barve so tu zelo intenzivne.
 
-Iz slike \ref{moodcolor} je razvidno da so bili pri strahu pogosto izbrani bolj sivi in črni odtenki. Veselje je bilo v večini primerov označeno z bolj intenzivnimi toni. Odtenki pa so bili v tem primeru bolj rdeči, oranžni, rumeni ter svetlo zeleni. Pri energičnosti se je večina uporabnikov odločila za rdečo, zeleno in rumeno barvo. Za sproščenost je zanimivo, da je dokaj enakomerno razporejena preko celotnega barvnega spektra. Torej si to razpoloženje vsak udeleženec predstavlja drugače. Intenzivnost barv je pri sproščenosti manjša. Pri jezi je bila pogosto izbrana barva rdeča, modra ali vijolična. Izbirali so praktično med vsemi intenzivnostmi.
+Iz slike \ref{moodcolor} je razvidno da so bili pri strahu pogosto izbrani bolj sivi in črni odtenki. Veselje je bilo v večini primerov označeno z bolj intenzivnimi toni. Odtenki so bili v tem primeru rdeči, oranžni, rumeni ter svetlo zeleni. Pri energičnosti se je večina uporabnikov odločila za rdečo, zeleno in rumeno barvo. Za sproščenost je zanimivo, da je dokaj enakomerno razporejena preko celotnega barvnega spektra. Torej si to razpoloženje vsak udeleženec predstavlja drugače. Intenzivnost barv je pri sproščenosti manjša. Pri jezi je bila pogosto izbrana rdeča, modra ali vijolična barva. Izbirali so praktično med vsemi intenzivnostmi.
 
 
 \subsection{Glasba, razpoloženje in barva}
@@ -808,15 +810,15 @@ Iz slike \ref{moodcolor} je razvidno da so bili pri strahu pogosto izbrani bolj 
 \centering
 \includegraphics[width=12.5cm]{images/moodmusic.png}
 
-\caption{Prikaz razpoloženj v VA prostoru skupaj z barvami, s katerimi so razpoloženja označili anketiranci. S krogci so označena razpoloženja, ki jih po njihovem mnenju glasba vzbudi pri poslušalcu, z kvadrati pa razpoloženja, ki so izražena v glasbi. Narejen je prikaz za 4 pesmi. Nad slikami so označene identifikacijske številke pesmi. Prva pesem je iz zbirke filmske glasbe (identifikacijska številka se začne z 1), druga je iz zbirke etnografskih pesmi (identifikacijska številka se začne z 4), tretja iz zbirke Jamendo (identifikacijska številka se začne z 5) in četrta iz nabora moderne elektro-akustične glasbe (identifikacijska številka se začne z 6).}
+\caption{Prikaz razpoloženj v VA prostoru skupaj z barvami, s katerimi so razpoloženja označili uporabniki. S krogci so označena razpoloženja, ki jih po njihovem mnenju glasba vzbudi pri poslušalcu, z kvadrati pa razpoloženja, ki so izražena v glasbi. Narejen je prikaz za 4 pesmi. Nad slikami so označene identifikacijske številke pesmi. Prva pesem je iz zbirke filmske glasbe (identifikacijska številka se začne z 1), druga je iz zbirke etnografskih pesmi (identifikacijska številka se začne z 4), tretja iz zbirke Jamendo (identifikacijska številka se začne z 5) in četrta iz nabora moderne elektro-akustične glasbe (identifikacijska številka se začne z 6).}
 \label{moodmusic}
 \end{figure} 
 
-Za konec smo izbrali še 4 glasbene odlomke in v sliki \ref{moodmusic} prikazal rezultate. Predstavili smo VA vrednosti, kamor so anketiranci postavili razpoloženja, ki nastopajo v posamezni pesmi. Z krogci so označena mesta kamor so postavili razpoloženja, ki jih po njihovem mnenju glasba vzbudi pri človeku. Z kvadratki so predstavljena razpoloženja, ki jih pesem izraža. Obenem sem vizualiziral tudi barve, ki po mnenju uporabnikov opisujejo posamezno pesem. 
+Za konec smo izbrali še 4 glasbene odlomke in v sliki \ref{moodmusic} prikazal rezultate. Predstavili smo VA vrednosti, kamor so udeleženci postavili razpoloženja, ki nastopajo v posamezni pesmi. Z krogci so označena mesta kamor so postavili razpoloženja, ki jih po njihovem mnenju glasba vzbudi pri človeku. Z kvadratki so predstavljena razpoloženja, ki jih pesem izraža. Obenem smo vizualizirali tudi barve, ki po mnenju uporabnikov opisujejo posamezno pesem. 
 
-Pri prvi pesmi nastopajo razpoloženja, ki so bolj pozitivna in aktivna (večina oznak se nahaja desno zgoraj). Tudi barve so glede na analizo barv zgoraj temu primerne, saj so svetle in niso tako intenzivne, kar se ujema z bolj aktivnimi razpoloženji. Iz grafa se opazi, da so razpoloženja, ki jih pesem vzbudi malo bolj razpršena, kot tista, ki jih pesem izraža.
+Pri prvi pesmi nastopajo razpoloženja, ki so bolj pozitivna in aktivna (večina oznak se nahaja desno zgoraj). Tudi barve so glede na analizo barv zgoraj temu primerne, saj so svetle in niso tako intenzivne, kar se ujema z bolj aktivnimi razpoloženji. Iz grafa se opazi, da ljudje bolj poenoteno dojemajo čustva, ki naj bi jih glasba izražala, manj enotni pa so si v čustvih, ki jih ob poslušanju doživljajo. 
 
-Pri drugi pesmi (desno zgoraj) so razpoloženja še vedno bolj prijetna in tudi malo bolj aktivna kot neaktivna. Tudi barve so enako kot pri prejšnji sliki temu primerne. V primerjavi s prejšnjo pesmijo pa so anketiranci veliko bolj neodločeni glede aktivnosti v pesmi. Tukaj so izražena razpoloženja manj razpršena in se v večini nahajajo v zgornjem desnem delu grafa za razliko od tistih, ki jih pesem vzbuja. 
+Pri drugi pesmi (desno zgoraj) so razpoloženja še vedno bolj prijetna in tudi malo bolj aktivna kot neaktivna. Tudi barve so enako kot pri prejšnji sliki temu primerne. V primerjavi s prejšnjo pesmijo pa so udeleženci veliko bolj neodločeni glede aktivnosti v pesmi. Tudi pri tej pesmi so izražena razpoloženja manj razpršena in se v večini nahajajo v zgornjem desnem delu grafa za razliko od tistih, ki jih pesem vzbuja. 
 
 Pri pesmi na grafu levo spodaj odločitve niso tako enotne. V večji meri prevladujejo prijetna in obenem aktivna razpoloženja. Je pa zanimivo, da se pojavijo 4 gruče odgovorov. Prva je skrajno levo zgoraj, druga levo spodaj, tretja največja je desno zgoraj in četrta desno spodaj. Zanimivo je, da so odločitve o izraženih razpoloženjih z nekaj izjemami bolj aktivne, tiste o vzbujenih pa se v večji meri pojavijo tudi v ostalih delih prostora. 
 
@@ -830,20 +832,20 @@ Zadali smo si, da preizkusimo delovanje nekaterih algoritmov za ocenjevanje razp
 
 Prvi algoritem, ki smo ga preizkusil je algoritem, ki so ga implementirali Schmidt et al. \cite{schmidt2009projection}. Ni nam uspelo dobiti izvirnega algoritma avtorja. Po informacijah, ki smo jih pridobil ob natančnem pregledu avtorjevega članka in nekaj izmenjanih e-poštah z avtorjem, smo sami implementiral algoritem, po navodilih avtorja. Algoritem iz glasbe izračuna značilnice. Na podlagi teh pa potem napove prijetnost (valence) in aktivnost (arousal) v skladbi. 
 
-Algoritem za sovje delovanje potrebuje značilnice izračunane na podlagi glasbenih odlomkov. Uporabili smo značilnici MFCC \cite{logan2000mel} in kromatski vektor \cite{Bello2005}. MFCC je bil izračunan s koeficientom 20, kromatski vektor pa je bil izračunan tako, da smo dobili 12 razredov tonskih višin. Za računanje teh vrednosti smo uporabili Python knjižnico LibROSA. Poleg tega potrebujemo še že znane VA vrednosti za del odlomkov, da na podlagi tega treniramo algoritem. V našem primeru smo imeli za vse odlomke znane VA vrednosti, tako smo lahko naključno določili na katerem delu podatkovne zbirke bomo trenirali algoritem in na katerem delu testirali. Obenem smo na tak način lahko preverili natančnost naših napovedi. VA vrednosti smo smo izračunali za vsako pesem s povprečenjem vrednosti v podatkovni zbirki opisani v poglavju \ref{odatasetu}.
+Algoritem za delovanje potrebuje značilnice izračunane na podlagi glasbenih odlomkov. Uporabili smo značilnici MFCC \cite{logan2000mel} in kromatski vektor \cite{Bello2005}. MFCC je bil izračunan s koeficientom 20, kromatski vektor pa je bil izračunan tako, da smo dobili 12 razredov tonskih višin. Za računanje teh vrednosti smo uporabili Python knjižnico LibROSA. Poleg tega smo potrebovali še že znane VA vrednosti za del odlomkov, da na podlagi tega treniramo algoritem. V našem primeru smo imeli za vse odlomke znane VA vrednosti, tako smo lahko naključno določili, na katerem delu podatkovne zbirke bomo trenirali algoritem in na katerem delu testirali. Obenem smo na tak način lahko preverili natančnost naših napovedi. VA vrednosti smo izračunali za vsako pesem s povprečenjem vrednosti v podatkovni zbirki opisani v poglavju \ref{odatasetu}.
 
-Algoritem deluje, tako da glasbene odlomke naključno razdeli na dva dela. 70\% podatkovne odlomkov uporabi za treniranje in ostalih 30\% za testiranje. Na delu zbirke za treniranje potem uporabi metodo najmanjših kvadratov (Least squares method) \cite{abdi2007method} s katero izračuna vektor $b$, ki ga potem uporabimo za preslikovanje iz matrike z značilnicami v VA vrednosti z enačbo \ref{regresion}. Metod najmanjših kvadratov kot vhod vzame matriko z značilnicami za posamezno pesem in vektor z VA vrednostmi. Ta postopek izvajamo ločeno za prijetnost (valence) in aktivnost (arousal).  
+Algoritem deluje, tako da glasbene odlomke naključno razdeli na dva dela. 70\% podatkovne odlomkov uporabi za treniranje in ostalih 30\% za testiranje. Na delu zbirke za treniranje potem uporabi metodo najmanjših kvadratov (Least squares method) \cite{abdi2007method}, s katero izračuna vektor $b$, ki ga potem uporabimo za preslikovanje iz matrike z značilnicami v VA vrednosti z enačbo \ref{regresion}. Metoda najmanjših kvadratov kot vhod vzame matriko z značilnicami za posamezno pesem in vektor z VA vrednostmi. Ta postopek izvajamo ločeno za prijetnost (valence) in aktivnost (arousal).  
 
 \begin{equation} 
 \label{regresion}
 y = X \cdot b
 \end{equation} 
 
-$X$ v enačbi \ref{regresion} je matrika, ki v vsaki vrstici vsebuje značilnice za posamezen glasbeni odlomek. $b$ je vektor, ki preslikuje iz prostora, ki ga predstavljajo značilnice v VA vrednost. $y$ je vrednost, ki jo algoritem napove. Vsaka vrednost predstavlja prijetnost ali aktivnost za en glasbeni odlomek. 
+V enačbi \ref{regresion} je $X$ matrika, ki v vsaki vrstici vsebuje značilnice za posamezen glasbeni odlomek, $b$ je vektor, ki preslikuje iz prostora, ki ga predstavljajo značilnice v VA vrednost. Vrednost, ki jo algoritem napove je $y$. Vsaka vrednost predstavlja prijetnost ali aktivnost za en glasbeni odlomek. 
 
 \subsection{Rezultati za regresijski algoritem}
 
-Algoritem smo kot sem že omenil trenirali z 70\% glasbenih odlomkov, test pa smo izvedli na 30\% odlomkov. Te napovedi, ki jih je algoritem dal na testnih odlomkih smo potem primerjali s podatki za vsako pesem iz podatkovne zbirke.
+Algoritem smo kot sem že omenil trenirali z 70\% glasbenih odlomkov, test pa smo izvedli na 30\% odlomkov. Te napovedi, ki jih je algoritem dal na testnih odlomkih, smo potem primerjali s podatki za vsako pesem iz podatkovne zbirke.
 
 Rezultati so predstavljeni v tabeli \ref{regressionresults} za oba tipa značilnic (MFCC in kromatski vektor) posebej. Za vsak primer smo izračunali povprečno razdaljo med povprečno vrednostjo iz podatkovne zbirke in algoritmično napovedano vrednostjo. Prav tako smo izračunali povprečno razdaljo med najbližjo točko v podatkovni zbirki in napovedano vrednostjo. Povprečno razdaljo do povprečne vrednosti smo izrazili tudi v večkratniku standardnega odklona v podatkih iz podatkovne zbirke. Za primerjavo smo algoritem preizkusili tudi na Mood Swing podatkovni zbirki \cite{schmidt2011modeling}. 
 
@@ -873,7 +875,7 @@ Algoritem smo preizkusil tudi na kromatskem vektorju izračunanem s hierarhični
 
 \begin{table}[htb]
 \begin{center}
-\caption{Povprečna razdalja med povprečnimi vrednostmi in napovedmi izračunana ločeno za prijetnost in aktivnost. Razvidno je da so napovedi aktivnosti dosti boljše od napovedi prijetnosti. }
+\caption{Povprečna razdalja med povprečnimi vrednostmi in napovedmi izračunana ločeno za prijetnost in aktivnost. Razvidno je da so napovedi aktivnosti veliko boljše od napovedi prijetnosti. }
 \begin{tabular}{|l|c|c|c|}
 \hline
  & MFCC & Kromatski vektor & HKM kromatski vektor \\
@@ -893,19 +895,19 @@ Aktivnost (arousal) & 0.0871 & 0.0940 & 0.0898\\
 \label{graphs}
 \end{figure}
 
-V tabeli \ref{seperateresults} so predstavljene povprečne razdalje  izračunane ločeno za prijetnost (valence) in aktivnost (arousal). Iz teh rezultatov je razvidno, da z uporabo vseh značilnic možno bolj natančno  napovedati aktivnost v primerjavi s prijetnostjo. Med tem je možno še opaziti, da kromatski vektor izračunan z Hierarhični kompozicionalnim modelom da veliko boljše rezultate pri računanju prijetnosti kot ostale značilnice, med tem ko je aktivnost izračunana podobno natančno kot z uporabo MFCC. 
+V tabeli \ref{seperateresults} so predstavljene povprečne razdalje  izračunane ločeno za prijetnost (valence) in aktivnost (arousal). Iz teh rezultatov je razvidno, da je z uporabo vseh značilnic možno bolj natančno  napovedati aktivnost v primerjavi s prijetnostjo. Med tem je možno še opaziti, da kromatski vektor izračunan z Hierarhični kompozicionalnim modelom da veliko boljše rezultate pri računanju prijetnosti kot ostale značilnice, med tem ko je aktivnost izračunana podobno natančno kot z uporabo MFCC. 
 
 
 
 \section{Essentia Gaiatransofrm algoritem}
 
-Drug algoritem, na katerem smo preizkusili natančnost napovedovanja razpoloženja na glasbenih odlomkih iz naše podatkovne zbirke, je GaiaTransform algoritem, ki na podlagi nekaterih značilnic izračuna nekatere visoko-nivojske značilnice \cite{bogdanov2013form} med katerimi je tudi razpoloženje. Algoritem se nahaja v knjižnicah Essentia in Gaia \cite{bogdanov2013essentia}, ki nam jo je po kar nekaj problemih uspelo naložiti na računalnik. 
+Drugi algoritem, na katerem smo preizkusili natančnost napovedovanja razpoloženja na glasbenih odlomkih iz naše podatkovne zbirke, je GaiaTransform algoritem, ki na podlagi nekaterih značilnic izračuna nekatere visoko-nivojske značilnice \cite{bogdanov2013form}, med katerimi je tudi razpoloženje. Algoritem se nahaja v knjižnicah Essentia in Gaia \cite{bogdanov2013essentia}, ki nam jo je po kar nekaj problemih uspelo naložiti na računalnik. 
 
-Essentia je knjižnica namenjena analizi zvoka in predvsem uporabi na MIR področju. Napisana je v C++ jeziku, možno pa jo je uporabiti tudi v jeziku Python. Ponuja funkcionalnost kot so branje in pisanje zvoka, standardno procesiranje signalov, statistična opredelitev podatkov, izračun velikega števila spektralnih, časovnih, tonskih in ostali značilnic. Te značilnice so osnova za izračun visoko nivojskih značilnic. Essentia skupaj s knjižnico Gaia ponuja funkcionalnosti za izračun nekaterih visoko nivojskih značilnic kot so žanr, kultura (zahodna ali nezahodna), vrsto plesa na izbrano skladbo, barvo zvoka, razpoloženja v skladbi. Ocenjuje tudi ali je pesem inštrumental ali ne. Ker v tem delu preučujemo predvsem razpoloženje v glasbi se bomo osredotočili na funkcionalnost, ki poskuša odkriti razpoloženje v glasbi.
+Essentia je knjižnica namenjena analizi zvoka in predvsem uporabi na MIR področju. Napisana je v C++ jeziku, možno pa jo je uporabiti tudi v jeziku Python. Ponuja funkcionalnost kot so branje in pisanje zvoka, standardno procesiranje signalov, statistična opredelitev podatkov, izračun velikega števila spektralnih, časovnih, tonskih in ostali značilnic. Te značilnice so osnova za izračun visoko nivojskih značilnic. Essentia skupaj s knjižnico Gaia ponuja funkcionalnosti za izračun nekaterih visoko nivojskih značilnic kot so žanr, kultura (zahodna ali nezahodna), vrsto plesa na izbrano skladbo, barvo zvoka, razpoloženja v skladbi. Ocenjuje tudi, ali je pesem inštrumental ali ne. Ker v tem delu preučujemo predvsem razpoloženje v glasbi, se bomo osredotočili na funkcionalnost, ki poskuša odkriti razpoloženje v glasbi.
 
-Algoritem visoko nivojske značilnice izračuna na podlagi nizko nivojskih, ki so prav tako izračunane s knjižnico Essentia. Za določanje visoko nivojskih značilnic seveda ne uporabi vseh značilnic ampak samo podmnožico teh. To podmnožico so za vsak razred (na primer srečo) izračunali posebej z uporabo algoritma za izbiro značilnic na podlagi korelacije (correlationbased feature selection - CFS). 
+Algoritem visoko nivojske značilnice izračuna na podlagi nizko nivojskih, ki so prav tako izračunane s knjižnico Essentia. Za določanje visoko nivojskih značilnic seveda ne uporabi vseh značilnic, ampak samo podmnožico teh. To podmnožico so za vsak razred (na primer srečo) izračunali posebej z uporabo algoritma za izbiro značilnic na podlagi korelacije (correlationbased feature selection - CFS). 
 
-Za klasifikacijo so uporabili večrazredni (muliti-class) SVM (support vector machine) algoritem z ena proti ena (one-versus-one) strategijo glasovanja (voting strategy). Uporabili so SVM algoritem iz knjižnice libSVM. Algoritem so razširili z možnostjo napovedovanja verjetnosti prisotnosti določenega razreda (na primer, da pove da je verjetnost, da v pesmi nastopa sreča 89\%). SVM je treniran s 5-fold cross-validation.  
+Za klasifikacijo so uporabili večrazredni (muliti-class) SVM (support vector machine) algoritem z ena proti ena (one-versus-one) strategijo glasovanja (voting strategy). Uporabili so SVM algoritem iz knjižnice libSVM. Algoritem so razširili z možnostjo napovedovanja verjetnosti prisotnosti določenega razreda (na primer, da pove, da je verjetnost, da v pesmi nastopa sreča 89\%). SVM je treniran s 5-fold cross-validation.  
 
 Algoritem so trenirali na 20 različnih glasbenih zbirkah. Algoritem za ocenjevanje razpoloženja iz glasbe so trenirali na zbirki, ki so jo pripravili Laurier et. al \cite{Laurier2009}. Zbirko so potem sami še dodatno označili. 
 
@@ -914,11 +916,11 @@ Za razpoloženje algoritem vrne verjetnost, da je v neki pesmi prisotno eno od �
 \subsection{Natančnost razvrščanja}
 \label{natancnostessentia}
 
-Zgoraj opisani algoritem po podatkih avtorjev med samostojnimi oznakami za razpoloženje (vesel, žalosten, elektronski, zabaven, sproščen in agresiven) najbolje napoveduje prisotnost agresivnosti z natančnostjo 97,5\%. Potem sledi razpoloženje sproščen (92,92\% natančno). Sledijo jima zabaven (88,38\%), žalosten (86,96\%) in elektronski (84,59\%). Najslabše napovedi da algoritem za razpoloženje vesel, kjer je natančnost 82,86\%.
+Zgoraj opisani algoritem po podatkih avtorjev med samostojnimi oznakami za razpoloženje (vesel, žalosten, elektronski, zabaven, sproščen in agresiven) najbolje napoveduje prisotnost agresivnosti z natančnostjo 97,5\%. Temu sledijo razpoloženja sproščen (92,92\% natančno). Sledijo jima zabaven (88,38\%), žalosten (86,96\%) in elektronski (84,59\%). Najslabše napovedi da algoritem za razpoloženje vesel, kjer je natančnost 82,86\%.
 
 \begin{table}[htb]
 \begin{center}
-\caption{Natančnost napovedovanja v gruče v odstotkih glede na teste, ki so jih naredili avtorji algoritma. V navpičnem stolpcu so gruče katerim pesem pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem.}
+\caption{Natančnost napovedovanja v gruče v odstotkih glede na teste, ki so jih naredili avtorji algoritma. V vrstici so gruče katerim pesem pripada, v stolpcu pa gruče kamor je algoritem uvrsti pesem.}
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
  & Gruča 1 & Gruča 2 & Gruča 3 & Gruča 4 & Gruča 5 \\ \hline
@@ -934,11 +936,11 @@ Gruča 5 & 25,49	& 1,96	& 0,00 & 1,96 & 70,59 \\ \hline
 \end{center}
 \end{table}
 
-Povsem drugačno je stanje pri natančnosti napovedovanja razpoloženj v gruče. V tem primeru je natančnost le  59.14\%. Iz tabele \ref{natancnost_gruce} je razvidno, da algoritem najbolj natančno napoveduje gručo 3 in gručo 5. Najslabše pa gručo 4. Iz tabele je tudi očitno, da sta gruča 2 in gruča 3 od gruče 5 tako drugačni, da ni napovedi, kjer bi pesem namesto v gručo 2 ali gručo 3 uvrstil v gručo 5. Med tem pa je veliko napačnih preslikav med gručama 1 in 2. Veliko je tudi takšnih napačnih napovedi, ko algoritem pesmi namesto gruče 5 določi gručo 1. Obratna korelacija ni tako močna. 
+Povsem drugačno je stanje pri natančnosti napovedovanja razpoloženj v gruče. V tem primeru je natančnost le  59.14\%. Iz tabele \ref{natancnost_gruce} je razvidno, da algoritem najbolj natančno napoveduje gručo 3 in gručo 5, najmanj natančno pa gručo 4. Iz tabele je tudi očitno, da sta gruča 2 in gruča 3 od gruče 5 tako drugačni, da ni napovedi, ki bi pesem namesto v gručo 2 ali gručo 3 uvrstila v gručo 5. Med tem pa je veliko napačnih preslikav med gručama 1 in 2. Veliko je tudi takšnih napačnih napovedi, ko algoritem pesmi namesto gruče 5 določi gručo 1. Obratna korelacija ni tako močna. 
 
 \subsection{Rezultati napovedovanja z algoritmom Gaiatransform}
 
-Primerjava rezultatov pri tem algoritmu je bila malo bolj zahtevna kot primerjava z uporabo regresije, saj v naši podatkovni zbirki nimamo enakih oznak, kot jih algoritem vrača kot rezultat. Zaradi tega je bilo potrebno poenotiti oznake. Ugotovil sem, da bo primerjava najlažja, če uporabim MIREX gruče, ki jih vrača algoritem. Oznake, ki jih imamo v naši podatkovni zbirki, smo razvrstili v gruče glede na podobnost s razpoloženji, ki se nahajajo v teh gručah in so prikazane v poglavju \ref{algoritmisp}. Razporeditev razpoloženj iz naše podatkovne zbirke v gruče je prikazana v tabeli \ref{gruce_nase}. 
+Primerjava rezultatov pri tem algoritmu je bila malo zahtevnejša kot primerjava z uporabo regresije, saj v naši podatkovni zbirki nimamo enakih oznak, kot jih algoritem vrača kot rezultat. Zaradi tega je bilo potrebno poenotiti oznake. Ugotovili smo, da bo primerjava najlažja, če uporabimo MIREX gruče, ki jih vrača algoritem. Oznake, ki jih imamo v naši podatkovni zbirki, smo razvrstili v gruče glede na podobnost z razpoloženji, ki se nahajajo v teh gručah in so prikazane v poglavju \ref{algoritmisp}. Razporeditev razpoloženj iz naše podatkovne zbirke v gruče je prikazana v tabeli \ref{gruce_nase}. 
 
 \begin{table}[htb]
 \begin{center}
@@ -962,11 +964,11 @@ Gruča 5 & jeza, strah\\\hline
 \end{center}
 \end{table}
 
-Nato smo izvedli primerjavo tako, da smo pogledali katero je najbolj pogosto razpoloženje v podatkovni zbirki pri pri vsakem izmed 200 glasbenih odlomkov. To razpoloženje smo potem glede na preslikavo v tabeli \ref{gruce_nase} preslikal v gručo. Potem smo te gruče primerjali z gručami, ki jih za isti glasbeni odlomek napove algoritem. 
+Nato smo izvedli primerjavo tako, da smo pogledali katero je najbolj pogosto razpoloženje v podatkovni zbirki pri vsakem izmed 200 glasbenih odlomkov. To razpoloženje smo potem glede na preslikavo v tabeli \ref{gruce_nase} preslikal v gručo. V nadaljevanju smo te gruče primerjali z gručami, ki jih za isti glasbeni odlomek napove algoritem. 
 
 \begin{table}[htb]
 \begin{center}
-\caption{Rezultati napovedovanja v gruče v odstotkih. V navpičnem stolpcu so gruče katerim pesem pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem. V četrti so ničle, ker se nobeno razpoloženje iz naše zbirke ne ujema z razpoloženji iz te gruče. Zaradi tega tudi nobena pesem ne pripada tej gruči. Najbolj natančne ocene smo dobili za gručo 3, najslabše za gručo 1.}
+\caption{Rezultati napovedovanja v gruče v odstotkih. V vrstici so gruče katerim pesem pripada, v stolpcu pa gruče kamor je algoritem uvrsti pesem. V četrti gruči so ničle, ker se nobeno razpoloženje iz naše zbirke ne ujema z razpoloženji iz te gruče. Zaradi tega tudi nobena pesem ne pripada tej gruči. Najbolj natančne ocene smo dobili za gručo 3, najslabše za gručo 1.}
 \begin{tabular}{|l|c|c|c|c|c|c|}
 \hline
  & Gruča 1 & Gruča 2 & Gruča 3 & Gruča 4 & Gruča 5 & Št. odl.\\ \hline
@@ -982,15 +984,15 @@ Gruča 5 & 26,32	& 5,26	& 15,79 & 5,26 & 47,37 & 19 \\ \hline
 \end{center}
 \end{table}
 
-Natančnost napovedovanja na naši podatkovni zbirki je 47,50\%. Bolj natančni rezultati napovedovanja so prikazani v tabeli \ref{natancnost_gruce_nasa}. Vsaka vrstica predstavlja gručo v katero spada pesem. Stolpci pa predstavljajo gruče v katere je algoritem uvrstil glasbeni odlomek. Torej na presečišču nam številka vrstice pove kam bi moral spadati določen odlomek, številka stolpca pa kam ga je uvrstil algoritem. Na presečišču je zapisan odstotek elementov uvrščenih v gručo v stolpcu glede na število elementov v dejanski gruči. 
+Natančnost napovedovanja na naši podatkovni zbirki je 47,50\%. Bolj natančni rezultati napovedovanja so prikazani v tabeli \ref{natancnost_gruce_nasa}. Vsaka vrstica predstavlja gručo, v katero spada pesem. Stolpci pa predstavljajo gruče, v katere je algoritem uvrstil glasbeni odlomek. Torej na presečišču nam številka vrstice pove, kam bi moral spadati določen odlomek, številka stolpca pa kam ga je uvrstil algoritem. Na presečišču je zapisan odstotek elementov uvrščenih v gručo v stolpcu glede na število elementov v dejanski gruči. 
 
-Iz teh podatkov je razvidno, da je algoritem najbolj natančno razvrstil elemente v gručo 3, med tem ko je bil najmanj natančen pri določanju gruče 1. Tukaj so rezultati slabi, saj je algoritem večino pesmi iz te gruče uvrstil v gručo 3. Mogoče je tukaj eden od problemov v tem, da je v tej gruči malo pesmi (7), zato ne moramo posplošiti teh rezultatov. V četrti vrstici so vsi rezultati nič, ker v naši podatkovni zbirki nimamo razpoloženja, za katerega bi lahko rekli, da pripada tej gruči. Temu posledično ni nobene pesmi uvrščene v to gručo. Iz rezultatov lahko opazimo, da je več pesmi, ki so v gruči 5 algoritem uvrstil v gručo 1, kar je podobno rezultatom avtorjev algoritma prikazanim v poglavju \ref{natancnostessentia}. Z avtorjevimi rezultati je podobno tudi to, da odlomki iz gruče 1 niso bili uvrščeni v gručo 4 in to, de je bilo malo odlomkov iz gruče 5 uvrščeno v gručo 2.
+Iz teh podatkov je razvidno, da je algoritem najbolj natančno razvrstil elemente v gručo 3, medtem ko je bil najmanj natančen pri določanju gruče 1. Tukaj so rezultati slabi, saj je algoritem večino pesmi iz te gruče uvrstil v gručo 3. Mogoče je tukaj eden od problemov v tem, da je v tej gruči malo pesmi (7), zato ne moramo posplošiti teh rezultatov. V četrti vrstici so vsi rezultati nič, ker v naši podatkovni zbirki nimamo razpoloženja, za katerega bi lahko rekli, da pripada tej gruči. Tako ni nobene pesmi uvrščene v to gručo. Iz rezultatov lahko opazimo, da je več pesmi, ki so v gruči 5, algoritem uvrstil v gručo 1, kar je podobno rezultatom avtorjev algoritma prikazanim v poglavju \ref{natancnostessentia}. Z avtorjevimi rezultati je podobno tudi to, da odlomki iz gruče 1 niso bili uvrščeni v gručo 4 in to, da je bilo malo odlomkov iz gruče 5 uvrščeno v gručo 2.
 
-Ker se pri določenih pesmih več razpoloženj pojavi skoraj enako pogosto v naši podatkovni zbirki, sem potem primerjavo dopolnil tako, da primerja vsa razpoloženja, ki so blizu razpoloženja, ki se pojavi največkrat. Če je gruča enega od teh razpoloženj enaka gruči v katero je algoritem uvrstil glasbeni odlomek smatramo napoved kot pravilno. 
+Ker se pri določenih pesmih več razpoloženj pojavi skoraj enako pogosto v naši podatkovni zbirki, smo potem primerjavo dopolnili tako, da primerja vsa razpoloženja, ki so blizu razpoloženja, ki se pojavi največkrat. Če je gruča enega od teh razpoloženj enaka gruči, v katero je algoritem uvrstil glasbeni odlomek smatramo napoved kot pravilno. 
 
 \begin{table}[htb]
 \begin{center}
-\caption{Rezultati napovedovanja v gruče v odstotkih v primeru, smo upoštevali tudi razpoloženja, ki so blizu največkrat označenem. V navpičnem stolpcu so gruče katerim pesem dejansko pripada, v vodoravnem pa gruče kamor je algoritem uvrsti pesem. V četrto gručo nismo uvrstili nobene pesmi, zaradi neujemanja vseh naših razpoloženj z razpoloženji v tej gruči. Kot pri tabeli \ref{natancnost_gruce_nasa} so tudi tukaj najboljše napovedi za gručo 3 in najslabše za gručo 1. }
+\caption{Rezultati napovedovanja v gruče v odstotkih v primeru, ko smo upoštevali tudi razpoloženja, ki so blizu največkrat označenem. V vrsticah so gruče, katerim pesem dejansko pripada, v stolpcu pa gruče kamor je algoritem uvrsti pesem. V četrto gručo nismo uvrstili nobene pesmi, zaradi neujemanja vseh naših razpoloženj z razpoloženji v tej gruči. Kot pri tabeli \ref{natancnost_gruce_nasa} so tudi tukaj najboljše napovedi za gručo 3 in najslabše za gručo 1. }
 \begin{tabular}{|l|c|c|c|c|c|c|}
 \hline
  & Gruča 1 & Gruča 2 & Gruča 3 & Gruča 4 & Gruča 5 & Št. odl.\\ \hline
@@ -1006,7 +1008,7 @@ Gruča 5 & 22,73	& 4,55 & 13,64 & 4,55 & 54,55 & 22 \\ \hline
 \end{center}
 \end{table}
 
-Pričakovano se je na tak način natančnost napovedovanja povečala in sedaj znaša 51.5\%. Iz rezultatov v tabeli \ref{natancnost_gruce_nasa_with_second} je razvidno, da se je natančnost izražena v odstotkih najbolj povečala v prvi gruči, po številu pesmi pa v gruči 5. V gruči 1 so za razliko od prej samo še tiste napačne napovedi, ki uvrščajo v gručo 3. Odstotek teh se je povečal, ker se je zmanjšalo skupno število pesmi v tej gruči. Ostale napovedi se niso bistveno spremenile. 
+Pričakovano je bilo, da tak način natančnost napovedovanja poveča. Natančnost pridobljena na tak način znaša 51.5\%. Iz rezultatov v tabeli \ref{natancnost_gruce_nasa_with_second} je razvidno, da se je natančnost izražena v odstotkih najbolj povečala v prvi gruči, po številu pesmi pa v gruči 5. V gruči 1 so za razliko od prej samo še tiste napačne napovedi, ki se uvrščajo v gručo 3. Odstotek teh se je povečal, ker se je zmanjšalo skupno število pesmi v tej gruči. Ostale napovedi se niso bistveno spremenile. 
 
 Kot smo že omenili algoritem poleg klasifikacije v MIREX gruče omogoča ocenjevanje za 6 razpoloženj. Za vsako od razpoloženj napove, če se pojavi v glasbenem odlomku. Glede na to, da se 3 od teh oznak ujemajo z oznakami v naši podatkovni zbirki, sem iz podatkovne zbirke vzel tiste pesmi, kjer je je to razpoloženje najbolj prisotno od vseh. Te pesmi sem potem primerjal z rezultati, ki jih vrne algoritem. 
 
@@ -1024,11 +1026,11 @@ Sproščen & 87,5\\ \hline
 \end{center}
 \end{table}
 
-Za ta primer algoritem napove pravilno prisotnost razpoloženja s 79,59\% natančnostjo. Kot je razvidno iz tabele \ref{natancnost_es_custva} je natančnost velika pri razpoloženjih žalosten in sproščen. Dosti manjša pa je pri razpoloženju srečen. Kar kaže na to, da je algoritmično direktno iz glasbenih odlomkov dosti lažje napovedati sproščenost in žalost, medtem ko je to težje pri razpoloženju srečen. 
+Za ta primer algoritem pravilno napove prisotnost razpoloženja s 79,59\% natančnostjo. Kot je razvidno iz tabele \ref{natancnost_es_custva} je natančnost velika pri razpoloženjih žalosten in sproščen. Dosti manjša pa je pri razpoloženju srečen, kar kaže na to, da je algoritmično direktno iz glasbenih odlomkov mnogo lažje napovedati sproščenost in žalost, medtem ko je to težje pri razpoloženju srečen. 
 
 Z uporabo algoritma za določanje MIREX gruč iz Essentie smo na naši podatkovni zbirki dobili slabše rezultate, kot so jih dobili avtorji. To gre po vsej verjetnosti pripisati temu, da naše oznake niso enake tistim, ki jih vrača algoritem, pri ročni pretvorbi pa nismo mogli zagotoviti popolnega ujemanja. 
 
-Pri napovedovanju posameznega razpoloženja pa so rezultati približno enaki tistim, ki so jih dobili avtorji za razpoloženji žalosten in sproščen. Za razpoloženje vesel so rezultati slabši. Mogoče gre za razliko v dojemanju razpoloženja srečen v slovenščini in razpoloženja "Happy" v angleščini. 
+Pri napovedovanju posameznega razpoloženja so rezultati približno enaki tistim, ki so jih dobili avtorji za razpoloženji žalosten in sproščen. Za razpoloženje vesel so rezultati slabši. Mogoče gre za razliko v dojemanju razpoloženja srečen v slovenščini in razpoloženja "Happy" v angleščini. 
 
 \bibliography{diploma1}{}
 \bibliographystyle{plain}

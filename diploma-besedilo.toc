@@ -36,8 +36,8 @@
 \contentsline {paragraph}{Zdravila in droge}{24}{section*.20}
 \contentsline {paragraph}{\IeC {\v Z}anri}{24}{section*.21}
 \contentsline {subsection}{\numberline {3.3.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva in barva}{27}{subsection.3.3.2}
-\contentsline {paragraph}{Barva}{31}{section*.22}
-\contentsline {subsection}{\numberline {3.3.3}Glasba, razpolo\IeC {\v z}enje in barva}{31}{subsection.3.3.3}
+\contentsline {paragraph}{Barva}{32}{section*.22}
+\contentsline {subsection}{\numberline {3.3.3}Glasba, razpolo\IeC {\v z}enje in barva}{32}{subsection.3.3.3}
 \contentsline {chapter}{\numberline {4}Algoritmi za ocenjevanje razpolo\IeC {\v z}enja v glasbi}{35}{chapter.4}
 \contentsline {section}{\numberline {4.1}Regresijski algoritem}{35}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Rezultati za regresijski algoritem}{36}{subsection.4.1.1}
