@@ -1,63 +1,26 @@
 \begin{thebibliography}{10}
 
-\bibitem{abdi2007method}
-Herv\'{e} Abdi.
-\newblock {The method of least squares}.
-\newblock {\em Encyclopedia of Measurement and Statistics. CA, USA: Thousand
-  Oaks}, 2007.
+\bibitem{JaeSikLee2006}
+Jin Chun~Lee {Jae Sik Lee}.
+\newblock {Music for My Mood: A Music Recommendation System Based on Context
+  Reasoning}.
+\newblock In Paul Havinga, Maria Lijding, Nirvana Meratnia, and Maarten Wegdam,
+  editors, {\em Smart Sensing and Context}, volume 4272 of {\em Lecture Notes
+  in Computer Science}, pages 190--203. Springer Berlin Heidelberg, Berlin,
+  Heidelberg, 2006.
 
-\bibitem{Bello2005}
-Juan~P Bello and Jeremy Pickens.
-\newblock {A robust mid-level representation for harmonic content in music
-  signals}.
-\newblock In {\em Proceedings of the International Conference on Music
-  Information Retrieval (ISMIR)}, pages 304--311, London, 2005.
+\bibitem{Song2012}
+Y~Song, S~Dixon, and M~Pearce.
+\newblock {A survey of music recommendation systems and future perspectives}.
+\newblock In {\em Proc. 9th Int. Symp. Computer Music Modelling and Retrieval
+  (CMMR)}, pages 395--410, London, 2012.
 
-\bibitem{ben2010user}
-Asa Ben-Hur and Jason Weston.
-\newblock {A user’s guide to support vector machines}.
-\newblock In {\em Data mining techniques for the life sciences}, pages
-  223--239. Springer, 2010.
-
-\bibitem{bogdanov2013form}
-D~Bogdanov.
-\newblock {\em {From music similarity to music recommendation: Computational
-  approaches based on audio features and metadata}}.
-\newblock PhD thesis, Universitat Pompeu Fabra, Barcelona, Spain, 2013.
-
-\bibitem{bogdanov2013essentia}
-Dmitry Bogdanov, Nicolas Wack, Emilia G\'{o}mez, Sankalp Gulati, Perfecto
-  Herrera, Oscar Mayor, Gerard Roma, Justin Salamon, Jos\'{e}~R Zapata, and
-  Xavier Serra.
-\newblock {Essentia: An Audio Analysis Library for Music Information
-  Retrieval.}
-\newblock In {\em ISMIR}, pages 493--498. Citeseer, 2013.
-
-\bibitem{brossier2004real}
-Paul Brossier, Juan~Pablo Bello, and Mark~D Plumbley.
-\newblock {Real-time temporal segmentation of note objects in music signals}.
-\newblock In {\em Proceedings of the ICMC}, 2004.
-
-\bibitem{chu2010lamp}
-Wei-rong Chu, RT-H Tsai, Ying-Sian Wu, Hui-Hsin Wu, Hung-Yi Chen, and JY-J Hsu.
-\newblock {LAMP, a lyrics and audio mandopop dataset for music mood estimation:
-  Dataset compilation, system construction, and testing}.
-\newblock In {\em Technologies and Applications of Artificial Intelligence
-  (TAAI), 2010 International Conference on}, pages 53--59. IEEE, 2010.
-
-\bibitem{Colibazzi2010}
-Tiziano Colibazzi, Jonathan Posner, Zhishun Wang, Daniel Gorman, Andrew Gerber,
-  Shan Yu, Hongtu Zhu, Alayar Kangarlu, Yunsuo Duan, James~A Russell, and
-  Bradley~S Peterson.
-\newblock {Neural systems subserving valence and arousal during the experience
-  of induced emotions.}
-\newblock {\em Emotion (Washington, D.C.)}, 10(3):377--389, 2010.
-
-\bibitem{dalgleish1999handbook}
-Tim Dalgleish and Michael~J Power.
-\newblock {Basic Emotions}.
-\newblock In {\em Handbook of cognition and emotion}. Wiley Online Library,
-  1999.
+\bibitem{chen2001music}
+Hung-Chen Chen and Arbee L~P Chen.
+\newblock {A music recommendation system based on music data grouping and user
+  interests}.
+\newblock In {\em Proceedings of the tenth international conference on
+  Information and knowledge management}, pages 231--238. ACM, 2001.
 
 \bibitem{Eerola2010}
 T~Eerola and J~K Vuoskoski.
@@ -65,12 +28,47 @@ T~Eerola and J~K Vuoskoski.
   music}.
 \newblock {\em Psychology of Music}, 39(1):18--49, 2010.
 
-\bibitem{Gerhard}
-David Gerhard.
-\newblock {Pitch Extraction and Fundamental Frequency: History and Current
-  Techniques}.
-\newblock Technical report, University of Regina, Saskatchewan, Canada, Regina,
-  2003.
+\bibitem{schmidt2011modeling}
+Erik~M Schmidt and Youngmoo~E Kim.
+\newblock {Modeling Musical Emotion Dynamics with Conditional Random Fields.}
+\newblock In {\em Proceedings of the International Conference on Music
+  Information Retrieval (ISMIR)}, pages 777--782, 2011.
+
+\bibitem{turnbull2008semantic}
+Douglas Turnbull, Luke Barrington, David Torres, and Gert Lanckriet.
+\newblock {Semantic annotation and retrieval of music and sound effects}.
+\newblock {\em Audio, Speech, and Language Processing, IEEE Transactions on},
+  16(2):467--476, 2008.
+
+\bibitem{schuller2010mister}
+Bj\"{o}rn Schuller, Clemens Hage, Dagmar Schuller, and Gerhard Rigoll.
+\newblock {‘Mister DJ, Cheer Me Up!’: Musical and textual features for
+  automatic mood classification}.
+\newblock {\em Journal of New Music Research}, 39(1):13--34, 2010.
+
+\bibitem{panda2013multi}
+R~Panda, R~Malheiro, B~Rocha, A~Oliveira, and R~P Paiva.
+\newblock {Multi-Modal Music Emotion Recognition: A New Dataset, Methodology
+  and Comparative Analysis}.
+\newblock {\em Proc. CMMR}, 2013.
+
+\bibitem{Krause2012}
+Bernie Krause.
+\newblock {Echonest of the past}.
+\newblock In {\em The Great Animal Orchestra: Finding the Origins of Music in
+  the World's Wild Places}, chapter Echonest o, pages 5--10. Hachette Digital,
+  Inc., London, 2012.
+
+\bibitem{lenko2009pomen}
+Mira Lenko, Tina Kogov\v{s}ek, and Peter Stankovi\'{c}.
+\newblock {\em {Pomen glasbe v o\v{c}eh mladih: diplomsko delo}}.
+\newblock M. Lenko, 2009.
+
+\bibitem{pesek2012prepoznavanje}
+Matev\v{z} Pesek.
+\newblock {\em {Prepoznavanje akordov s hierarhi\{\v{c}\}nim kompozicionalnim
+  modelom: diplomsko delo}}.
+\newblock PhD thesis, M. Pesek, 2012.
 
 \bibitem{Gillet2008}
 O.~Gillet and G.~Richard.
@@ -78,24 +76,19 @@ O.~Gillet and G.~Richard.
 \newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
   16(3):529--540, March 2008.
 
-\bibitem{gouyon2000classifying}
-F~Gouyon, O~Delerue, and F~Pachet.
-\newblock {Classifying percussive sounds: a matter of zero-crossing rate?}
-\newblock In {\em Proceedings of the COST G-6 Conference on Digital Audio
-  Effects}, 2000.
+\bibitem{Li2007}
+Yipeng Li and DeLiang Wang.
+\newblock {Separation of Singing Voice From Music Accompaniment for Monaural
+  Recordings}.
+\newblock {\em IEEE Transactions on Audio, Speech and Language Processing},
+  15(4):1475--1487, May 2007.
 
-\bibitem{gouyon2001exploration}
-Fabien Gouyon and Perfecto Herrera.
-\newblock {Exploration of techniques for automatic labeling of audio drum
-  tracks instruments}.
-\newblock In {\em Proceedings of MOSART: Workshop on Current Directions in
-  Computer Music}, 2001.
-
-\bibitem{gunderson2007musical}
-Steinar~Heimdal Gunderson.
-\newblock {Musical descriptors: An assessment of psychoacoustical models in the
-  presence of lossy compression}.
-\newblock 2007.
+\bibitem{Gerhard}
+David Gerhard.
+\newblock {Pitch Extraction and Fundamental Frequency: History and Current
+  Techniques}.
+\newblock Technical report, University of Regina, Saskatchewan, Canada, Regina,
+  2003.
 
 \bibitem{Klapuri2006}
 Anssi Klapuri and Manuel Davy, editors.
@@ -107,17 +100,29 @@ Anssi~P Klapuri.
 \newblock {Automatic Music Transcription as We Know it Today}.
 \newblock {\em Journal of New Music Research}, 33(3):269--282, September 2004.
 
-\bibitem{Krause2012}
-Bernie Krause.
-\newblock {Echonest of the past}.
-\newblock In {\em The Great Animal Orchestra: Finding the Origins of Music in
-  the World's Wild Places}, chapter Echonest o, pages 5--10. Hachette Digital,
-  Inc., London, 2012.
+\bibitem{Smith1983}
+Dave Smith and Chet Wood.
+\newblock {MIDI Musical Instrument Digital Interface Specification 1.0}, 1983.
 
-\bibitem{la2001harmonic}
-Jan {La Rue}.
-\newblock {Harmonic Rhythm in the Beethoven symphonies}.
-\newblock {\em The Journal of Musicology}, 18(2):221--248, 2001.
+\bibitem{ben2010user}
+Asa Ben-Hur and Jason Weston.
+\newblock {A user’s guide to support vector machines}.
+\newblock In {\em Data mining techniques for the life sciences}, pages
+  223--239. Springer, 2010.
+
+\bibitem{chu2010lamp}
+Wei-rong Chu, RT-H Tsai, Ying-Sian Wu, Hui-Hsin Wu, Hung-Yi Chen, and JY-J Hsu.
+\newblock {LAMP, a lyrics and audio mandopop dataset for music mood estimation:
+  Dataset compilation, system construction, and testing}.
+\newblock In {\em Technologies and Applications of Artificial Intelligence
+  (TAAI), 2010 International Conference on}, pages 53--59. IEEE, 2010.
+
+\bibitem{schmidt2009projection}
+Erik~M Schmidt and Youngmoo~E Kim.
+\newblock {Projection of acoustic features to continuous valence-arousal mood
+  labels via regression}.
+\newblock In {\em 10th International Society for Music Information Retrieval
+  Conference. ISMIR}, 2009.
 
 \bibitem{laurier2007audio}
 Cyril Laurier, Perfecto Herrera, M~Mandel, and D~Ellis.
@@ -125,41 +130,106 @@ Cyril Laurier, Perfecto Herrera, M~Mandel, and D~Ellis.
 \newblock {\em Music Information Retrieval Evaluation eXchange (MIREX) extended
   abstract}, 2007.
 
-\bibitem{Laurier2009}
-Cyril Laurier, Owen Meyers, Joan Serr\`{a}, Martin Blech, Perfecto Herrera, and
-  Xavier Serra.
-\newblock {Indexing music by mood: design and integration of an automatic
-  content-based annotator}.
-\newblock {\em Multimedia Tools and Applications}, 48(1):161--184, 2009.
+\bibitem{watson2012modeling}
+Diane Watson and Regan~L Mandryk.
+\newblock {Modeling Musical Mood From Audio Features and Listening Context on
+  an In-Situ Data Set.}
+\newblock In {\em Proceedings of the International Conference on Music
+  Information Retrieval (ISMIR)}, pages 31--36, 2012.
 
-\bibitem{lenko2009pomen}
-Mira Lenko, Tina Kogov\v{s}ek, and Peter Stankovi\'{c}.
-\newblock {\em {Pomen glasbe v o\v{c}eh mladih: diplomsko delo}}.
-\newblock M. Lenko, 2009.
+\bibitem{saari2013role}
+Pasi Saari, Tuomas Eerola, Gy\"{o}rgy Fazekas, Mathieu Barthet, Olivier
+  Lartillot, and Mark~B Sandler.
+\newblock {The Role of Audio and Tags in Music Mood Prediction: A Study Using
+  Semantic Layer Projection.}
+\newblock In {\em Proceedings of the International Conference on Music
+  Information Retrieval (ISMIR)}, pages 201--206, 2013.
 
-\bibitem{Li2007}
-Yipeng Li and DeLiang Wang.
-\newblock {Separation of Singing Voice From Music Accompaniment for Monaural
-  Recordings}.
-\newblock {\em IEEE Transactions on Audio, Speech and Language Processing},
-  15(4):1475--1487, May 2007.
+\bibitem{bogdanov2013form}
+D~Bogdanov.
+\newblock {\em {From music similarity to music recommendation: Computational
+  approaches based on audio features and metadata}}.
+\newblock PhD thesis, Universitat Pompeu Fabra, Barcelona, Spain, 2013.
+
+\bibitem{gunderson2007musical}
+Steinar~Heimdal Gunderson.
+\newblock {Musical descriptors: An assessment of psychoacoustical models in the
+  presence of lossy compression}.
+\newblock 2007.
+
+\bibitem{gouyon2001exploration}
+Fabien Gouyon and Perfecto Herrera.
+\newblock {Exploration of techniques for automatic labeling of audio drum
+  tracks instruments}.
+\newblock In {\em Proceedings of MOSART: Workshop on Current Directions in
+  Computer Music}, 2001.
+
+\bibitem{brossier2004real}
+Paul Brossier, Juan~Pablo Bello, and Mark~D Plumbley.
+\newblock {Real-time temporal segmentation of note objects in music signals}.
+\newblock In {\em Proceedings of the ICMC}, 2004.
+
+\bibitem{gouyon2000classifying}
+F~Gouyon, O~Delerue, and F~Pachet.
+\newblock {Classifying percussive sounds: a matter of zero-crossing rate?}
+\newblock In {\em Proceedings of the COST G-6 Conference on Digital Audio
+  Effects}, 2000.
+
+\bibitem{zhu2005music}
+Yongwei Zhu, Mohan~S Kankanhalli, and Sheng Gao.
+\newblock {Music key detection for musical audio}.
+\newblock In {\em Multimedia Modelling Conference, 2005. MMM 2005. Proceedings
+  of the 11th International}, pages 30--37. IEEE, 2005.
+
+\bibitem{terhardt1974pitch}
+Ernst Terhardt.
+\newblock {Pitch, consonance, and harmony}.
+\newblock {\em The Journal of the Acoustical Society of America},
+  55(5):1061--1069, 1974.
+
+\bibitem{la2001harmonic}
+Jan {La Rue}.
+\newblock {Harmonic Rhythm in the Beethoven symphonies}.
+\newblock {\em The Journal of Musicology}, 18(2):221--248, 2001.
+
+\bibitem{dalgleish1999handbook}
+Tim Dalgleish and Michael~J Power.
+\newblock {Basic Emotions}.
+\newblock In {\em Handbook of cognition and emotion}. Wiley Online Library,
+  1999.
+
+\bibitem{Wu2013}
+B~Wu, S~Wun, C~Lee, and A~Horner.
+\newblock {Spectral correlates in emotion labeling of sustained musical
+  instrument tones}.
+\newblock In {\em Proceedings of the International Conference on Music
+  Information Retrieval (ISMIR)}, pages 415--421, 2013.
+
+\bibitem{Colibazzi2010}
+Tiziano Colibazzi, Jonathan Posner, Zhishun Wang, Daniel Gorman, Andrew Gerber,
+  Shan Yu, Hongtu Zhu, Alayar Kangarlu, Yunsuo Duan, James~A Russell, and
+  Bradley~S Peterson.
+\newblock {Neural systems subserving valence and arousal during the experience
+  of induced emotions.}
+\newblock {\em Emotion (Washington, D.C.)}, 10(3):377--389, 2010.
 
 \bibitem{logan2000mel}
 Beth Logan and Others.
 \newblock {Mel Frequency Cepstral Coefficients for Music Modeling.}
 \newblock In {\em ISMIR}, 2000.
 
-\bibitem{panda2013multi}
-R~Panda, R~Malheiro, B~Rocha, A~Oliveira, and R~P Paiva.
-\newblock {Multi-Modal Music Emotion Recognition: A New Dataset, Methodology
-  and Comparative Analysis}.
-\newblock {\em Proc. CMMR}, 2013.
+\bibitem{Bello2005}
+Juan~P Bello and Jeremy Pickens.
+\newblock {A robust mid-level representation for harmonic content in music
+  signals}.
+\newblock In {\em Proceedings of the International Conference on Music
+  Information Retrieval (ISMIR)}, pages 304--311, London, 2005.
 
-\bibitem{pesek2012prepoznavanje}
-Matev\v{z} Pesek.
-\newblock {\em {Prepoznavanje akordov s hierarhi\{\v{c}\}nim kompozicionalnim
-  modelom: diplomsko delo}}.
-\newblock PhD thesis, M. Pesek, 2012.
+\bibitem{abdi2007method}
+Herv\'{e} Abdi.
+\newblock {The method of least squares}.
+\newblock {\em Encyclopedia of Measurement and Statistics. CA, USA: Thousand
+  Oaks}, 2007.
 
 \bibitem{Pesek2013}
 Matev\v{z} Pesek and Matija Marolt.
@@ -169,64 +239,40 @@ Matev\v{z} Pesek and Matija Marolt.
   Principles and Practice of Knowledge Discovery in Databases, ECML/PKDD 2013},
   2013.
 
-\bibitem{saari2013role}
-Pasi Saari, Tuomas Eerola, Gy\"{o}rgy Fazekas, Mathieu Barthet, Olivier
-  Lartillot, and Mark~B Sandler.
-\newblock {The Role of Audio and Tags in Music Mood Prediction: A Study Using
-  Semantic Layer Projection.}
-\newblock In {\em ISMIR}, pages 201--206, 2013.
-
-\bibitem{schmidt2009projection}
-Erik~M Schmidt and Youngmoo~E Kim.
-\newblock {Projection of acoustic features to continuous valence-arousal mood
-  labels via regression}.
-\newblock In {\em 10th International Society for Music Information Retrieval
-  Conference. ISMIR}, 2009.
-
-\bibitem{schmidt2011modeling}
-Erik~M Schmidt and Youngmoo~E Kim.
-\newblock {Modeling Musical Emotion Dynamics with Conditional Random Fields.}
-\newblock In {\em ISMIR}, pages 777--782, 2011.
-
-\bibitem{schuller2010mister}
-Bj\"{o}rn Schuller, Clemens Hage, Dagmar Schuller, and Gerhard Rigoll.
-\newblock {‘Mister DJ, Cheer Me Up!’: Musical and textual features for
-  automatic mood classification}.
-\newblock {\em Journal of New Music Research}, 39(1):13--34, 2010.
-
-\bibitem{Smith1983}
-Dave Smith and Chet Wood.
-\newblock {MIDI Musical Instrument Digital Interface Specification 1.0}, 1983.
-
-\bibitem{terhardt1974pitch}
-Ernst Terhardt.
-\newblock {Pitch, consonance, and harmony}.
-\newblock {\em The Journal of the Acoustical Society of America},
-  55(5):1061--1069, 1974.
-
-\bibitem{turnbull2008semantic}
-Douglas Turnbull, Luke Barrington, David Torres, and Gert Lanckriet.
-\newblock {Semantic annotation and retrieval of music and sound effects}.
-\newblock {\em Audio, Speech, and Language Processing, IEEE Transactions on},
-  16(2):467--476, 2008.
-
-\bibitem{watson2012modeling}
-Diane Watson and Regan~L Mandryk.
-\newblock {Modeling Musical Mood From Audio Features and Listening Context on
-  an In-Situ Data Set.}
-\newblock In {\em ISMIR}, pages 31--36, 2012.
-
-\bibitem{Wu2013}
-B~Wu, S~Wun, C~Lee, and A~Horner.
-\newblock {Spectral correlates in emotion labeling of sustained musical
-  instrument tones}.
+\bibitem{bogdanov2013essentia}
+Dmitry Bogdanov, Nicolas Wack, Emilia G\'{o}mez, Sankalp Gulati, Perfecto
+  Herrera, Oscar Mayor, Gerard Roma, Justin Salamon, Jos\'{e}~R Zapata, and
+  Xavier Serra.
+\newblock {Essentia: An Audio Analysis Library for Music Information
+  Retrieval.}
 \newblock In {\em Proceedings of the International Conference on Music
-  Information Retrieval (ISMIR)}, pages 415--421, 2013.
+  Information Retrieval (ISMIR)}, pages 493--498. Citeseer, 2013.
 
-\bibitem{zhu2005music}
-Yongwei Zhu, Mohan~S Kankanhalli, and Sheng Gao.
-\newblock {Music key detection for musical audio}.
-\newblock In {\em Multimedia Modelling Conference, 2005. MMM 2005. Proceedings
-  of the 11th International}, pages 30--37. IEEE, 2005.
+\bibitem{Laurier2009}
+Cyril Laurier, Owen Meyers, Joan Serr\`{a}, Martin Blech, Perfecto Herrera, and
+  Xavier Serra.
+\newblock {Indexing music by mood: design and integration of an automatic
+  content-based annotator}.
+\newblock {\em Multimedia Tools and Applications}, 48(1):161--184, 2009.
+
+\bibitem{Sural2002}
+S.~Sural and S.~Pramanik.
+\newblock {Segmentation and histogram generation using the HSV color space for
+  image retrieval}.
+\newblock In {\em Proceedings. International Conference on Image Processing},
+  volume~2, pages II--589--II--592. IEEE, 2002.
+
+\bibitem{susstrunk1999standard}
+Sabine S\"{u}sstrunk, Robert Buckley, and Steve Swen.
+\newblock {Standard RGB color spaces}.
+\newblock In {\em Color and Imaging Conference}, volume 1999, pages 127--134.
+  Society for Imaging Science and Technology, 1999.
+
+\bibitem{julier1997consistent}
+Simon~J Julier and Jeffrey~K Uhlmann.
+\newblock {Consistent debiased method for converting between polar and
+  Cartesian coordinate systems}.
+\newblock In {\em AeroSense'97}, pages 110--121. International Society for
+  Optics and Photonics, 1997.
 
 \end{thebibliography}
