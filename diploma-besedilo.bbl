@@ -70,6 +70,35 @@ Matev\v{z} Pesek.
   modelom: diplomsko delo}}.
 \newblock PhD thesis, M. Pesek, 2012.
 
+\bibitem{Downie2008}
+J~Stephen Downie.
+\newblock {The music information retrieval evaluation exchange (2005–2007): A
+  window into music information retrieval research}.
+\newblock {\em Acoustical Science and Technology}, 29(4):247--255, 2008.
+
+\bibitem{Downie2010}
+J~Stephen Downie, Andreas~F Ehmann, Mert Bay, and M~Cameron Jones.
+\newblock {The Music Information Retrieval Evaluation eXchange: Some
+  Observations and Insights}.
+\newblock In Wieczorkowska A.A. and Ras Z.W., editors, {\em Advances in Music
+  Information Retrieval}, pages 93--115. Springer-Verlag, Berlin, 2010.
+
+\bibitem{bu2010music}
+Jiajun Bu, Shulong Tan, Chun Chen, Can Wang, Hao Wu, Lijun Zhang, and Xiaofei
+  He.
+\newblock {Music recommendation by unified hypergraph: combining social media
+  information and music content}.
+\newblock In {\em Proceedings of the international conference on Multimedia},
+  pages 391--400. ACM, 2010.
+
+\bibitem{saari2013role}
+Pasi Saari, Tuomas Eerola, Gy\"{o}rgy Fazekas, Mathieu Barthet, Olivier
+  Lartillot, and Mark~B Sandler.
+\newblock {The Role of Audio and Tags in Music Mood Prediction: A Study Using
+  Semantic Layer Projection.}
+\newblock In {\em Proceedings of the International Conference on Music
+  Information Retrieval (ISMIR)}, pages 201--206, 2013.
+
 \bibitem{Gillet2008}
 O.~Gillet and G.~Richard.
 \newblock {Transcription and Separation of Drum Signals From Polyphonic Music}.
@@ -136,14 +165,6 @@ Diane Watson and Regan~L Mandryk.
   an In-Situ Data Set.}
 \newblock In {\em Proceedings of the International Conference on Music
   Information Retrieval (ISMIR)}, pages 31--36, 2012.
-
-\bibitem{saari2013role}
-Pasi Saari, Tuomas Eerola, Gy\"{o}rgy Fazekas, Mathieu Barthet, Olivier
-  Lartillot, and Mark~B Sandler.
-\newblock {The Role of Audio and Tags in Music Mood Prediction: A Study Using
-  Semantic Layer Projection.}
-\newblock In {\em Proceedings of the International Conference on Music
-  Information Retrieval (ISMIR)}, pages 201--206, 2013.
 
 \bibitem{bogdanov2013form}
 D~Bogdanov.

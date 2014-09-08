@@ -11,37 +11,36 @@
 \contentsline {paragraph}{Lo\IeC {\v c}evanje pesmi na ve\IeC {\v c} izvorov in prepoznavanje in\IeC {\v s}trumentov}{5}{section*.6}
 \contentsline {paragraph}{Avtomati\IeC {\v c}na transkripcija glasbe}{5}{section*.7}
 \contentsline {paragraph}{Avtomati\IeC {\v c}na kategorizacija glasbe}{5}{section*.8}
-\contentsline {paragraph}{Generiranje glasbe}{5}{section*.9}
 \contentsline {section}{\numberline {2.2}Ocenjevanje razpolo\IeC {\v z}enja v glasbi}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Podatkovne zbirke}{6}{subsection.2.2.1}
-\contentsline {paragraph}{Podatkovna zbirka s filmsko glasbo}{6}{section*.10}
-\contentsline {paragraph}{Mood Swing Turk Dataset}{7}{section*.11}
-\contentsline {paragraph}{Cal500}{7}{section*.12}
-\contentsline {paragraph}{MTV Music Dataset}{7}{section*.13}
-\contentsline {paragraph}{LAMP}{7}{section*.14}
-\contentsline {paragraph}{Multi Modal}{8}{section*.15}
+\contentsline {paragraph}{Podatkovna zbirka s filmsko glasbo}{6}{section*.9}
+\contentsline {paragraph}{Mood Swing Turk Dataset}{7}{section*.10}
+\contentsline {paragraph}{Cal500}{7}{section*.11}
+\contentsline {paragraph}{MTV Music Dataset}{7}{section*.12}
+\contentsline {paragraph}{LAMP}{7}{section*.13}
+\contentsline {paragraph}{Multi Modal}{8}{section*.14}
 \contentsline {subsection}{\numberline {2.2.2}Algoritmi za ocenjevanje razpolo\IeC {\v z}enja v glasbi}{8}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Zna\IeC {\v c}ilnice}{10}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Lastna podatkovna zbirka}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Zbiranje podatkovne zbirke}{13}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Preliminarna analiza}{14}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Glavna anketa}{15}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Implementacija ankete}{18}{section.3.2}
+\contentsline {section}{\numberline {3.2}Implementacija ankete}{20}{section.3.2}
 \contentsline {section}{\numberline {3.3}Sestava podatkovne zbirke}{20}{section.3.3}
 \contentsline {section}{\numberline {3.4}Analiza podatkov}{24}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Demografska analiza}{24}{subsection.3.4.1}
-\contentsline {paragraph}{Ukvarjanje z glasbo}{24}{section*.16}
-\contentsline {paragraph}{Zdravila in droge}{24}{section*.17}
-\contentsline {paragraph}{\IeC {\v Z}anri}{24}{section*.18}
-\contentsline {subsection}{\numberline {3.4.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva in barva}{26}{subsection.3.4.2}
-\contentsline {paragraph}{Barva}{31}{section*.19}
+\contentsline {paragraph}{Ukvarjanje z glasbo}{24}{section*.24}
+\contentsline {paragraph}{Zdravila in droge}{24}{section*.26}
+\contentsline {paragraph}{\IeC {\v Z}anri}{24}{section*.27}
+\contentsline {subsection}{\numberline {3.4.2}Razpolo\IeC {\v z}enje, \IeC {\v c}ustva in barva}{27}{subsection.3.4.2}
+\contentsline {paragraph}{Barva}{32}{section*.34}
 \contentsline {subsection}{\numberline {3.4.3}Glasba, razpolo\IeC {\v z}enje in barva}{32}{subsection.3.4.3}
 \contentsline {chapter}{\numberline {4}Algoritmi za ocenjevanje razpolo\IeC {\v z}enja v glasbi}{35}{chapter.4}
 \contentsline {section}{\numberline {4.1}Regresijski algoritem}{35}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Rezultati za regresijski algoritem}{36}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Essentia Gaiatransform algoritem}{38}{section.4.2}
+\contentsline {section}{\numberline {4.2}Essentia Gaiatransform algoritem}{39}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Natan\IeC {\v c}nost razvr\IeC {\v s}\IeC {\v c}anja}{41}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Rezultati napovedovanja z algoritmom Gaiatransform}{41}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Rezultati napovedovanja z algoritmom Gaiatransform}{42}{subsection.4.2.2}
 \contentsline {chapter}{\numberline {5}Napovedovanje razpolo\IeC {\v z}enja iz barve}{47}{chapter.5}
 \contentsline {section}{\numberline {5.1}Rezultati napovedovanja razpolo\IeC {\v z}enja iz barve}{48}{section.5.1}
 \contentsline {chapter}{\numberline {6}Zaklju\IeC {\v c}ek in nadaljnje delo}{51}{chapter.6}
